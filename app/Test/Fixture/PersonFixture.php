@@ -1,0 +1,41 @@
+<?php
+/**
+ * Person Fixture
+ */
+class PersonFixture extends CakeTestFixture {
+
+/**
+ * Fields
+ *
+ * @var array
+ */
+	public $fields = array(
+		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false, 'key' => 'primary'),
+		'team_id' => array('type' => 'integer', 'null' => false, 'default' => null, 'unsigned' => false),
+		'title' => array('type' => 'string', 'null' => false, 'default' => null, 'length' => 100, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
+		'status' => array('type' => 'boolean', 'null' => false, 'default' => null),
+		'created' => array('type' => 'datetime', 'null' => false, 'default' => null),
+		'updated' => array('type' => 'datetime', 'null' => false, 'default' => null),
+		'indexes' => array(
+			'PRIMARY' => array('column' => 'id', 'unique' => 1)
+		),
+		'tableParameters' => array('charset' => 'latin1', 'collate' => 'latin1_swedish_ci', 'engine' => 'InnoDB')
+	);
+
+/**
+ * Records
+ *
+ * @var array
+ */
+	public $records = array(
+		array(
+			'id' => 1,
+			'team_id' => 1,
+			'title' => 'Lorem ipsum dolor sit amet',
+			'status' => 1,
+			'created' => '2015-07-28 09:31:09',
+			'updated' => '2015-07-28 09:31:09'
+		),
+	);
+
+}
