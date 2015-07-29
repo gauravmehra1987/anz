@@ -31,4 +31,39 @@ App::uses('Controller', 'Controller');
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    
+    public $components = array(
+        'Session',
+        'Auth' => array(
+            'loginRedirect' => array(
+                'controller' => 'users',
+                'action' => 'admin_index'
+            ),
+            'logoutRedirect' => array(
+                'controller' => '/',
+                'action' => 'display',
+                'home'
+            ),
+            'authenticate' => array(
+                'Form' => array(
+                    'passwordHasher' => 'Simple',
+                    'hashType'      => 'sha256'
+                )
+            )
+        )
+    );
+
+    function beforeFilter() {
+
+        if(isset($this->request->params['admin']) && $this->request->params['admin'] && $this->request->params['action'] !== 'admin_login') {
+            
+            if( !$this->Session->read('Auth.User')){ 
+                $this->Session->setFlash('You must be logged in for that action.');
+                $this->redirect('/admin/users/login');
+            }
+            $this->set('user',$this->Session->read('Auth.User'));
+            $this->layout = 'admin';
+        }
+    }
+    
 }

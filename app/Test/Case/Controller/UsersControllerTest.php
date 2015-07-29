@@ -1,10 +1,10 @@
 <?php
-App::uses('CountriesController', 'Controller');
+App::uses('UsersController', 'Controller');
 
 /**
- * CountriesController Test Case
+ * UsersController Test Case
  */
-class CountriesControllerTest extends ControllerTestCase {
+class UsersControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -12,7 +12,7 @@ class CountriesControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.country'
+		'app.user'
 	);
 
 /**
@@ -61,48 +61,48 @@ class CountriesControllerTest extends ControllerTestCase {
 	}
 
 /**
- * testAdminIndex method
+ * testSecurepanelIndex method
  *
  * @return void
  */
-	public function testAdminIndex() {
-		$this->markTestIncomplete('testAdminIndex not implemented.');
+	public function testSecurepanelIndex() {
+		$this->markTestIncomplete('testSecurepanelIndex not implemented.');
 	}
 
 /**
- * testAdminView method
+ * testSecurepanelView method
  *
  * @return void
  */
-	public function testAdminView() {
-		$this->markTestIncomplete('testAdminView not implemented.');
+	public function testSecurepanelView() {
+		$this->markTestIncomplete('testSecurepanelView not implemented.');
 	}
 
 /**
- * testAdminAdd method
+ * testSecurepanelAdd method
  *
  * @return void
  */
-	public function testAdminAdd() {
-		$this->markTestIncomplete('testAdminAdd not implemented.');
+	public function testSecurepanelAdd() {
+		$this->markTestIncomplete('testSecurepanelAdd not implemented.');
 	}
 
 /**
- * testAdminEdit method
+ * testSecurepanelEdit method
  *
  * @return void
  */
-	public function testAdminEdit() {
-		$this->markTestIncomplete('testAdminEdit not implemented.');
+	public function testSecurepanelEdit() {
+		$this->markTestIncomplete('testSecurepanelEdit not implemented.');
 	}
 
 /**
- * testAdminDelete method
+ * testSecurepanelDelete method
  *
  * @return void
  */
-	public function testAdminDelete() {
-		$this->markTestIncomplete('testAdminDelete not implemented.');
+	public function testSecurepanelDelete() {
+		$this->markTestIncomplete('testSecurepanelDelete not implemented.');
 	}
 
 }

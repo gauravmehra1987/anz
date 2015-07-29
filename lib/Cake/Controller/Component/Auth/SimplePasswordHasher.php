@@ -49,7 +49,7 @@ class SimplePasswordHasher extends AbstractPasswordHasher {
  * @return bool True if hashes match else false.
  */
 	public function check($password, $hashedPassword) {
-		return $hashedPassword === $this->hash($password);
+            	return $hashedPassword === $this->hash($password);
 	}
 
 }
