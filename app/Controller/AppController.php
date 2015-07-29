@@ -36,7 +36,7 @@ class AppController extends Controller {
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
-                'controller' => 'users',
+                'controller' => '/admin/users',
                 'action' => 'admin_index'
             ),
             'logoutRedirect' => array(
@@ -52,17 +52,23 @@ class AppController extends Controller {
             )
         )
     );
-
-    function beforeFilter() {
+    
+    public function beforeRender() {
+        if(isset($this->request->params['admin']) && $this->request->params['admin']) {
+            $this->layout = 'admin';
+        }
+    }
+    public function beforeFilter() {
 
         if(isset($this->request->params['admin']) && $this->request->params['admin'] && $this->request->params['action'] !== 'admin_login') {
             
-            if( !$this->Session->read('Auth.User')){ 
+            if( !$this->Session->read('Auth.User')){
                 $this->Session->setFlash('You must be logged in for that action.');
                 $this->redirect('/admin/users/login');
             }
             $this->set('user',$this->Session->read('Auth.User'));
-            $this->layout = 'admin';
+        }else{
+            $this->Auth->allow();
         }
     }
     

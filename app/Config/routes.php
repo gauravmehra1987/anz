@@ -31,7 +31,7 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         
         Router::connect('/make-an-appointment', array('controller' => 'Appointments', 'action' => 'add'));
-        
+        Router::connect('/make-an-appointment/thanks', array('controller' => 'Appointments', 'action' => 'success'));
         Router::connect('/admin',array('controller' => 'countries', 'action' => 'index', 'admin' => true)
         );
 

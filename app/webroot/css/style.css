@@ -71,14 +71,14 @@ header{ width:100%; float:left;}
 .form-row .right-col{ width:252px; float:right;}
 
 .form-row label{ float:left; width:100%; font-size:18px; color:#fff; margin-bottom:8px;}
-.form-row input[type="text"]{ width:244px; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:8px; }
+.form-row input[type="text"],.form-row input[type="email"],.form-row input[type="tel"]{ width:244px; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:8px; }
 
 .full-width-feild{width:100%; float:left;}
-.full-width-feild input[type="text"]{ width:96%; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:4%; }
+.full-width-feild input[type="text"],.form-row input[type="email"],.form-row input[type="tel"]{ width:96%; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:4%; }
 
 .form-feild-box{ width: 31%; float:left; margin-right: 3.5%;}
 .form-feild-box label{ float:left; width:100%; font-size:18px; color:#fff; margin-bottom:0px;}
-.form-feild-box input[type="text"]{ width:98%; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:2%; }
+.form-feild-box input[type="text"],.form-row input[type="email"],.form-row input[type="tel"]{ width:98%; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:2%; }
 .form-feild-box.last{  margin-right: 0;}
 .form-feild-box p{ font-size:12px; color:#fff; font-style:italic;}
 

@@ -51,7 +51,7 @@ class AppointmentsController extends AppController {
 			$this->Appointment->create();
 			if ($this->Appointment->save($this->request->data)) {
 				$this->Session->setFlash(__('The appointment has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+				return $this->redirect('/make-an-appointment/thanks');
 			} else {
 				$this->Session->setFlash(__('The appointment could not be saved. Please, try again.'));
 			}
@@ -225,4 +225,8 @@ class AppointmentsController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+        
+        public function success(){
+            
+        }
 }
