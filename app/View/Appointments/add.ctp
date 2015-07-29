@@ -103,7 +103,7 @@
                 
             },
             messages: {
-                'data[Appointment][first_name]': {required: "Please Provide your full name",minlength: "Full name must be more than 2 characters."},
+                'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
                 'data[Appointment][last_name]':"Please enter your last name.",
                 'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 characters are needed!",maxlength:"Maximim 12 characters allowed!"},
                 'data[Appointment][email]': {required:"Please enter your email address",email:"PLease enter a valid email address"},
@@ -111,21 +111,7 @@
                 'data[Appointment][city]':{required: "Please enter your city"}
             },
             submitHandler: function(form) {
-                $('.load').show();
-                $('._reg').attr('disable','disable');
-                $.post('xhr/',$('.register-form input'),function(r){ r=$.parseJSON(r);
-                    $('.popup').bPopup({
-                        modalClose:true,
-                        fadeSpeed: 'slow',
-                        followSpeed: 1500,
-                        modalColor: '#ffd300',opacity:1
-                    });
-                    
-                    if(r.status)
-                        $('input').not('input[type=hidden],input[type=submit]').val('');
-                    $('._reg').attr('disable',false);
-                    $('.load').hide();
-                });
+                return true;
             }
         });
     });

@@ -465,9 +465,4 @@ button{ float:none; display:block;     margin: 1em auto;}
     float: left;
 }
 }
-
-
-
-
-
-
+label.error{color: red; font-weight: small;}

@@ -21,8 +21,8 @@
                 </div>
 
                 <div class="btn">
-                    <button onclick="location.href='make-an-appointment'">Make an Appointment</button>
-                    <button>Make an Appointment</button>
+                    <button onclick="location.href='/make-an-appointment'">Make an Appointment</button>
+                    <button onclick="location.href='/cocktail-reception'">Cocktail Reception</button>
                 </div>
             </div>
     </div>

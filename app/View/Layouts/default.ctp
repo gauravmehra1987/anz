@@ -31,15 +31,15 @@
     <div class="right-blue-bar"></div>
     </div>
 </header>
-
+<?php ?>
 <div class="menu">
 	<div class="navigation">
     <div class="hamburgar-icon" id="open-menu"><img src="/img/hamburgar-menu.png" alt="menu" /></div>
     <ul>
-    	<li><a href="#" class="active" title="Home">Home</a></li>
-        <li><a href="#" title="Make an Appointment">Make an Appointment</a></li>
-        <li><a href="#" title="Cocktail Reception">Cocktail Reception</a></li>
-        <li class="last"><a href="#" title="Delegates">Delegates</a></li>
+    	<li><a href="/" title="Home">Home</a></li>
+        <li><a href="/make-an-appointment" title="Make an Appointment">Make an Appointment</a></li>
+        <li><a href="/cocktail-reception" title="Cocktail Reception">Cocktail Reception</a></li>
+        <li class="last"><a href="/delegates" title="Delegates">Delegates</a></li>
     </ul>
     </div>
 </div>
