@@ -61,8 +61,12 @@
 		<td>
 			<?php echo $this->Html->link($appointment['Time']['title'], array('controller' => 'times', 'action' => 'view', $appointment['Time']['id'])); ?>
 		</td>
-		<td><?php echo h($appointment['Appointment']['alternate_date']); ?>&nbsp;</td>
-		<td><?php echo h($appointment['Appointment']['alternate_time']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($appointment['AlternateDate']['date'], array('controller' => 'dates', 'action' => 'view', $appointment['AlternateDate']['id'])); ?>
+		</td>
+		<td>
+			<?php echo $this->Html->link($appointment['AlternateTime']['title'], array('controller' => 'times', 'action' => 'view', $appointment['AlternateTime']['id'])); ?>
+		</td>
 		<td><?php echo h($appointment['Appointment']['created']); ?>&nbsp;</td>
 		<td><?php echo h($appointment['Appointment']['updated']); ?>&nbsp;</td>
 		<td class="actions">

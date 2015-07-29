@@ -30,6 +30,8 @@
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         
+        Router::connect('/make-an-appointment', array('controller' => 'Appointments', 'action' => 'add'));
+        
         Router::connect('/admin',array('controller' => 'countries', 'action' => 'index', 'admin' => true)
         );
 

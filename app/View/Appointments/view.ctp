@@ -93,12 +93,12 @@
 		</dd>
 		<dt><?php echo __('Alternate Date'); ?></dt>
 		<dd>
-			<?php echo h($appointment['Appointment']['alternate_date']); ?>
+			<?php echo $this->Html->link($appointment['AlternateDate']['date'], array('controller' => 'dates', 'action' => 'view', $appointment['AlternateDate']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Alternate Time'); ?></dt>
 		<dd>
-			<?php echo h($appointment['Appointment']['alternate_time']); ?>
+			<?php echo $this->Html->link($appointment['AlternateTime']['title'], array('controller' => 'times', 'action' => 'view', $appointment['AlternateTime']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Created'); ?></dt>

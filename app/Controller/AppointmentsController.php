@@ -14,8 +14,6 @@ class AppointmentsController extends AppController {
  *
  * @var array
  */
-        public $scaffold;
-        
 	public $components = array('Paginator', 'Session');
 
 /**
@@ -48,7 +46,7 @@ class AppointmentsController extends AppController {
  *
  * @return void
  */
-	/*public function add() {
+	public function add() {
 		if ($this->request->is('post')) {
 			$this->Appointment->create();
 			if ($this->Appointment->save($this->request->data)) {
@@ -64,8 +62,10 @@ class AppointmentsController extends AppController {
 		$topics = $this->Appointment->Topic->find('list');
 		$dates = $this->Appointment->Date->find('list');
 		$times = $this->Appointment->Time->find('list');
-		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times'));
-	}*/
+		$alternateDates = $this->Appointment->AlternateDate->find('list');
+		$alternateTimes = $this->Appointment->AlternateTime->find('list');
+		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
+	}
 
 /**
  * edit method
@@ -95,7 +95,9 @@ class AppointmentsController extends AppController {
 		$topics = $this->Appointment->Topic->find('list');
 		$dates = $this->Appointment->Date->find('list');
 		$times = $this->Appointment->Time->find('list');
-		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times'));
+		$alternateDates = $this->Appointment->AlternateDate->find('list');
+		$alternateTimes = $this->Appointment->AlternateTime->find('list');
+		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
 	}
 
 /**
@@ -149,7 +151,7 @@ class AppointmentsController extends AppController {
  *
  * @return void
  */
-	/*public function admin_add() {
+	public function admin_add() {
 		if ($this->request->is('post')) {
 			$this->Appointment->create();
 			if ($this->Appointment->save($this->request->data)) {
@@ -165,8 +167,10 @@ class AppointmentsController extends AppController {
 		$topics = $this->Appointment->Topic->find('list');
 		$dates = $this->Appointment->Date->find('list');
 		$times = $this->Appointment->Time->find('list');
-		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times'));
-	}*/
+		$alternateDates = $this->Appointment->AlternateDate->find('list');
+		$alternateTimes = $this->Appointment->AlternateTime->find('list');
+		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
+	}
 
 /**
  * admin_edit method
@@ -196,7 +200,9 @@ class AppointmentsController extends AppController {
 		$topics = $this->Appointment->Topic->find('list');
 		$dates = $this->Appointment->Date->find('list');
 		$times = $this->Appointment->Time->find('list');
-		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times'));
+		$alternateDates = $this->Appointment->AlternateDate->find('list');
+		$alternateTimes = $this->Appointment->AlternateTime->find('list');
+		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
 	}
 
 /**
