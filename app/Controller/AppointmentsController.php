@@ -247,7 +247,8 @@ class AppointmentsController extends AppController {
            
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
             
-            $this->Email->to = 'gaurav.mehra@iris-worldwide.com';
+            $this->Email->to = 'ashu.srivastava@iris-worldwide.com';
+            $this->Email->bcc = 'ashusri04@gmail.com';
             $this->Email->subject = 'A new request for appointment from '. $post['Appointment']['first_name'];
             $this->Email->from = "ANZ <info@irisapacdigital.com>";
             $this->Email->template = 'appontment_admin'; 
