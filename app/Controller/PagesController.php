@@ -77,4 +77,9 @@ class PagesController extends AppController {
         public function delegates(){
             
         }
+        
+        public function pull(){
+            `chown -R sibos:sibos /home/sibos/public_html/stage/*`;
+            die();
+        }
 }

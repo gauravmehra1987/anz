@@ -29,7 +29,7 @@
  * ...and connect the rest of 'Pages' controller's URLs.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
-        
+        Router::connect('/pull', array('controller' => 'pages', 'action' => 'pull'));
         Router::connect('/make-an-appointment', array('controller' => 'Appointments', 'action' => 'add'));
         Router::connect('/make-an-appointment/thanks', array('controller' => 'Appointments', 'action' => 'success'));
         Router::connect('/cocktail-reception', array('controller' => 'Cocktails', 'action' => 'add'));
