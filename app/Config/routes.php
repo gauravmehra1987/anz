@@ -33,7 +33,7 @@
         Router::connect('/make-an-appointment', array('controller' => 'Appointments', 'action' => 'add'));
         Router::connect('/make-an-appointment/thanks', array('controller' => 'Appointments', 'action' => 'success'));
         Router::connect('/cocktail-reception', array('controller' => 'Cocktails', 'action' => 'add'));
-        Router::connect('/cocktail-reception/thanks', array('controller' => 'Appointments', 'action' => 'success'));
+        Router::connect('/cocktail-reception/thanks', array('controller' => 'Cocktails', 'action' => 'success'));
         
         Router::connect('/delegates', array('controller' => 'pages', 'action' => 'delegates'));
         

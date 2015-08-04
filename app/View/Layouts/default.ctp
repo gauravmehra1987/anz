@@ -22,7 +22,7 @@
     
     <div class="header-logo-bar">
     <div class="header-logo">
-    <div class="anz-logo"><img src="/img/anz-logo.jpg" alt="AZN" /></div>
+    <div class="anz-logo"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></div>
     <div class="anz-logo-right-col"></div>
     </div>
     </div>
@@ -31,15 +31,15 @@
     <div class="right-blue-bar"></div>
     </div>
 </header>
-<?php ?>
+
 <div class="menu">
 	<div class="navigation">
-    <div class="hamburgar-icon" id="open-menu"><img src="/img/hamburgar-menu.png" alt="menu" /></div>
+    <div class="hamburgar-icon" id="open-menu"><img src="<?php echo $this->webroot; ?>hamburgar-menu.png" alt="menu" /></div>
     <ul>
-    	<li><a href="/" title="Home">Home</a></li>
-        <li><a href="/make-an-appointment" title="Make an Appointment">Make an Appointment</a></li>
-        <li><a href="/cocktail-reception" title="Cocktail Reception">Cocktail Reception</a></li>
-        <li class="last"><a href="/delegates" title="Delegates">Delegates</a></li>
+    	<li><a <?php if($this->request->url=='') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>" title="Home">Home</a></li>
+        <li><a <?php if($this->request->url=='make-an-appointment') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>make-an-appointment" title="Make an Appointment">Make an Appointment</a></li>
+        <li><a <?php if($this->request->url=='cocktail-reception') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>cocktail-reception" title="Cocktail Reception">Cocktail Reception</a></li>
+        <li class="last"><a <?php if($this->request->url=='delegates') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>delegates" title="Delegates">Delegates</a></li>
     </ul>
     </div>
 </div>
@@ -51,14 +51,24 @@
 
 
 <footer>
-<div class="footer-content">
-<ul>
-<li class="frst"><a href="#">anz.com</a></li>
-<li><a href="#">Website Terms of Us</a></li>
-<li><a href="#">Privacy &amp; Security</a></li>
-<li class="lst"><a href="#">Our Guidelines</a></li>
-</ul>
-<p>&copy; Australia and New Zealand Banking Group Limited (ANZ) 2015 ABN 11 005 357 522.</p>
+    <div class="footer-content">
+    <div class="footer-links">
+    <ul>
+    <li class="frst"><a href="#">anz.com</a></li>
+    <li><a href="#">Website Terms of Us</a></li>
+    <li><a href="#">Privacy &amp; Security</a></li>
+    <li class="lst"><a href="#">Our Guidelines</a></li>
+    </ul>
+    <p>&copy; Australia and New Zealand Banking Group Limited (ANZ) 2015 ABN 11 005 357 522.</p>
+    </div>
+
+    <div class="connect-with-us"><p>Connect with us</p>
+    <div class="social-icon">
+    <img src="<?php echo $this->webroot; ?>img/facebook.jpg" class="left" alt="facebook" />
+    <img src="<?php echo $this->webroot; ?>img/twitter.jpg" class="left" alt="twitter" />
+    </div>
+    </div>
+
 </div>
 </footer>
 <script type="text/javascript">

@@ -1,87 +1,115 @@
 <div class="wrapper">
+
+
+<div class="main-banner-img cocktail-bnr makeanappointment">
+<div class="main-bnnr-layout">
+<h1 class="cocktail-reception-heading"><span>Make an</span>Appointment</h1>
+    </div>
+</div>
+
 	<div class="cocktail-reception">
     <div class="cocktail-reception-form">
     
     <div class="form-title-and-heading">
-    <h1><span>Make an</span>
-    Appointment</h1>
-    <p><span>Please complete the following to</span> make an appointment:</p>
+    <p class="makeanapointment">Please complete the following to make an appointment:</p>
     </div>
-    <div class="form-wrapper">
-        <?php echo $this->Form->create('Appointment',array('id'=>'appointment-form')); ?>
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('first_name'); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('last_name'); ?></div>
+    <div class="form-wrapper makeanapointment">
+    <?php echo $this->Form->create('Appointment',array('id'=>'appointment-form')); ?>
+        <div class="step_1">
+    <div class="form-row">
+    <div class="left-col makeanapointment-3"><?php echo $this->Form->input('first_name',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('last_name',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('email',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="left-col makeanapointment-3"><?php echo $this->Form->input('phone',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('city',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('country_id',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('bank_name',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="form-feild-box">
+    <label class="makeanapointment">Guest 1</label>
+    <p>First name, last name, job title</p>
+    <?php echo $this->Form->input('guest_1',array('label'=>false)); ?>
+    </div>
+    <div class="form-feild-box guest2">
+    <label class="makeanapointment">Guest 2</label>
+    <p>First name, last name, job title</p>
+    <?php echo $this->Form->input('guest_2',array('label'=>false)); ?>
+    </div>
+    <div class="form-feild-box last">
+    <label class="makeanapointment">Guest 3</label>
+    <p>First name, last name, job title</p>
+    <?php echo $this->Form->input('guest_3',array('label'=>false)); ?>
+    </div>
+    </div>
+            <div class="submit-button hidden"><input class="next" type="button" value="Next">  </div>
         </div>
-
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('initials',array('type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('email'); ?></div>
-        </div>
-
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('phone'); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('city'); ?></div>
-        </div>
-
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('country'); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('bank_name'); ?></div>
-        </div>
-
-        <div class="form-row">
-            <div class="form-feild-box">
-                <label>Guest 1</label>
-                <p>First name, last name, job title</p>
-                <?php echo $this->Form->input('guest_1',array('label'=>false)); ?>
-            </div>
-            <div class="form-feild-box">
-                <label>Guest 2</label>
-                <p>First name, last name, job title</p>
-                <?php echo $this->Form->input('guest_2',array('label'=>false)); ?>
-            </div>
-            <div class="form-feild-box last">
-                <label>Guest 3</label>
-                <p>First name, last name, job title</p>
-                <?php echo $this->Form->input('guest_3',array('label'=>false)); ?>
-            </div>
-        </div>
-
-        <div class="form-row">
-        <hr>
-        </div>
-
-        <div class="form-row">
-            <h3>We would like to meet with</h3>
-            <div class="form-feild-box"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
-            <div class="form-feild-box"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
-            <div class="form-feild-box last"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
-        </div>
-
-
-        <div class="form-row">
-            <div class="full-width-feild"><label>Other interested topics</label><?php echo $this->Form->input('other_topic',array('label'=>false)); ?></div>
-        </div>
-
-
-        <div class="form-row">
-        <div class="left-col topspacing"><?php echo $this->Form->input('date_id',array('label'=>'Preferred meeting date')); ?></div>
-        <div class="right-col"><?php echo $this->Form->input('time_id',array('label'=>'Preferred meeting time')); ?></div>
-        </div>
-
-        <div class="form-row">
-        <div class="left-col"><?php echo $this->Form->input('alternate_date',array('label'=>'Alternative meeting date')); ?></div>
-        <div class="right-col"><?php echo $this->Form->input('alternate_time',array('label'=>'Alternative meeting time')); ?></div>
-        </div>
-
-        <div class="submit-button"><input type="submit" value="Submit"> </div>
+        
+    <div class='step_2'>
+    <div class="form-row topspacing">
+    
+    <h3 class="makeanapointment">We would like to meet with</h3>
+    
+    <div class="form-feild-box"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
+    <div class="form-feild-box guest2"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
+    <div class="form-feild-box last"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
+    </div>
+    
+    
+    <div class="form-row topspacing2 mbl-width">
+    <div class="full-width-feild"><label class="makeanapointment">Other interested topics</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'makeanapointment')); ?></div>
+    </div>
+    
+    
+    <div class="form-row makeanapointment topspacing mbl-width">
+    <div class="left-col topspacing makeanapointment-2"><label class="makeanapointment">Preferred meeting date</label>
+    <?php echo $this->Form->input('date_id',array('label'=>false)); ?>
+    </div>
+    <div class="right-col makeanapointment-2"><label class="makeanapointment">Preferred meeting time</label>
+    <?php echo $this->Form->input('time_id',array('label'=>false)); ?>
+    </div>
+    </div>
+    
+    <div class="form-row makeanapointment topspacing mbl-width">
+    <div class="left-col makeanapointment-2"><label class="makeanapointment">Alternative meeting date</label>
+        <?php echo $this->Form->input('alternate_date',array('label'=>false)); ?>
+    </div>
+    <div class="right-col makeanapointment-2"><label class="makeanapointment">Alternative meeting time</label>
+    <?php echo $this->Form->input('alternate_time',array('label'=>false)); ?>
+    </div>
+    </div>
+    
+    <div class="submit-button"><input type="submit" value="Submit">  </div>
+    </div>
     <?php echo $this->Form->end();  ?>
     </div>
     
     </div>
     </div>
-    <script type="text/javascript">
-        $(document).ready(function () {
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+            
+        $('.next').click(function(e){ e.preventDefault();
+            if($("#appointment-form").valid()){
+                $('.step_1').hide();
+                $('.step_2').show();
+            }else{
+                $('.step_2').hide();
+            }
+        });  
+            
         $.validator.addMethod("noSpace", function(value, element) {
             var str = value.trim();
             if(str=='') return false; else return true;
@@ -93,6 +121,7 @@
         }, "Please enter a valid email address");
         
         $("#appointment-form").validate({
+            ignore: ":hidden",
             rules: {
                 'data[Appointment][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Appointment][last_name]': {required: true,minlength: 3,noSpace:true},
@@ -117,4 +146,3 @@
     });
     </script>
     <?php echo $this->Html->script(array('jquery.validate.min')); ?>
-</div>

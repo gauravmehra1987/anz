@@ -14,7 +14,7 @@ class AppointmentsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator', 'Session');
+	public $components = array('Paginator', 'Session','Email');
 
 /**
  * index method
@@ -51,6 +51,9 @@ class AppointmentsController extends AppController {
 			$this->Appointment->create();
 			if ($this->Appointment->save($this->request->data)) {
 				$this->Session->setFlash(__('The appointment has been saved.'));
+//                                print_r($this->request->data); exit;
+                                $this->_sendAckMail($this->request->data);
+                                $this->_notifyAdmin($this->request->data);
 				return $this->redirect('/make-an-appointment/thanks');
 			} else {
 				$this->Session->setFlash(__('The appointment could not be saved. Please, try again.'));
@@ -228,5 +231,28 @@ class AppointmentsController extends AppController {
         
         public function success(){
             
+        }
+        
+        function _sendAckMail($post) {
+            $this->Email->to = $post['Appointment']['email'];
+            $this->Email->subject = 'Acknowledgement from ANZ';
+            $this->Email->from = "ANZ <info@irisapacdigital.com>";
+            $this->Email->template = 'appontment'; 
+            $this->Email->sendAs = 'html'; 
+            $this->set('form', $post);
+            $this->Email->send();
+        }
+        
+        function _notifyAdmin($post) {
+           
+            $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
+            
+            $this->Email->to = 'gaurav.mehra@iris-worldwide.com';
+            $this->Email->subject = 'A new request for appointment from '. $post['Appointment']['first_name'];
+            $this->Email->from = "ANZ <info@irisapacdigital.com>";
+            $this->Email->template = 'appontment_admin'; 
+            $this->Email->sendAs = 'html'; 
+            $this->set('form', $appointment);
+            $this->Email->send();
         }
 }

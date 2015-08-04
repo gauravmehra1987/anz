@@ -14,7 +14,7 @@ class CocktailsController extends AppController {
  *
  * @var array
  */
-	public $components = array('Paginator', 'Session');
+	public $components = array('Paginator', 'Session','Email');
 
 /**
  * index method
@@ -50,8 +50,10 @@ class CocktailsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Cocktail->create();
 			if ($this->Cocktail->save($this->request->data)) {
-				$this->Session->setFlash(__('The cocktail has been saved.'));
-				return $this->redirect(array('action' => 'index'));
+                            $this->_sendAckMail($this->request->data);
+                            $this->_notifyAdmin($this->request->data);
+                            $this->Session->setFlash(__('The cocktail has been saved.'));
+                            return $this->redirect('/cocktail-reception/thanks');
 			} else {
 				$this->Session->setFlash(__('The cocktail could not be saved. Please, try again.'));
 			}
@@ -197,4 +199,29 @@ class CocktailsController extends AppController {
 		}
 		return $this->redirect(array('action' => 'index'));
 	}
+        
+        public function success(){
+            
+        }
+        
+        function _sendAckMail($post){
+            $this->Email->to = $post['Cocktail']['email'];
+            $this->Email->subject = 'Cocktail Acknowledgement from ANZ';
+            $this->Email->from = "ANZ Cocktail <info@irisapacdigital.com>";
+            $this->Email->template = 'cocktail'; 
+            $this->Email->sendAs = 'html'; 
+            $this->set('form', $post);
+            $this->Email->send();
+        }
+        
+        function _notifyAdmin($post){     
+            $cocktail = $this->Cocktail->findById($this->Cocktail->getLastInsertID());
+            $this->Email->to = 'gaurav.mehra@iris-worldwide.com';
+            $this->Email->subject = 'A new request for appointment from '. $post['Cocktail']['first_name'];
+            $this->Email->from = "ANZ Admin<info@irisapacdigital.com>";
+            $this->Email->template = 'cocktail_admin'; 
+            $this->Email->sendAs = 'html'; 
+            $this->set('form', $cocktail);
+            $this->Email->send();
+        }
 }

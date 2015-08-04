@@ -1,55 +1,68 @@
 <div class="wrapper cocktail-reception">
+
+<div class="main-banner-img cocktail-bnr">
+<div class="main-bnnr-layout">
+<h1 class="cocktail-reception-heading"><span>Cocktail</span>
+    Reception</h1>
+    </div>
+</div>
+
+
 	<div class="cocktail-reception">
     <div class="cocktail-reception-form">
     
     <div class="form-title-and-heading">
-        <h1><span>Cocktail</span>
-        Reception</h1>
-        <p><span>Registration for Cocktail @ ANZ Booth, B2-C44 </span> <span>Cocktail Reception at ANZ Booth C44, Level B2</span>
-        <span>13 October 2015, Tuesday</span>
-        4:00pm â€“ 6:00pm</p>
+    
+    <p><span>Champers and Ambers</span>
+You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. It's our shout!<br>
+<span class="topspacing"><strong>13 October 2015, Tuesday</strong></span>
+<strong>4.00pm - 6.00pm</strong>
+</p>
+
     </div>
     <div class="form-wrapper">
-    <?php echo $this->Form->create('Cocktail',array('id'=>'cocktail-form')); ?>
     
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('first_name'); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('last_name'); ?></div>
-        </div>
-        
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('initials',array('type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
-            <div class="right-col"><div class="right-col"><?php echo $this->Form->input('email'); ?></div></div>
-        </div>
-
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('phone'); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('city'); ?></div>
-        </div>
-
-        <div class="form-row">
-            <div class="left-col"><?php echo $this->Form->input('country'); ?></div>
-            <div class="right-col"><?php echo $this->Form->input('bank_name'); ?></div>
-        </div>
-        
-        <div class="form-row">
-        <hr>
-        </div>
-
-
-        <div class="form-row">
-        <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('type'=>'select','options'=>array(1=>'Yes',0=>'No'))); ?></div>
-
-        </div>
-
-        <div class="form-row">
-        <div class="full-width-feild"><?php echo $this->Form->input('dietary_restrictions'); ?></div>
-        </div>
-
-
-
-
-        <div class="submit-button"><input type="submit" value="submit"> </div>
+    <?php echo $this->Form->create('Cocktail',array('id'=>'cocktail-form')); ?>
+    <div class="form-row">
+    <div class="left-col"><?php echo $this->Form->input('first_name'); ?></div>
+    <div class="right-col"><?php echo $this->Form->input('last_name'); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="left-col"><?php echo $this->Form->input('initials',array('label'=>"Title",'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
+    <div class="right-col"><div class="right-col"><?php echo $this->Form->input('email'); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="left-col"><?php echo $this->Form->input('phone'); ?></div>
+    <div class="right-col"><?php echo $this->Form->input('city'); ?></div>
+    </div>
+    
+    <div class="form-row">
+    <div class="left-col"><?php echo $this->Form->input('country'); ?></div>
+    <div class="right-col"><?php echo $this->Form->input('bank_name'); ?></div>
+    </div>
+    
+    
+    
+   
+    
+    
+    <div class="form-row topspacing">
+    <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('type'=>'select','options'=>array(1=>'Yes',0=>'No'))); ?></div>
+    
+    </div>
+    
+    <div class="form-row topspacing2">
+    <div class="full-width-feild">
+      <?php echo $this->Form->input('dietary_restrictions'); ?>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="submit-button"><input type="submit" value="Submit"> </div>
     <?php echo $this->Form->end(); ?>
     </div>
     

@@ -1,131 +1,256 @@
-@charset "UTF-8";
-/* CSS Document */
-
-
 @font-face {
-	font-family:'MyriadPro-Regular';
-	src: url('MyriadPro-Regular_gdi.eot');
-	src: url('MyriadPro-Regular_gdi.eot?#iefix') format('embedded-opentype'),
-		url('MyriadPro-Regular_gdi.woff') format('woff'),
-		url('MyriadPro-Regular_gdi.ttf') format('truetype'),
-		url('MyriadPro-Regular_gdi.svg#MyriadPro-Regular') format('svg');
-	font-weight: 400;
-	font-style: normal;
-	font-stretch: normal;
-	unicode-range: U+0020-25CA;
+                font-family:'MyriadPro-Regular';
+                src: url('../fonts/MyriadPro-Regular_gdi.eot');
+                src: url('../fonts/MyriadPro-Regular_gdi.eot?#iefix') format('embedded-opentype'),
+                                url('../fonts/MyriadPro-Regular_gdi.woff') format('woff'),
+                                url('../fonts/MyriadPro-Regular_gdi.ttf') format('truetype'),
+                                url('../fonts/MyriadPro-Regular_gdi.svg#MyriadPro-Regular') format('svg');
+                font-weight: 400;
+                font-style: normal;
+                font-stretch: normal;
+                unicode-range: U+0020-25CA;
 }
-
-
+ 
+ 
+@font-face {
+    font-family: 'GothamBold_21010';
+    src: url('../fonts/fonts/GothamBold_21010.eot');
+    src: url('../fonts/GothamBold_21010.eot') format('embedded-opentype'),
+         url('../fonts/GothamBold_21010.woff2') format('woff2'),
+         url('../fonts/GothamBold_21010.woff') format('woff'),
+         url('../fonts/GothamBold_21010.ttf') format('truetype'),
+         url('../fonts/GothamBold_21010.svg#GothamBold_21010') format('svg');
+}
+ 
+/** {
+    -webkit-transition-duration: 0.3s;
+    -moz-transition-duration: 0.3s;
+    -ms-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}*/
+ 
+ 
+/** Correct `block` display not defined in IE 6/7/8/9 and Firefox 3. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+ 
+/** Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3. */
+audio, canvas, video {
+  display: inline-block; }
+ 
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+ 
+/** Address styling not present in IE 7/8/9, Firefox 3, and Safari 4. Known issue: no IE 6 support. */
+[hidden] {
+  display: none; }
+ 
+ 
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+ 
+html, button, input, select, textarea {
+  font-family: "SamsungSharpSans-Medium", Arial;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  width: 100%;
+  height: 100%; }
+ 
+ 
 *{ margin:0; padding:0;}
-body{ width:100%; height:100%; background:#004165; font-family:'MyriadPro-Regular'; color:#fff; font-weight:normal;
+body{ width:100%; height:100%; background:#fff; font-family:'MyriadPro-Regular'; color:#000; font-weight:normal;
 -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
   -webkit-tap-highlight-color: transparent;
 }
-
-
+ 
+a {
+  outline: none;
+  border: none;
+  text-decoration: none; }
+ 
+a:hover {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
+ 
+link {
+  text-decoration: none;
+  border: 0;
+  outline: none; }
+ 
+  
+ img {
+  border: 0;
+  outline: none;
+  display: block; }
+ 
+/** Address styling not present in IE 7/8/9, Safari 5, and Chrome. */
+abbr[title] {
+  border-bottom: 1px dotted; }
+ 
+/** Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome. */
+b, strong {
+  font-weight: bold; }
+ 
+ 
+ 
 body.cocktail-reception-bg{ background:#0e3d57;}
-
+ 
 header{ width:100%; float:left;}
 .header{ width:100%; height:47px; position:relative;}
-.header .left-blue-bar{ width:50%;height:47px; float:left; background:url(../img/header-left-grednt.jpg) repeat-x;}
-.header .right-blue-bar{ width:50%;height:47px;float:left; background:url(../img/header-right-grednt.jpg) repeat-x;}
-
+.header .left-blue-bar{ width:50%;height:56px; float:left; background:url(../img/header-left-grednt.jpg) repeat-x;}
+.header .right-blue-bar{ width:50%;height:56px;float:left; background:url(../img/header-right-grednt.jpg) repeat-x;}
+ 
 .header-logo-bar{ width:100%; position:absolute; top:0; left:0;}
 .header-logo{ width:1000px; margin:0 auto;}
-.anz-logo{ float:left; width:165px;}
-.anz-logo-right-col{ width:835px; height:47px; float:left;background:url(../img/header-right-grednt.jpg) repeat-x;}
-
-.menu{ width:100%; float:left; background:#004165; height:50px;}
+.anz-logo{ float:left; width:187px;}
+.anz-logo-right-col{ width:813px; height:56px; float:left;background:url(../img/header-right-grednt.jpg) repeat-x;}
+.anz-logo-right-col p{ font-size:17.5px; color:#fff; font-family:Verdana, Geneva, sans-serif;     line-height: 54px; margin-left:20px;}
+ 
+.menu{ width:100%; float:left; background:#fff; height:61px;}
 .navigation{ width:1000px; margin:0 auto;}
-.navigation ul{ margin:0; padding:0; list-style-type:none; margin-left:20px;}
+.navigation ul{ margin:0; padding:0; list-style-type:none; margin-left:0px;}
 .navigation ul li{ margin:0; padding:0 15px; display:inline;}
-.navigation ul li a{ font-size:15px; line-height:50px; color:#fff; text-decoration:none;}
-.navigation ul li a:hover{ color:#1792d2; }
-.navigation ul li a.active{ color:#1792d2;}
-
-
-.wrapper{ width:100%; float:left; background:url(../img/form-bg.jpg) no-repeat center top; background-size:100%;}
-.wrapper.cocktail-reception{width:100%; float:left; background:url(../img/cocktail-reception-bg.jpg) no-repeat center top; background-size:100%;}
-
+.navigation ul li a{ font-size:17.5px; line-height:60px; font-weight:bold; color:#1792d2; font-family:Verdana, Geneva, sans-serif; text-decoration:none;}
+.navigation ul li a:hover{ color:#004165; }
+.navigation ul li a.active{ color:#004165;}
+.navigation ul li.frst{ padding-left:0;}
+ 
+ 
+.wrapper{ width:100%; float:left;}
+.wrapper.cocktail-reception{width:100%; float:left;}
+ 
+ 
+ 
+ 
+ 
+.main-banner-img{ width:100%; height:637px; float:left; background:#999;}
+.main-banner-img .main-bnnr-layout{ width:1000px; margin:0 auto;}
+.main-banner-img.home-bnr{ background:url(../img/anz-home-bg.jpg) no-repeat center center; background-size:cover;}
+.main-banner-img.cocktail-bnr{ height:332px; background:url(../img/cocktail-reception.jpg) no-repeat center center; background-size:cover;}
+.main-banner-img.cocktail-bnr.deligates-bnr{ height:332px; background:url(../img/deligates.jpg) no-repeat center center; background-size:cover;}
+.main-banner-img.cocktail-bnr.makeanappointment{ height:332px; background:url(../img/make-an-appointment.jpg) no-repeat center center; background-size:cover;     background-position: 0px 76%;}
+.conversation{ width: 32%; margin:0 auto;}
+.conversation img{ width:100%; margin-top:80px;}
+.main-banner-img h1{ color:#fff; font-size:47px; font-family: 'GothamBold_21010'; text-transform:uppercase;}
+.main-banner-img h1 span{ display: block;}
+.main-banner-img h1.cocktail-reception-heading{ margin-top:80px;}
+ 
+ 
+ 
 .cocktail-reception{ width:1000px; margin:0 auto;}
 .cocktail-reception-form{ width:100%; float:left;}
-.form-title-and-heading{ float:left; margin-top:170px; width: 100%;}
+.form-title-and-heading{ float:left;         margin-top: 42px;width: 100%;}
 .cocktail-reception-form h1 span{ display: block;}
 .cocktail-reception-form h1{ font-size:55px;  line-height:55px; font-weight:normal;}
-.cocktail-reception-form p{ font-size:20px;font-weight:normal; margin-top:25px; }
+.cocktail-reception-form p{ font-size:15px;font-weight:normal; color:#414042; font-family:Verdana, Geneva, sans-serif; }
 .cocktail-reception-form p span{ display: block;}
-
+.cocktail-reception-form p span.topspacing{ margin-top:15px;}
+.cocktail-reception-form p.makeanapointment{ font-size:13.5px;font-family:Verdana, Geneva, sans-serif; }
+.form-row label.makeanapointment{ font-size:13.5px;font-family:Verdana, Geneva, sans-serif; }
+.form-row h3.makeanapointment{ font-size:13.5px;font-family:Verdana, Geneva, sans-serif; }
+ 
+.form-row input[type="text"].makeanapointment{     width: 250px; height:27px;color:#414042; font-size:11px; }
+.form-row .left-col.makeanapointment{     width: 258px;}
+.form-row .right-col.makeanapointment{     width: 258px;}
+ 
+.form-feild-box input[type="text"].makeanapointment{     width: 252px; height:27px;color:#414042; font-size:11px; padding-left:6px; }
+.full-width-feild input[type="text"].makeanapointment{     width: 432px; padding-left:10px; height:27px;color:#414042; font-size:11px; }
+.form-row.makeanapointment{         width: 100%;}
+ 
+.form-row .left-col.makeanapointment-3{     width: 258px; }
+.form-row .right-col.makeanapointment-3{     width: 258px;     margin-left: 40px; float:left;}
+ 
+ 
+.form-row .left-col.makeanapointment-2{    width: 187px;}
+.form-row .right-col.makeanapointment-2{         width: 187px;float: left;margin-left: 67px;}
+.form-wrapper.makeanapointment{ max-width:1000px;}
+ 
+ 
+.form-wrapper .hidden{display: none;}
+  @media all and (min-width: 200px) and (max-width: 420px) {
+      .form-wrapper .hidden{display: block;}
+      .step_2{display: none;}
+  }
+label.error{color: red!important; font-size: 12px!important;font-family:"Verdana"}
 .form-wrapper{    float: left;
     width: 100%;
-    margin-top: 50px; margin-bottom:50px;    max-width: 600px;}
-	
-.form-wrapper input[type="submit"]{ width:208px; height:68px; border:none; outline:none; background:#1792d2; font-size:20px; text-transform:uppercase; color:#fff; cursor:pointer;}
-	
+    margin-top: 50px; margin-bottom:50px;        max-width: 650px;}
+               
+.form-wrapper input[type="submit"],.form-wrapper input[type="button"]{ width:231px; height:72px; border:none; outline:none; background: url(../img/button-bg.png) no-repeat; background-size:contain; font-size:20px; font-family:Verdana, Geneva, sans-serif; color:#fff; cursor:pointer;    margin-top: 30px;}
+               
 .form-row{ width:100%; float:left; margin-bottom:28px;}
-
+ 
 .form-row hr{ width:96%; margin:0 auto; background:#1488c5; outline:none; border:none; height:2px;}
-
-.form-row .left-col{ width:252px; float:left;}
-.form-row .right-col{ width:252px; float:right;}
-
-.form-row label{ float:left; width:100%; font-size:18px; color:#fff; margin-bottom:8px;}
-.form-row input[type="text"],.form-row input[type="email"],.form-row input[type="tel"]{ width:244px; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:8px; }
-
+ 
+.form-row .left-col{     width: 302px; float:left;}
+.form-row .right-col{     width: 302px; float:right;}
+ 
+.form-row label{ float:left; width:100%; font-size:16px; color:#414042; font-family:Verdana, Geneva, sans-serif; margin-bottom:8px;}
+.form-row input[type="text"]{     width: 294px; height:32px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:8px; }
+ 
 .full-width-feild{width:100%; float:left;}
-.full-width-feild input[type="text"],.form-row input[type="email"],.form-row input[type="tel"]{ width:96%; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:4%; }
-
-.form-feild-box{ width: 31%; float:left; margin-right: 3.5%;}
-.form-feild-box label{ float:left; width:100%; font-size:18px; color:#fff; margin-bottom:0px;}
-.form-feild-box input[type="text"],.form-row input[type="email"],.form-row input[type="tel"]{ width:98%; height:37px; float:left; border:none; outline:none; background:#1792d2; color:#fff; font-size:14px; padding-left:2%; }
+.full-width-feild input[type="text"]{ width:96%; height:37px; float:left; border:none; outline:none; background:##e7e8e9; color:#414042; font-size:14px; padding-left:4%; }
+ 
+.form-feild-box{ width: 258px; float:left; margin-right: 40px;}
+.form-feild-box label{ float:left; width:100%; font-size:18px; color:#414042; margin-bottom:0px;}
+.form-feild-box input[type="text"]{ width:98%; height:37px; float:left; border:none; outline:none; background:##e7e8e9; color:#fff; font-size:14px; padding-left:2%; }
 .form-feild-box.last{  margin-right: 0;}
-.form-feild-box p{ font-size:12px; color:#fff; font-style:italic;}
-
-.form-row h3{    font-size: 18px;color: #fff; font-weight:normal; margin-bottom:10px; width:100%; float:left;}
-
-.full-width-feild textarea{ width:98%; height:80px; border:none; outline:none; background:#1792d2; resize:none; padding-left:2%; padding-top:10px; font-size:14px; color:#fff; font-family:'MyriadPro-Regular';}
-
-
-
-
-
+.form-feild-box p{ font-size:11px; color:#414042; font-style:italic;    margin-bottom: 7px;}
+ 
+.form-row h3{    font-size: 18px;color: #414042; font-weight:normal; margin-bottom:10px; width:100%; float:left;}
+ 
+.full-width-feild textarea{ width:98%; height:160px; border:none; outline:none; background:#e7e8e9; color:#414042; resize:none; padding-left:2%; padding-top:10px; font-size:14px; font-family:'MyriadPro-Regular';}
+ 
+.form-row.topspacing{ margin:30px 0 0 0;}
+.form-row.topspacing2{ margin:15px 0 0 0;}
+ 
+ 
 ::-webkit-input-placeholder {
-   color: #fff;
+   color: #414042;
    font-style:italic;
    opacity:1 !important;
 }
-
+ 
 :-moz-placeholder { /* Firefox 18- */
-   color: #fff;
+   color: #414042;
    font-style:italic;
    opacity:1 !important;
 }
-
+ 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: #fff;
+   color: #414042;
    font-style:italic;
    opacity:1 !important;
 }
-
-:-ms-input-placeholder {  
-  color: #fff;
+ 
+:-ms-input-placeholder { 
+  color: #414042;
   font-style:italic;
   opacity:1 !important;
 }
-
-
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 .ddcommon {position:relative;display:-moz-inline-stack; zoom:1; display:inline-block; *display:inline; cursor:default;width: 98% !important;padding: 0;}
 .ddcommon ul{padding:0;margin:0;}
 .ddcommon ul li{list-style-type:none;}
 .borderRadiusTp ul li:last-child{-moz-border-radius:0 0 5px 5px ; border-radius:0 0 5px 5px;border-bottom:0 none #c3c3c3; }
 .borderRadiusBtm ul li:first-child{-moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0 ;border-bottom:1 solid #c3c3c3; }
-
+ 
 .ddcommon .disabled img, .ddcommon .disabled span, .ddcommon.disabledAll{
 opacity: .5; /* standard: ff gt 1.5, opera, safari */
 -ms-filter:"alpha(opacity=50)"; /* ie 8 */
@@ -159,12 +284,12 @@ img.fnone{float:none !important}
 .ddcommon .ddChild li.optgroup .optgroupTitle{padding:0 5px; font-weight:bold; font-style:italic}
 .ddcommon .ddChild li.optgroup ul li{padding:5px 5px 5px 15px}
 .ddcommon .noBorderTop{border-top:none 0  !important; padding:0; margin:0;}
-
+ 
 /*************** default theme **********************/
-
+ 
 .dd .ddArrow{width:16px;height:16px; margin-top:-8px;}
 .dd .ddArrow:hover{background-position:0 100%;}
-.dd .ddTitle{color: #fff; background:#1792d2 url(../img/dropdown-arrow.jpg) right no-repeat; width:100%; height: 27px; font-size: 14px;
+.dd .ddTitle{color: #414042; background:#e7e8e9 url(../img/dropdown-arrow.jpg) right no-repeat; width:100%;     height: 22px; font-size: 14px;
   text-align: left;
   padding-left: 0; font-family:Arial, Helvetica, sans-serif;   z-index: 999;padding-left: 2%;padding-top: 10px;font-style: italic;}
 .dd .ddTitle .ddTitleText{  padding: 0;}
@@ -190,83 +315,219 @@ img.fnone{float:none !important}
   font-size: 14px;
   font-family: arial;
   text-align: left;}
-  
+ 
 /*Thank you*/
 .thankyou{ width:1000px; margin:0 auto;}
 .thankyou-layout{ width:100%; float:left; margin:4em 0;}
-.thankyou-layout h1{    font-size: 55px;
-    line-height: 55px;
+.thankyou-layout h1{    font-size: 49px;color: #414042;
+    line-height: 55px;font-family: 'GothamBold_21010';
     font-weight: normal;}
-.thankyou-layout p{    font-size: 20px;
-    font-weight: normal;
-    margin-top: 25px; width:400px;}
-
-
-
-
-footer{ width:100%; float:left; margin-bottom:4em;}
-.footer-content{ width:1000px; margin:0 auto;}
-.footer-content p{ font-size:15px; color:#fff; margin-top:5px;}
-.footer-content ul{ margin:0; padding:0;}
-.footer-content ul li{ border-right:1px solid #fff; margin:0; padding:0 10px; list-style-type:none; display:inline;}
-.footer-content ul li a{ font-size:15px; color:#fff; text-decoration:none;}
-.footer-content ul li.frst{ padding-left:0;}
-.footer-content ul li.lst{ border-right:none;}
-
-
+.thankyou-layout p{    font-size: 15px;
+    font-weight: normal; color:#414042;
+    margin-top: 25px; }
+ 
+ 
+ 
+ 
+footer{ width:100%; float:left; height:80px; background:#004067;     margin-top: 120px; font-family:Verdana, Geneva, sans-serif;}
+.footer-content{ width:1000px; margin:0 auto;     margin-top: 20px;}
+.footer-links{ width:70%; float:left;}
+.footer-links p{ font-size:10px; color:#fff; margin-top:5px;}
+.footer-links ul{ margin:0; padding:0;}
+.footer-links ul li{ border-right:1px solid #fff; margin:0; padding:0 10px; list-style-type:none; display:inline;}
+.footer-links ul li a{ font-size:10px; color:#fff; text-decoration:none; font-weight:bold;}
+.footer-links ul li.frst{ padding-left:0;}
+.footer-links ul li.lst{ border-right:none;}
+ 
+.connect-with-us{ width:20%; float:right;}
+.connect-with-us p{ font-size:10px; font-family:Verdana, Geneva, sans-serif; color:#fff; text-align:right;}
+ 
+.social-icon{ width:62px; float:right; margin-top:2px;}
+.social-icon .left{ float:left;}
+ 
+ 
 .hamburgar-icon{ display:none;}
-
-
-  @media all and (min-width: 768px) and (max-width: 1000px) {
-	  .header-logo{     width: 92%;}
-	  .navigation{     width: 92%;}
-	  .cocktail-reception{     width: 92%;}
-	  .footer-content{     width: 92%;}
-	  .anz-logo-right-col {width: 60%;}
+ 
+ 
+/*************** HOME **********************/
+.home{width:100%; float:left; }
+.sibos{ width:50%; max-width:580px; margin: 0 auto; padding-top:10%;}
+.sibos img{ width:100%}
+.sibos h1{ font-weight:normal;text-align:center; margin-top:25px;}
+.home-reception{ max-width:1000px; margin:0 auto;}
+.home-reception-form{ width:100%; float:left;}
+ 
+.home-reception-form .left-col{ width:45%; float:left; margin-top:88px;}
+.home-reception-form .right-col{ width:55%; float:right; margin-top:84px;}
+ 
+ 
+.home-title-and-heading{ float:left;     margin-top: 0;}
+.home-reception-form h1 span{ display: block;}
+.home-reception-form h3 span{ display: block;}
+.home-reception-form h3{ margin-top:0px; font-size:17.5px; font-family:Verdana, Geneva, sans-serif; color:#414042;}
+.home-reception-form h1{font-family: 'GothamBold_21010'; font-size:40px; color:#414042;  line-height:45px; font-weight:normal;}
+.home-reception-form p{ font-size:16px;font-weight:normal; margin-top:25px; color:#414042; font-family: Verdana, Geneva, sans-serif;}
+.home-reception-form p span{ display: block;}
+.btn{ width:100%; float:left; margin-bottom:0px;}
+ 
+ 
+ 
+.makenappointment{ width:231px; height:72px; background:url(../img/button-bg.png) no-repeat; border:none; outline:none; color:#fff; font-size:20px;font-family:'MyriadPro-Regular'; float:left; font-weight:bold; margin-right:32px; margin-top:51px; cursor:pointer;}
+.cocktailreception{ width:231px; height:72px; background:url(../img/button-bg.png) no-repeat; border:none; outline:none; color:#fff; font-size:20px; font-family:'MyriadPro-Regular'; float:left; font-weight:bold; margin-top:51px; cursor:pointer;}
+ 
+ 
+.form-wrapper{float: left;
+width: 100%;
+margin-top: 50px; margin-bottom:50px;}
+ 
+ 
+ 
+ 
+  @media all and (min-width: 640px) and (max-width: 1000px) {
+                 
+                  
+                   
+                  
+                  
+                  
+                  .header-logo{     width: 92%;}
+                  .navigation{     width: 92%;}
+                  .cocktail-reception{     width: 92%;}
+                  .footer-content{     width: 92%;}
+                  .anz-logo-right-col {width: 60%;}
+                  .anz-logo-right-col p {font-size: 15px;}
+                  .navigation ul li a {font-size: 14px;}
+                  .navigation ul li {padding: 0 8px;}
+                  .footer-links ul li a {font-size: 8px;vertical-align: middle;}
+                  .footer-links p {font-size: 8px;}
+                                .home-reception-form .left-col {
+    width: 100%;
+    margin-top: 30px;
+}
+ 
+.home-reception-form .right-col {
+    width: 100%;
+    margin-top: 15px;
+}
+.conversation {
+    width: 46%;
+    margin: 0 auto;
+}
+.conversation img {
+    margin-top: 124px;
+}
+ 
   }
+ 
   
-  @media all and (min-width: 200px) and (max-width: 767px) {
-	  .header-logo{     width: 92%;}
-	  .navigation{     width: 92%;}
-	  .cocktail-reception{     width: 92%;}
-	  .footer-content{     width: 100%;}
-	  .anz-logo-right-col {width: 20%;}
-	  
-	  .menu {
+  
+  @media all and (min-width: 200px) and (max-width: 639px) {
+                 
+                  .main-banner-img.cocktail-bnr {
+    height: 250px;
+}
+ 
+.main-banner-img.cocktail-bnr.deligates-bnr {
+    height: 250px;
+}
+.main-banner-img h1 {
+    margin-left: 2%;
+                    font-size: 28px;
+}
+                 
+                  .header-logo{        width: 100%;}
+                .navigation {
+    width: 100%;
+}
+                  .cocktail-reception{     width: 92%;}
+                  .footer-content{     width: 100%;}
+                  .anz-logo-right-col {    width: 50%;    height: 36px;    background: url(../img/header-right-grednt.jpg) repeat-x;
+    background-size: contain;}
+                  .anz-logo-right-col p {
+    font-size: 8px;
+    line-height: 10px;
+                    margin-top: 12px;
+}
+                 
+                  .menu {
     background: #fff;
     height: auto;
+                    width: 50%;
+    background: #fff;
+ 
 }
-
+ 
+ 
 .navigation ul li {
     padding: 0 0px;
     display: block;
     width: 100%;
-    text-align: center;
-	border-bottom: 1px solid #1792d2;
+    text-align: left;
+    border-bottom: 0;
+    padding-left: 20px;
+}
+ 
+ 
+.navigation ul li.frst {
+    padding-left: 20px;
 }
 .navigation ul li.last{ border-bottom:0;}
-
+ 
+ 
+ 
 .navigation ul {
     margin-left: 0px;
-	display:none;
+    display: none;
+                    padding: 20px 0;
+    position: absolute;
+    top: 36px;
+    z-index: 999;
+    background-color: #004167;
+    padding-right: 20px;
 }
-
+ 
 .navigation ul li a {
-    font-size: 15px;
-    line-height: 50px;
-    color: #004165;
+       font-size: 12px;
+    line-height: 35px;
+    color: #fff;
     text-decoration: none;
 }
-
+.navigation ul li a:hover {
+    color: #fff;
+}
+.navigation ul li a.active {
+    color: #fff;
+}
+ 
 .hamburgar-icon{ display:block;    float: left;
     z-index: 999;
     position: absolute;
-    top: 13px;
-    left: 4%; cursor:pointer;}
-	.anz-logo {
-    margin-left: 45px;
+        top: 10px;
+    left: 4%; cursor:pointer;    width: 20px;}
+               
+                .header {
+    height: 36px;
 }
-
+                .hamburgar-icon img{ width:100%;}
+                .anz-logo {
+            padding-left: 45px;
+                width: 120px;
+                background:url(../img/mbl-nv-bg.jpg) repeat-x; background-size:contain;
+}
+.header-logo-bar {
+    background: url(../img/header-right-grednt.jpg) repeat-x;
+    background-size: contain;
+}
+ 
+.header .left-blue-bar {
+    height: 36px;
+}
+ 
+.header .right-blue-bar {
+    height: 36px;
+}
+ 
+.anz-logo img{ width:100%;    display: block;}
 .form-row input[type="text"] {
     width: 96%;
     padding-left: 4%;
@@ -274,18 +535,18 @@ footer{ width:100%; float:left; margin-bottom:4em;}
 .form-row .right-col {
     width: 100%;
     float: left;
-	    margin-bottom: 2em;
+                    margin-bottom: 2em;
 }
-
+ 
 .form-row .left-col {
     width: 100%;
-	    margin-bottom: 2em;
+                    margin-bottom: 2em;
 }
-
+ 
 .form-row {
     margin-bottom: 0;
 }
-
+ 
 .form-feild-box {
     width: 100%;
     margin-right: 0;
@@ -298,31 +559,36 @@ footer{ width:100%; float:left; margin-bottom:4em;}
 }
 .topspacing{margin-top: 2em;}
 footer {
-    text-align: center;
+    text-align: left;
+    padding-left: 4%;
+    width: 96%;
+ 
 }
-
+ 
 .footer-content ul li a {
-    font-size: 10px;
+        font-size: 8px;
+    vertical-align: middle;
+    text-align: left;
 }
 .footer-content ul li {
     padding: 0 4px;
 }
 .footer-content p {
-    font-size: 13px;
-	
+        font-size: 8px;
+               
 }
-
+ 
 .full-width-feild textarea {
     margin-bottom: 2em;
-	height:120px;
+                height:120px;
 }
 .submit-button{    margin: 0 auto;
     width: 100%;
     display: inline-block;
-    text-align: center;}
-	
-	
-	.thankyou {
+        text-align: left;}
+               
+               
+                .thankyou {
     width: 100%;
 }
 .thankyou-layout {
@@ -331,138 +597,383 @@ footer {
 }
 .thankyou-layout p {
     width: 100%;
-	    font-size: 16px;
+                    font-size: 16px;
 }
-
-	  
+ 
+ 
+ 
+ 
+.home-reception-form .left-col {
+    width: 100%;
+    margin-top: 30px;
+}
+ 
+.home-reception-form .right-col {
+    width: 100%;
+    margin-top: 15px;
+}
+.conversation {
+    width: 46%;
+    margin: 0 auto;
+}
+.conversation img {
+    margin-top: 124px;
+}
+ 
+.connect-with-us{ display:none;}
+ 
+.footer-links {
+    width: 100%;
+}
+ 
+ 
+ 
+                 
   }
+ 
+  @media all and (min-width: 420px) and (max-width: 639px) {
+                 
+                  .anz-logo-right-col p {
+    font-size: 10px;
+}
+ 
+.anz-logo {
+    padding-left: 70px;
+}
+                 
+  }
+ 
+  @media all and (min-width:200px) and (max-width:480px){
+.home-reception-form h1{ font-size:40px;  line-height:45px; font-weight:normal;}
+}
+  @media all and (min-width: 200px) and (max-width: 420px) {
+                  .main-banner-img.home-bnr {
+    background: url(../img/anz-home-bg.jpg) no-repeat center center;
+    background-size: 151%;
+    background-position: 36% 0%;
+                height: 403px;
+}
+.conversation img {
+        margin-top: 32%;
+}
+.home-reception-form h1 {
+    font-size: 24px;
+    line-height: 28px;
+}
+.home-reception-form h3 {
+    font-size: 13px;
+}
+.conversation {
+    width: 55%;
+}
+ 
+.home-reception-form p {
+    font-size: 13px;
+    margin-top: 6px;
+}
+ 
+.makenappointment {
+    width: 152px;
+    height: 47px;
+    background: url(../img/button-bg.png) no-repeat;
+    background-size: contain;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 51px;
+}
+ 
+.cocktailreception {
+    width: 152px;
+    height: 47px;
+    background: url(../img/button-bg.png) no-repeat;
+    background-size: contain;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 51px;
+}
+.home-reception-form .left-col {
+    margin-top: 0px;
+}
+footer {
+    margin-top: 30px;
+}
+ 
+.footer-content p {
+    font-size: 7px;
+}
+ 
+  }
+ 
   
   @media all and (min-width: 768px) and (max-width: 2000px) {
-	  .navigation ul {
-	display:block !important;
+                  .navigation ul {
+                display:block !important;
 }
   }
+ 
   
   
-  
-/*************** HOME **********************/
-.home{width:100%; float:left; background:url(../img/anz-home-bg.jpg) no-repeat center top; background-size:100%;}
-.sibos{ width:50%; max-width:580px; margin: 0 auto; padding-top:10%;}
-.sibos img{ width:100%}
-.sibos h1{ font-weight:normal;text-align:center; margin-top:25px;}
-.home-reception{ max-width:1000px; margin:0 auto;}
-.home-reception-form{ width:100%; float:left;}
-.home-title-and-heading{ float:left; margin-top:20%;}
-.home-reception-form h1 span{ display: block;}
-.home-reception-form h3 span{ display: block;}
-.home-reception-form h3{ margin-top:25px}
-.home-reception-form h1{ font-size:50px;  line-height:50px; font-weight:normal;}
-.home-reception-form p{ font-size:20px;font-weight:normal; margin-top:25px; -webkit-text-size-adjust: auto;}
-.home-reception-form p span{ display: block;}
-.btn{ width:100%; float:left; margin-bottom:50px;}
-
-button {
-    background: #1792d2;
-    color: #fff;
-    font-size: 20px;
-    padding: 25px 20px;
-    margin-top: 25px;
-    text-align: center;
-    border: 0;
-float:left;
-margin-right:40px;
-    transition: all 0.3s ease 0s;
-outline:none;
-}
-button:hover {
-  background: #0a70a5
-}
-
-
-.form-wrapper{float: left;
- width: 100%;
-margin-top: 50px; margin-bottom:50px;}
-
-.mbl{display:none}
-.tbl{display:none}
-.dsk{display:block}
+ 
 @media all and (min-width:1500px) and (max-width:2000px){
 .home-title-and-heading{ margin-top:600px;}
-
-
+ 
+ 
 }
 @media all and (min-width:768px) and (max-width:1100px){
 .home-reception-form{ padding: 5%; }
 .home-reception { width: 90%; margin:0;}
-
-
+ 
+ 
 }
-
+ 
 @media all and (min-width:480px) and (max-width:768px){
 .home-reception {margin:0;}
-.mbl{display:none}
-.tbl{display:block}
-.dsk{display:none}
 }
-  
+ 
 @media all and (min-width:200px) and (max-width:768px){
 button{ float:none; display:block;     margin: 1em auto;}
 .home-reception-form{ padding: 5%;}
 .home-reception { width: 90%; margin:0;}
 }
-@media all and (min-width:200px) and (max-width:480px){
-.mbl{display:block}
-.tbl{display:none}
-.dsk{display:none}
-.home-reception-form h1{ font-size:40px;  line-height:45px; font-weight:normal;}
-}
-
-
-
-
-
+ 
+ 
+ 
+ 
+ 
+ 
 /*************** Deligates **********************/
-.deligates{width:100%; float:left; background:url(../img/deligates-bg.jpg) no-repeat center top; background-size:100%;}
+ 
+.tabs-bar{ float:left; overflow:hidden; width:100%; margin-top:62px; margin-bottom:5px;     border-radius: 10px 10px 0 0;
+-moz-border-radius: 10px 10px 0 0;
+-ms-border-radius: 10px 10px 0 0;
+-o-border-radius: 10px 10px 0 0;
+-webkit-border-radius: 10px 10px 0 0;
+    z-index: 999;
+    position: relative;}
+ 
+.deligates{width:100%; float:left;}
 .deligates-reception{ max-width:1000px; margin:0 auto;}
 .deligates-reception-form{ width:100%; float:left;}
-.deligates-title-and-heading{ float:left; margin-top:40%; padding: 2%;}
+.deligates-title-and-heading{ float:left; margin-top:0; padding: 0;}
 .deligates-reception-form h1{ font-size:50px;  line-height:50px; font-weight:normal;}
-.tab{ width:220px; height:65px; float: left; background: #1792d2; text-align: center; vertical-align: middle; margin-top:20px; margin-right:20px; margin-bottom:30px}
-.tab p{ font-size:18px;font-weight:normal; margin-top:10px; text-transform:uppercase;}
+.tab{ width:190px; height:53px;     float: left; background:url(../img/inactive-tab.jpg) repeat-x; text-align: center;     display: table;    margin-top: 0;
+        margin-right: 5px;
+    margin-bottom: 0; cursor:pointer;}
+                .tab.lst{ margin-right:0;}
+                .tab.active{background: #fff url(../img/active-tabe.jpg) repeat-x;     border-bottom: 4px solid #038acc;height: 58px;}
+                .tab.active p{ color:#fff;}
+.tab p{ font-size:12px; color:#414042;font-weight:normal; margin-top:10px; text-transform:uppercase; font-family:Verdana, Geneva, sans-serif; vertical-align:middle; display:table-cell;}
 .tab p span{ display: block;}
-.content{width: 100%; clear: both;}
-.content h1{ font-size:50px;  line-height:50px; font-weight:normal; margin-bottom:30px}
-.content h3{ font-size:20px;  line-height:20px; font-weight:normal; margin-top:20px}
-.content p{ font-size:15px;  line-height:25px; font-weight:normal; color:#1792d2;}
+.content{width: 90%;clear: both;background-color: #f7f7f7;padding: 5%;     float: left; margin-top:-9px;}
+.content h1{ font-size:26.5px; color:#414042;  line-height:50px; font-weight:normal; margin-bottom:30px; font-family:Verdana, Geneva, sans-serif;}
+.content h3{ font-size:16px; font-family:Verdana, Geneva, sans-serif; color:#1792d2;  line-height:20px; font-weight:normal; margin-top:20px}
+.content p{ font-size:11.5px; font-family:Verdana, Geneva, sans-serif; color:#414042;  line-height:25px; font-weight:normal;}
 .content p.last{ margin-bottom:60px;}
-
+ 
 .form-wrapper{float: left; width: 100%; margin-top: 50px; margin-bottom:50px;}
-
-@media all and (min-width:880px) and (max-width:1000px){
-.tab{ width:200px; height:65px; margin-right:10px; margin-bottom:30px}
+ 
+@media all and (min-width:700px) and (max-width:1000px){
+               
+                .tab {
+    width: 24.5%;
+    min-height: 53px;
+	height:53px;
+    background: url(../img/inactive-tab.jpg) repeat-x;
+                background-size:100% 100%;
+        margin-right: 0.6%
 }
-
-@media all and (min-width:200px) and (max-width:880px){
-.deligates-title-and-heading{ padding: 5%;}
-.tab{ width:255px; height:170px; margin-right:40px; margin-bottom:30px}
-.tab p{ font-size:18px;font-weight:normal; margin-top:10px; text-transform:uppercase; padding: 20px; margin-top: 40px;}
+.deligates-reception-form {
+    width: 92%;
+    margin-left: 4%;
 }
-@media all and (min-width:200px) and (max-width:660px){
+}
+ 
+@media all and (min-width:200px) and (max-width:699px){
+               
+                .content {
+					margin-top:20px;
+}
+.deligates {
+    width: 80%;
+    margin-left: 10%;
+}
+ 
+.tab.active {
+    background: #fff url(../img/active-tabe.jpg) repeat-x;
+    border-bottom: 0;
+    height: auto;
+    min-height: 100px;
+	height:100px;
+    background-size: 100% 100%;
+}
+.tabs-bar {
+    border-radius: 0px 0px 0 0;
+    -moz-border-radius:0px 0px 0 0;
+    -ms-border-radius: 0px 0px 0 0;
+    -o-border-radius: 0px 0px 0 0;
+    -webkit-border-radius: 0px 0px 0 0;
+}
 .tab {
-        width: 46%;
-    height: 159px;
-    margin-right: 4%;
-    margin-bottom: 0px;
-    margin-top: 4%;
+    width: 100%;
+    background: url(../img/inactive-tab.jpg) repeat-x;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    height: auto;
+    min-height: 100px;
+	height:100px;
+    background-size: 100% 100%;
 }
 .tab p {
+    font-size: 16px;
+ 
+    padding: 0 20px;
+}
+}
+ 
+ 
+ 
+ 
+ 
+ 
+/*New psd css*/
+ 
+@media all and (min-width:640px) and (max-width:768px){
+               
+                .home-reception-form .left-col {
+    width: 100%;
+    margin-top: 30px;
+}
+ 
+.home-reception-form .right-col {
+    width: 100%;
+    margin-top: 15px;
+}
+.conversation {
+    width: 46%;
+    margin: 0 auto;
+}
+.conversation img {
+    margin-top: 124px;
+}
+               
+}
+ 
+ 
+ 
+ 
+@media all and (min-width:200px) and (max-width:1000px){
+ 
+.main-banner-img h1 {
+               
+                margin-left:2%;
+}
+.main-banner-img .main-bnnr-layout {
+    width: 100%;
+    margin: 0 auto;
+}
+ 
+}
+ 
+ 
+ 
+ 
+  @media all and (min-width: 680px) and (max-width: 1000px) {
+ 
+/*Make an appointment form*/
+                  .form-feild-box.last {
     margin-top: 20px;
 }
-.content {
-    width: 100%;
-    clear: both;
+.form-row.topspacing{ margin-top:30px;}
+                .form-row.topspacing2{ margin-top:50px;}
+               
+               
+ 
+  }
+ 
+  @media all and (min-width: 421px) and (max-width: 679px) {
+ 
+  .form-row .left-col.makeanapointment-3 {
+    width: 48%;
+}
+ 
+.form-row input[type="text"].makeanapointment {
+    width: 96%;
+                padding-left: 4%;
+}
+ 
+.form-row .right-col.makeanapointment-3 {
+    width: 48%;
+    margin-left: 4%;
+}
+.form-row .left-col.makeanapointment {
+    width: 48%;
+               
+}
+.form-feild-box {
+    width: 48%;
+    margin-right: 0;
+    margin-left: 0;
+}
+.form-feild-box.guest2{ margin-left:4%;}
+ 
+.form-row.mbl-width{     width: 75%;}
+.form-row .left-col {
+    margin-bottom: 0;
+}
+.form-row .right-col.makeanapointment-2 {
+    margin-bottom: 0;
+                    margin-left: 0;
+    float: right;
+                    width: 49%;
+}
+.form-row .left-col.makeanapointment-2 {
+    margin-top: 0;
+                    width: 49%;
+}
+ 
+.form-feild-box.last {
     margin-top: 30px;
-    float: left;
 }
+ 
+.form-row.topspacing2 {
+    margin: 55px 0 0 0;
 }
-label.error{color: red; font-weight: small;}
+ 
+  }
+ 
+   @media all and (min-width: 200px) and (max-width: 420px) {
+                   form-row .left-col.makeanapointment-3 {
+    width: 100%;
+}.form-row input[type="text"].makeanapointment {
+    width: 96%;
+                    padding-left: 4%;
+}
+.form-row .right-col.makeanapointment-3 {
+    width: 100%;
+    margin-left: 0;
+}
+.form-row .left-col.makeanapointment-3 {
+    width: 100%;
+}
+.form-row .left-col.makeanapointment {
+    width: 100%;
+}
+ 
+.form-row .left-col.makeanapointment-2 {
+    width: 100%;
+}
+.form-row .right-col.makeanapointment-2 {
+    width: 100%;
+    margin-left: 0;
+}
+.form-row.topspacing {
+    margin: 0px 0 0 0;
+}
+ 
+.main-banner-img.cocktail-bnr.makeanappointment {
+    height: 250px;
+    background: url(../img/make-an-appointment.jpg) no-repeat center center;
+    background-size: 200%;
+    background-position: 86% 76%;
+}
+   }
