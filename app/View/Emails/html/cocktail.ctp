@@ -38,10 +38,10 @@
         <br /><br />
         <table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
             <tr>
-                <td>Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td><td>13 October 2015 Tuesday - 4:00 p.m. - 6:00 p.m.</td>
+                <td><strong>Date:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td><td><strong>13 October 2015 Tuesday - 4:00 p.m. - 6:00 p.m.</strong></td>
             </tr>
             <tr>
-                <td>Venue:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td><td>ANZ Stand C44 on Level B2</td>
+                <td><strong>Venue:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td><td><strong>ANZ Stand C44 on Level B2</strong></td>
             </tr>
         </table>
         <br />
