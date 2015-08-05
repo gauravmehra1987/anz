@@ -14,7 +14,10 @@
 
 <div class="thankyou-layout">
 <h1>Thank you</h1>
-<p>Thank you for advising that you are unable to join us for our cocktail reception.<br>
- We look forward to hosting you at future events.</p>
+<?php if($accepted['attending_cocktail']): ?>
+    <p>Thank you for accepting our invitation to join us at our cocktail reception.<br> More details will be sent through closer the date.</p>
+<?php else: ?>
+    <p>Thank you for advising that you are unable to join us for our cocktail reception.<br> We look forward to hosting you at future events.</p>
+<?php endif; ?>
 </div>
 </div>

@@ -50,8 +50,9 @@ class CocktailsController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Cocktail->create();
 			if ($this->Cocktail->save($this->request->data)) {
-                            $this->_sendAckMail($this->request->data);
-                            $this->_notifyAdmin($this->request->data);
+//                            $this->_sendAckMail($this->request->data);
+//                            $this->_notifyAdmin($this->request->data);
+                            $this->Session->write('Cocktail.acceptance', $this->request->data['Cocktail']);
                             $this->Session->setFlash(__('The cocktail has been saved.'));
                             return $this->redirect('/cocktail-reception/thanks');
 			} else {
@@ -201,7 +202,12 @@ class CocktailsController extends AppController {
 	}
         
         public function success(){
+            $cocktail = $this->Session->read('Cocktail.acceptance');
+            if(!is_array($cocktail))
+                $this->redirect('/');
             
+            $this->set('accepted',$cocktail);
+            $this->Session->delete('Cocktail.acceptance');
         }
         
         function _sendAckMail($post){

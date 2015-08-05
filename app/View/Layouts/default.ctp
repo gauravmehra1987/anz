@@ -1,11 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+<!-- Meta Tag -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+
+
 <?php echo $this->Html->charset(); ?>
 	<title>ANZ</title>
         <?php echo $this->Html->css('style'); ?>
-        <?php echo $this->Html->script(array('jquery','jquery.dd')); ?>
+        <?php echo $this->Html->script(array('jquery','jquery.dd','vendor/modernizr','vendor/html5')); ?>
        <?php
 		echo $this->Html->meta('icon');
 		echo $this->Html->css('style');
@@ -23,7 +30,7 @@
     <div class="header-logo-bar">
     <div class="header-logo">
     <div class="anz-logo"><a href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></a></div>
-    <div class="anz-logo-right-col"><p>Conversations that matter @ Sibos</p></div>
+    <div class="anz-logo-right-col"></div>
     </div>
     </div>
     <div class="left-blue-bar"></div>
@@ -123,4 +130,3 @@ $("#tech").change(function() {
 
 </body>
 </html>
-

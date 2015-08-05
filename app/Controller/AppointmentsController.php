@@ -54,7 +54,7 @@ class AppointmentsController extends AppController {
 //                                print_r($this->request->data); exit;
                                 $this->_sendAckMail($this->request->data);
                                 $this->_notifyAdmin($this->request->data);
-				return $this->redirect('/make-an-appointment/thanks');
+                                return $this->redirect('/make-an-appointment/thanks');
 			} else {
 				$this->Session->setFlash(__('The appointment could not be saved. Please, try again.'));
 			}
