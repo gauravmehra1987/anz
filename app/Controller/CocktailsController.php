@@ -212,7 +212,7 @@ class CocktailsController extends AppController {
         
         function _sendAckMail($post){
             $this->Email->to = $post['Cocktail']['email'];
-            $this->Email->subject = 'Cocktail Acknowledgement from ANZ';
+            $this->Email->subject = 'ANZ Sibos 2015';
             $this->Email->from = "ANZ Cocktail <info@irisapacdigital.com>";
             $this->Email->template = 'cocktail'; 
             $this->Email->sendAs = 'html'; 
@@ -224,7 +224,7 @@ class CocktailsController extends AppController {
             $cocktail = $this->Cocktail->findById($this->Cocktail->getLastInsertID());
             $this->Email->to = 'ashu.srivastava@iris-worldwide.com';
             $this->Email->bcc = 'ashusri04@gmail.com';
-            $this->Email->subject = 'A new request for appointment from '. $post['Cocktail']['first_name'];
+            $this->Email->subject = 'Cocktail Reception: Acceptance / Decline';
             $this->Email->from = "ANZ Admin<info@irisapacdigital.com>";
             $this->Email->template = 'cocktail_admin'; 
             $this->Email->sendAs = 'html'; 
