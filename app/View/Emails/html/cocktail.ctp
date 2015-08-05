@@ -1,3 +1,13 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+
 <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
   <tr>
     <td align="center" valign="top">
@@ -22,23 +32,27 @@
   </tr>
   <tr>
     <td align="left" valign="top" style="color:#414042; font-size:14px; font-family:Verdana, Geneva, sans-serif; padding-left:40px;">
-        
+       
         <?php if($form['Cocktail']['attending_cocktail']) : ?>
-        Thank you for accepting our invitation to join us at our cocktail reception. More details will be sent through closer the date. Meanwhile please mark your calendar with the event information listed below.  
+        Thank you for accepting our invitation to join us at our cocktail reception. More details will be sent through closer the date. Meanwhile please mark your calendar with the event information listed below. 
+        <br /><br />
         <table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
             <tr>
-                <td>Date: </td><td>13 October 2015 Tuesday - 4:00 p.m - 6:00 p.m</td>
+                <td>Date: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td><td>13 October 2015 Tuesday - 4:00 p.m. - 6:00 p.m.</td>
             </tr>
             <tr>
-                <td>Venue: </td><td>ANZ Stand, C44 on Level B2</td>
+                <td>Venue:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </td><td>ANZ Stand C44 on Level B2</td>
             </tr>
         </table>
+        <br />
         If you have any questions , please contact the ANZ Sibos Meeting Coordinator at sibos@anz.com.
-
+ 
+ 
         <?php else: ?>
-        Thank you for advising that you are unable to join us for our cocktail reception. We look forward to hosting you at future events.  
+        Thank you for advising that you are unable to join us for our cocktail reception. We look forward to hosting you at future events. 
 If you wish to update your attendance, please contact our ANZ Sibos Meeting Coordinator at sibos@anz.com
-        <?php endif; ?>
+<br><br>
+       <?php endif; ?>
     </td>
   </tr>
   <tr>
@@ -63,3 +77,7 @@ If you wish to update your attendance, please contact our ANZ Sibos Meeting Coor
 </td>
   </tr>
 </table>
+
+
+</body>
+</html>
