@@ -31,11 +31,7 @@
         Country: <?php echo $form['Country']['name']; ?><br/>
         Bank name: <?php echo $form['Appointment']['bank_name']; ?><br/>
         <br/><br/>
-        Accompanied by: <br/>
-        Guest 1: <?php echo $form['Appointment']['guest_1']; ?><br/>
-        Guest 2: <?php echo $form['Appointment']['guest_2']; ?><br/>
-        Guest 3: <?php echo $form['Appointment']['guest_3']; ?><br/>
-        <br/><br/>
+        
         Discussion Topics:<?php echo $form['Topic']['title']; ?><br/>
         <?php echo $form['Appointment']['other_topic']; ?><br/>
         We would like to meet with:<br/>

@@ -239,7 +239,7 @@ class AppointmentsController extends AppController {
         
         function _sendAckMail($post) {
             $this->Email->to = $post['Appointment']['email'];
-            $this->Email->subject = 'Acknowledgement from ANZ';
+            $this->Email->subject = 'ANZ Sibos 2015';
             $this->Email->from = "ANZ <info@irisapacdigital.com>";
             $this->Email->template = 'appontment'; 
             $this->Email->sendAs = 'html'; 
