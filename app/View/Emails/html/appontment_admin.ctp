@@ -40,8 +40,8 @@
         <?php echo $form['Appointment']['other_topic']; ?><br/>
         We would like to meet with:<br/>
         <?php echo $form['Team']['title']; ?>, <?php echo $form['Person']['title']; ?><br/>
-        Preferred meeting date and time: <?php echo $form['Date']['date']; ?><br/>
-        Alternative meeting date and time: <?php echo $form['Time']['title']; ?><br/>
+        Preferred meeting date and time: <?php echo $form['Date']['title']; ?>, <?php echo $form['Time']['title']; ?><br/>
+        Alternative meeting date and time: <?php echo $form['AlternateDate']['title']; ?>, <?php echo $form['AlternateTime']['title']; ?><br/>
     </td>
   </tr>
   <tr>
