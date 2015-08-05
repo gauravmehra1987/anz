@@ -106,7 +106,7 @@
         </div>
         
         <div class="tc t4">
-            <h1>Compliance</h1>
+            <h1>Compliance:</h1>
             <h3>Dinesh Anand </h3>
             <p>Head of Global Sanctions Compliance </p>
 

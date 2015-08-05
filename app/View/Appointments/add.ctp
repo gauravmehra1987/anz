@@ -90,7 +90,7 @@
     </div>
     </div>
     
-    <div class="submit-button"><input type="submit" value="Submit">  </div>
+        <div class="submit-button"><input type="button" id="DoSubmit" value="Submit">  </div>
     </div>
     <?php echo $this->Form->end();  ?>
     </div>
@@ -125,12 +125,14 @@
             return re.test(value);
         }, "Please enter a valid email address");
         
+        $('#DoSubmit').click(function(){
+//        $('.c-error').remove();
         $("#appointment-form").validate({
             ignore: ":hidden",
             rules: {
                 'data[Appointment][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Appointment][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Appointment][phone]': {'required': true,'minlength': 10,'maxlength': 12,noSpace:true},
+                'data[Appointment][phone]': {'digits': true,'required': true,'minlength': 10,'maxlength': 12,noSpace:true},
                 'data[Appointment][city]': {'required': true,noSpace:true},
                 'data[Appointment][bank_name]': {'required': true,noSpace:true},
                 'data[Appointment][email]':{required: true,email: true,custom_email:true},
@@ -142,8 +144,8 @@
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
                 'data[Appointment][last_name]':"Please enter your last name.",
-                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 characters are needed!",maxlength:"Maximim 12 characters allowed!"},
-                'data[Appointment][email]': {required:"Please enter your email address",email:"PLease enter a valid email address"},
+                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 digits are needed!",maxlength:"Maximim 12 digits allowed!"},
+                'data[Appointment][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Appointment][bank_name]': {'required':"Please enter your bank name"},
                 'data[Appointment][city]':{required: "Please enter your city"},
                 'data[Appointment][date_id]': {'required': "Please Select Date."},
@@ -152,17 +154,23 @@
                 'data[Appointment][alternate_time]': {'required': "Please Select Time."}
             },
             errorPlacement: function(error, element) {
-               
-                if (element.attr("name") == "data[Appointment][date_id]" ){
-                   $('#AppointmentDateId_msdd').append("<label class='c-error'>Please Select Date</label>")
-                }else
+//                if (element.attr("name") == "data[Appointment][date_id]" ){
+//                   $('#AppointmentDateId_msdd').append("<label class='c-error error'>Please Select Date</label>")
+//                }if (element.attr("name") == "data[Appointment][time_id]" ){
+//                   $('#AppointmentTimeId_msdd').append("<label class='c-error error'>Please Select Time</label>")
+//                }if (element.attr("name") == "data[Appointment][alternate_date]" ){
+//                   $('#AppointmentAlternateDate_msdd').append("<label class='c-error error'>Please Select Date</label>")
+//                }if (element.attr("name") == "data[Appointment][alternate_time]" ){
+//                   $('#AppointmentAlternateTime_msdd').append("<label class='c-error error'>Please Select Time</label>")
+//                }else
                     error.insertAfter(element);
                     
             },
             submitHandler: function(form) {
                 return true;
             }
-        });
+        }).form();
+    });
     });
     </script>
     <?php echo $this->Html->script(array('jquery.validate.min')); ?>

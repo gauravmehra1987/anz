@@ -30,7 +30,7 @@
                 <td>Date: </td><td>13 October 2015 Tuesday - 4:00 p.m - 6:00 p.m</td>
             </tr>
             <tr>
-                <td>Venue: </td><td>ANZ Booth, C44, Level B2</td>
+                <td>Venue: </td><td>ANZ Stand, C44 on Level B2</td>
             </tr>
         </table>
         If you have any questions , please contact the ANZ Sibos Meeting Coordinator at sibos@anz.com.

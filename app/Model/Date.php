@@ -11,6 +11,6 @@ class Date extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'date';
+	public $displayField = 'title';
 
 }
