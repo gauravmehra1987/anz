@@ -30,7 +30,7 @@
     <div class="header-logo-bar">
     <div class="header-logo">
     <div class="anz-logo"><a href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></a></div>
-    <div class="anz-logo-right-col"></div>
+    <div class="anz-logo-right-col"><p>Conversations that matter @ Sibos</p></div>
     </div>
     </div>
     <div class="left-blue-bar"></div>

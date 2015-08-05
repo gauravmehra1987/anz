@@ -8,22 +8,22 @@
 </div>
 
 	<div class="cocktail-reception">
-    <div class="cocktail-reception-form">
+            <div class="cocktail-reception-form" id="cocktail-reception-form">
     
     <div class="form-title-and-heading">
     <p class="makeanapointment">Please complete the following to make an appointment:</p>
     </div>
-    <div class="form-wrapper makeanapointment">
+   <div class="form-wrapper makeanapointment">
     <?php echo $this->Form->create('Appointment',array('id'=>'appointment-form')); ?>
         <div class="step_1">
     <div class="form-row">
     <div class="left-col makeanapointment-3"><?php echo $this->Form->input('first_name',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
-    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('last_name',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('last_name',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
     </div>
     
     <div class="form-row">
-    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
-    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('email',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('email',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
     </div>
     
     <div class="form-row">
@@ -68,25 +68,25 @@
     
     
     <div class="form-row topspacing2 mbl-width">
-    <div class="full-width-feild"><label class="makeanapointment">Other interested topics</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'makeanapointment')); ?></div>
+    <div class="full-width-feild"><label class="makeanapointment">Other interested topics</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'bigtext')); ?></div>
     </div>
     
     
     <div class="form-row makeanapointment topspacing mbl-width">
     <div class="left-col topspacing makeanapointment-2"><label class="makeanapointment">Preferred meeting date</label>
-    <?php echo $this->Form->input('date_id',array('label'=>false)); ?>
+    <?php echo $this->Form->input('date_id',array('label'=>false,'required'=>true)); ?>
     </div>
     <div class="right-col makeanapointment-2"><label class="makeanapointment">Preferred meeting time</label>
-    <?php echo $this->Form->input('time_id',array('label'=>false)); ?>
+    <?php echo $this->Form->input('time_id',array('label'=>false,'required'=>true)); ?>
     </div>
     </div>
     
     <div class="form-row makeanapointment topspacing mbl-width">
     <div class="left-col makeanapointment-2"><label class="makeanapointment">Alternative meeting date</label>
-        <?php echo $this->Form->input('alternate_date',array('label'=>false)); ?>
+        <?php echo $this->Form->input('alternate_date',array('label'=>false,'required'=>true)); ?>
     </div>
     <div class="right-col makeanapointment-2"><label class="makeanapointment">Alternative meeting time</label>
-    <?php echo $this->Form->input('alternate_time',array('label'=>false)); ?>
+    <?php echo $this->Form->input('alternate_time',array('label'=>false,'required'=>true)); ?>
     </div>
     </div>
     
@@ -109,7 +109,12 @@
                 $('.step_2').hide();
             }
         });  
+        
+        $.validator.addMethod("before", function(value, element) {
             
+           if(!value){return true;}else{return false;$('#alternatedate').remove();};
+        }, "Please select a valid date!");
+         
         $.validator.addMethod("noSpace", function(value, element) {
             var str = value.trim();
             if(str=='') return false; else return true;
@@ -129,7 +134,10 @@
                 'data[Appointment][city]': {'required': true,noSpace:true},
                 'data[Appointment][bank_name]': {'required': true,noSpace:true},
                 'data[Appointment][email]':{required: true,email: true,custom_email:true},
-                
+                'data[Appointment][date_id]': {required:true},
+                'data[Appointment][time_id]': {required:true},
+                'data[Appointment][alternate_date]': {required:true},
+                'data[Appointment][alternate_time]': {required:true}
             },
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
@@ -137,7 +145,19 @@
                 'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 characters are needed!",maxlength:"Maximim 12 characters allowed!"},
                 'data[Appointment][email]': {required:"Please enter your email address",email:"PLease enter a valid email address"},
                 'data[Appointment][bank_name]': {'required':"Please enter your bank name"},
-                'data[Appointment][city]':{required: "Please enter your city"}
+                'data[Appointment][city]':{required: "Please enter your city"},
+                'data[Appointment][date_id]': {'required': "Please Select Date."},
+                'data[Appointment][time_id]': {'required': "Please Select Time."},
+                'data[Appointment][alternate_date]': {'required': "Please Select Date."},
+                'data[Appointment][alternate_time]': {'required': "Please Select Time."}
+            },
+            errorPlacement: function(error, element) {
+               
+                if (element.attr("name") == "data[Appointment][date_id]" ){
+                   $('#AppointmentDateId_msdd').append("<label class='c-error'>Please Select Date</label>")
+                }else
+                    error.insertAfter(element);
+                    
             },
             submitHandler: function(form) {
                 return true;

@@ -63,10 +63,14 @@ class AppointmentsController extends AppController {
 		$teams = $this->Appointment->Team->find('list');
 		$people = $this->Appointment->Person->find('list');
 		$topics = $this->Appointment->Topic->find('list');
-		$dates = $this->Appointment->Date->find('list');
+                $dates = $this->Appointment->Date->find('list');
+                $dates[''] = "Select Date"; ksort($dates);
 		$times = $this->Appointment->Time->find('list');
+                $times[''] = "Select Time"; ksort($times);
 		$alternateDates = $this->Appointment->AlternateDate->find('list');
+                $alternateDates[''] = "Select Date"; ksort($alternateDates);
 		$alternateTimes = $this->Appointment->AlternateTime->find('list');
+                $alternateTimes[''] = "Select Time"; ksort($alternateTimes);
 		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
 	}
 
