@@ -13,7 +13,7 @@
 
 <div class="thankyou-layout">
 <h1>Thank you</h1>
-<p>Thank you for advising that you are unable to join us for our cocktail reception.<br>
- We look forward to hosting you at future events.</p>
+<p>Thank you for submitting your meeting request with the ANZ team at Sibos. <br/>
+    We have received your request and will respond as soon as the meeting details are finalised.    </p>
 </div>
 </div>
