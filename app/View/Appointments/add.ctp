@@ -74,23 +74,23 @@
     
     <div class="form-row makeanapointment topspacing mbl-width">
     <div class="left-col topspacing makeanapointment-2"><label class="makeanapointment">Preferred meeting date</label>
-    <?php echo $this->Form->input('date_id',array('label'=>false,'required'=>true)); ?>
+    <?php echo $this->Form->input('date_id',array('label'=>false)); ?>
     </div>
     <div class="right-col makeanapointment-2"><label class="makeanapointment">Preferred meeting time</label>
-    <?php echo $this->Form->input('time_id',array('label'=>false,'required'=>true)); ?>
+    <?php echo $this->Form->input('time_id',array('label'=>false)); ?>
     </div>
     </div>
     
     <div class="form-row makeanapointment topspacing mbl-width">
     <div class="left-col makeanapointment-2"><label class="makeanapointment">Alternative meeting date</label>
-        <?php echo $this->Form->input('alternate_date',array('label'=>false,'required'=>true)); ?>
+        <?php echo $this->Form->input('alternate_date',array('label'=>false)); ?>
     </div>
     <div class="right-col makeanapointment-2"><label class="makeanapointment">Alternative meeting time</label>
-    <?php echo $this->Form->input('alternate_time',array('label'=>false,'required'=>true)); ?>
+    <?php echo $this->Form->input('alternate_time',array('label'=>false)); ?>
     </div>
     </div>
     
-        <div class="submit-button"><input type="button" id="DoSubmit" value="Submit">  </div>
+        <div class="submit-button"><input type="submit" id="DoSubmit" value="Submit">  </div>
     </div>
     <?php echo $this->Form->end();  ?>
     </div>
@@ -125,7 +125,7 @@
             return re.test(value);
         }, "Please enter a valid email address");
         
-        $('#DoSubmit').click(function(){
+//        $('#DoSubmit').click(function(){
 //        $('.c-error').remove();
         $("#appointment-form").validate({
             ignore: ":hidden",
@@ -169,8 +169,8 @@
             submitHandler: function(form) {
                 return true;
             }
-        }).form();
+        });
     });
-    });
+//    });
     </script>
     <?php echo $this->Html->script(array('jquery.validate.min')); ?>
