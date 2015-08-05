@@ -45,6 +45,7 @@ class PagesController extends AppController {
  *	or MissingViewException in debug mode.
  */
 	public function display() {
+            $this->set('title','ANZ Sibos 2015');
 		$path = func_get_args();
 
 		$count = count($path);
@@ -75,7 +76,7 @@ class PagesController extends AppController {
 	}
         
         public function delegates(){
-            
+            $this->set('title','Delegates');
         }
         
         public function pull(){

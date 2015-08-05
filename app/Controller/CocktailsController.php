@@ -47,6 +47,7 @@ class CocktailsController extends AppController {
  * @return void
  */
 	public function add() {
+            $this->set('title','Cocktail Reception');
 		if ($this->request->is('post')) {
 			$this->Cocktail->create();
 			if ($this->Cocktail->save($this->request->data)) {

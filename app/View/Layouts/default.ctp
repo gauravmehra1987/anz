@@ -10,7 +10,7 @@
 
 
 <?php echo $this->Html->charset(); ?>
-	<title>ANZ</title>
+	<title><?php if(isset($title)) echo $title; else echo "ANZ"; ?></title>
         <?php echo $this->Html->css('style'); ?>
         <?php echo $this->Html->script(array('jquery','jquery.dd','vendor/modernizr','vendor/html5')); ?>
        <?php

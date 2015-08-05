@@ -47,6 +47,7 @@ class AppointmentsController extends AppController {
  * @return void
  */
 	public function add() {
+            $this->set('title','Make an Appointment');
 		if ($this->request->is('post')) {
 			$this->Appointment->create();
 			if ($this->Appointment->save($this->request->data)) {
