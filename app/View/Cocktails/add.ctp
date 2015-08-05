@@ -94,7 +94,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
             messages: {
                 'data[Cocktail][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
                 'data[Cocktail][last_name]':"Please enter your last name.",
-                'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 characters are needed!",maxlength:"Maximim 12 characters allowed!"},
+                'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 digits are needed!",maxlength:"Maximim 12 digits allowed!"},
                 'data[Cocktail][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Cocktail][bank_name]': {'required':"Please enter your bank name"},
                 'data[Cocktail][city]':{required: "Please enter your city"}
