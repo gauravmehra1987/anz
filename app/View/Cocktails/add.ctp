@@ -85,7 +85,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
             rules: {
                 'data[Cocktail][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Cocktail][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Cocktail][phone]': {'required': true,'minlength': 10,'maxlength': 12,noSpace:true},
+                'data[Cocktail][phone]': {'digits': true,'required': true,'minlength': 10,'maxlength': 12,noSpace:true},
                 'data[Cocktail][city]': {'required': true,noSpace:true},
                 'data[Cocktail][bank_name]': {'required': true,noSpace:true},
                 'data[Cocktail][email]':{required: true,email: true,custom_email:true}
