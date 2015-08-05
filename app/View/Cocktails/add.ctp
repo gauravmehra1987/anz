@@ -30,7 +30,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     
     <div class="form-row">
     <div class="left-col"><?php echo $this->Form->input('initials',array('label'=>"Title",'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
-    <div class="right-col"><div class="right-col"><?php echo $this->Form->input('email'); ?></div>
+    <div class="right-col mbl-rightcolspacing"><?php echo $this->Form->input('email'); ?></div>
     </div>
     
     <div class="form-row">

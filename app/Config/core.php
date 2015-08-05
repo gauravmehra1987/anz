@@ -389,3 +389,4 @@ Cache::config('_cake_model_', array(
 Configure::write('Routing.prefixes', array('admin'));
 
 Configure::write('Config.timezone', 'Europe/London');
+

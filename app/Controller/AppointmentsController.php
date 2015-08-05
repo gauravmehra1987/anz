@@ -246,7 +246,6 @@ class AppointmentsController extends AppController {
         function _notifyAdmin($post) {
            
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
-            
             $this->Email->to = 'ashu.srivastava@iris-worldwide.com';
             $this->Email->bcc = 'ashusri04@gmail.com';
             $this->Email->subject = 'A new request for appointment from '. $post['Appointment']['first_name'];

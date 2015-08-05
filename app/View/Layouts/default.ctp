@@ -22,8 +22,8 @@
     
     <div class="header-logo-bar">
     <div class="header-logo">
-        <div class="anz-logo"><a href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></a></div>
-        <div class="anz-logo-right-col"><p>Conversations that matter @ Sibos</p></div>
+    <div class="anz-logo"><a href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></a></div>
+    <div class="anz-logo-right-col"><p>Conversations that matter @ Sibos</p></div>
     </div>
     </div>
     <div class="left-blue-bar"></div>
@@ -34,7 +34,7 @@
 
 <div class="menu">
 	<div class="navigation">
-    <div class="hamburgar-icon" id="open-menu"><img src="<?php echo $this->webroot; ?>hamburgar-menu.png" alt="menu" /></div>
+    <div class="hamburgar-icon" id="open-menu"><img src="<?php echo $this->webroot; ?>img/hamburgar-menu.png" alt="menu" /></div>
     <ul>
     	<li><a <?php if($this->request->url=='') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>" title="Home">Home</a></li>
         <li><a <?php if($this->request->url=='make-an-appointment') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>make-an-appointment" title="Make an Appointment">Make an Appointment</a></li>
@@ -54,9 +54,9 @@
     <div class="footer-content">
     <div class="footer-links">
     <ul>
-    <li class="frst"><a href="#">anz.com</a></li>
-    <li><a href="#">Website Terms of Us</a></li>
-    <li><a href="#">Privacy &amp; Security</a></li>
+    <li class="frst"><a href="http://www.anz.com/personal/" target="_blank">anz.com</a></li>
+    <li><a href="http://www.anz.com/auxiliary/help/help/website-terms-use/" target="_blank">Website Terms of Use</a></li>
+    <li><a href="http://www.anz.com/auxiliary/help/help/website-security-privacy/" target="_blank">Privacy &amp; Security</a></li>
     <li class="lst"><a href="#">Our Guidelines</a></li>
     </ul>
     <p>&copy; Australia and New Zealand Banking Group Limited (ANZ) 2015 ABN 11 005 357 522.</p>

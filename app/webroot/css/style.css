@@ -28,6 +28,7 @@
     -ms-transition-duration: 0.3s;
     transition-duration: 0.3s;
 }*/
+
  
  
 /** Correct `block` display not defined in IE 6/7/8/9 and Firefox 3. */
@@ -64,7 +65,7 @@ html, button, input, select, textarea {
   height: 100%; }
  
  
-*{ margin:0; padding:0;}
+*{ margin:0; padding:0; outline:none;}
 body{ width:100%; height:100%; background:#fff; font-family:'MyriadPro-Regular'; color:#000; font-weight:normal;
 -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -196,14 +197,15 @@ label.error{color: red!important; font-size: 12px!important;font-family:"Verdana
 .form-row .right-col{     width: 302px; float:right;}
  
 .form-row label{ float:left; width:100%; font-size:16px; color:#414042; font-family:Verdana, Geneva, sans-serif; margin-bottom:8px;}
-.form-row input[type="text"]{     width: 294px; height:32px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:8px; }
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"]{     width: 294px; height:32px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:8px; }
+
  
 .full-width-feild{width:100%; float:left;}
 .full-width-feild input[type="text"]{ width:96%; height:37px; float:left; border:none; outline:none; background:##e7e8e9; color:#414042; font-size:14px; padding-left:4%; }
  
 .form-feild-box{ width: 258px; float:left; margin-right: 40px;}
 .form-feild-box label{ float:left; width:100%; font-size:18px; color:#414042; margin-bottom:0px;}
-.form-feild-box input[type="text"]{ width:98%; height:37px; float:left; border:none; outline:none; background:##e7e8e9; color:#fff; font-size:14px; padding-left:2%; }
+.form-feild-box input[type="text"]{ width:98%; height:37px; float:left; border:none; outline:none; background:##e7e8e9;     color: #414042;font-size:14px; padding-left:2%; }
 .form-feild-box.last{  margin-right: 0;}
 .form-feild-box p{ font-size:11px; color:#414042; font-style:italic;    margin-bottom: 7px;}
  
@@ -528,7 +530,7 @@ margin-top: 50px; margin-bottom:50px;}
 }
  
 .anz-logo img{ width:100%;    display: block;}
-.form-row input[type="text"] {
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"] {
     width: 96%;
     padding-left: 4%;
 }
@@ -537,6 +539,7 @@ margin-top: 50px; margin-bottom:50px;}
     float: left;
                     margin-bottom: 2em;
 }
+.form-row .right-col.mbl-rightcolspacing{margin-bottom: 1em;}
  
 .form-row .left-col {
     width: 100%;
@@ -918,7 +921,7 @@ button{ float:none; display:block;     margin: 1em auto;}
  
 .form-row.mbl-width{     width: 75%;}
 .form-row .left-col {
-    margin-bottom: 0;
+    margin-bottom: 2;
 }
 .form-row .right-col.makeanapointment-2 {
     margin-bottom: 0;
@@ -936,7 +939,7 @@ button{ float:none; display:block;     margin: 1em auto;}
 }
  
 .form-row.topspacing2 {
-    margin: 55px 0 0 0;
+        margin: 0px 0 0 0;
 }
  
   }
