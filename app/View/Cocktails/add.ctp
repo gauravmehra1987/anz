@@ -62,7 +62,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     
     
     
-    <div class="submit-button"><input type="submit" value="Submit"> </div>
+        <div id="something" class="submit-button"><input type="submit" value="Submit"> </div>
     <?php echo $this->Form->end(); ?>
     </div>
     
