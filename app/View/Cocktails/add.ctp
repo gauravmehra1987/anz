@@ -49,7 +49,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     
     
     <div class="form-row topspacing">
-    <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('label'=>'Attending Cocktail:','type'=>'select','options'=>array(''=>"Select Response",1=>'Yes',0=>'No'))); ?></div>
+        <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('label'=>'Attending Cocktail:','type'=>'select','options'=>array(''=>"Select Response",1=>'Yes',0=>'No'))); ?></div>
     
     </div>
     
