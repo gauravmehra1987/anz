@@ -12,5 +12,12 @@ class PeopleController extends AppController {
  * @var mixed
  */
 	public $scaffold;
+        
+        public function index(){
+            if($this->request->is('ajax')){
+                $result = $this->Person->find('list',array('conditions'=>array('team_id'=>$this->request->data['team'])));
+                die(json_encode($result));
+            }
+        }
 
 }

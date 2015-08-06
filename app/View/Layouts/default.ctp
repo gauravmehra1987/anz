@@ -7,7 +7,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
-
+<!-- About -->
+<link rel="icon" href="favicon.ico" type="image/x-icon" >
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+<meta content="favicon.ico" itemprop="image">
 
 <?php echo $this->Html->charset(); ?>
 	<title><?php if(isset($title)) echo $title; else echo "ANZ"; ?></title>
@@ -70,8 +73,8 @@
 
     <div class="connect-with-us"><p>Connect with us</p>
     <div class="social-icon">
-    <img src="<?php echo $this->webroot; ?>img/facebook.jpg" class="left" alt="facebook" />
-    <img src="<?php echo $this->webroot; ?>img/twitter.jpg" class="left" alt="twitter" />
+        <a href="https://www.facebook.com/ANZAustralia"><img src="<?php echo $this->webroot; ?>img/facebook.jpg" class="left" alt="facebook" /></a>
+        <a href="http://twitter.com/ANZ_AU"><img src="<?php echo $this->webroot; ?>img/twitter.jpg" class="left" alt="twitter" /></a>
     </div>
     </div>
 
@@ -112,7 +115,7 @@ $(document).ready(function(e) {
 	$("#ver").html(msBeautify.version.msDropdown);
 		
 	//convert
-	$("select").msDropdown({roundedBorder:false});
+	
 //	createByJson();
 	$("#tech").data("dd");
 });

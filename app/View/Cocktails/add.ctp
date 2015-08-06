@@ -29,7 +29,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     </div>
     
     <div class="form-row">
-    <div class="left-col"><?php echo $this->Form->input('initials',array('label'=>"Title",'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
+    <div class="left-col"><?php echo $this->Form->input('initials',array('label'=>"Title",'type'=>'select','options'=>array(''=>'Select Title','Mr'=>'Mr','Mrs'=>'Mrs','Miss'=>'Miss','Ms'=>'Ms','Dr'=>'Dr','Professor'=>'Professor'))); ?></div>
     <div class="right-col mbl-rightcolspacing"><?php echo $this->Form->input('email'); ?></div>
     </div>
     
@@ -39,7 +39,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     </div>
     
     <div class="form-row">
-    <div class="left-col"><?php echo $this->Form->input('country'); ?></div>
+    <div class="left-col"><?php echo $this->Form->input('country_id',array('required'=>'required')); ?></div>
     <div class="right-col"><?php echo $this->Form->input('bank_name'); ?></div>
     </div>
     
@@ -49,7 +49,7 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     
     
     <div class="form-row topspacing">
-    <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('type'=>'select','options'=>array(1=>'Yes',0=>'No'))); ?></div>
+    <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('type'=>'select','options'=>array(''=>"Select Response",1=>'Yes',0=>'No'))); ?></div>
     
     </div>
     
@@ -82,13 +82,19 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
         }, "Please enter a valid email address");
         
         $("#cocktail-form").validate({
+            errorClass: "error",
+            validClass: "noerror",
+            errorElement: "span",
             rules: {
                 'data[Cocktail][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Cocktail][last_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Cocktail][phone]': {'digits': true,'required': true,'minlength': 10,'maxlength': 12,noSpace:true},
                 'data[Cocktail][city]': {'required': true,noSpace:true},
                 'data[Cocktail][bank_name]': {'required': true,noSpace:true},
-                'data[Cocktail][email]':{required: true,email: true,custom_email:true}
+                'data[Cocktail][email]':{required: true,email: true,custom_email:true},
+                'data[Cocktail][country_id]':{required: true},
+                'data[Cocktail][initials]':{required: true},
+                'data[Cocktail][attending_cocktail]':{required: true}
                 
             },
             messages: {
@@ -101,8 +107,27 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
             },
             submitHandler: function(form) {
                 return true;
-            }
+            }, highlight:function(element, errorClass, validClass) {
+                 
+                if ($(element).attr('name') == "data[Cocktail][country_id]" ){
+                  $('#countryid').remove(); $('#CocktailCountryId_msdd').append("<span id='countryid' class='c-error error'>Please Select Country.</span>")
+                }if ($(element).attr('name') == "data[Cocktail][initials]" ){
+                  $('#init').remove(); $('#CocktailInitials_msdd').append("<span id='init' class='c-error error'>Please Select Title.</span>")
+                }if ($(element).attr('name') == "data[Cocktail][attending_cocktail]" ){
+                  $('#attend').remove(); $('#CocktailAttendingCocktail_msdd').append("<span id='attend' class='c-error error'>Please select yes/no.</span>")
+                }
+            },
+            unhighlight: function(element, errorClass, validClass) {
+               if ($(element).attr('name') == "data[Cocktail][country_id]" ){
+                  $('#countryid').remove(); 
+                }if ($(element).attr('name') == "data[Cocktail][initials]" ){
+                  $('#init').remove();
+                }if ($(element).attr('name') == "data[Cocktail][attending_cocktail]" ){
+                  $('#attend').remove(); 
+                }
+            },
         });
     });
+    var $selectBox = $("select").msDropDown().data("dd");
     </script>
     <?php echo $this->Html->script(array('jquery.validate.min')); ?>

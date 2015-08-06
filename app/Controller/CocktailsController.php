@@ -61,6 +61,7 @@ class CocktailsController extends AppController {
 			}
 		}
 		$countries = $this->Cocktail->Country->find('list');
+                $countries[''] = "Select Country"; ksort($countries);
 		$this->set(compact('countries'));
 	}
 

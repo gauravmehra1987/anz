@@ -64,7 +64,7 @@ class AppointmentsController extends AppController {
                 $countries[''] = "Select Country";ksort($countries);
 		$teams = $this->Appointment->Team->find('list');
                 $teams[''] = "Select ANZ Team";ksort($teams);
-		$people = $this->Appointment->Person->find('list');
+		
                 $people[''] = "Select ANZ Delegate";ksort($people);
 		$topics = $this->Appointment->Topic->find('list');
                 $topics[''] = "Select Topic to discuss";ksort($topics);

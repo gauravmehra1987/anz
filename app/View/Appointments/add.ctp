@@ -22,7 +22,7 @@
     </div>
     
     <div class="form-row">
-    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array(''=>'Select Title','Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array(''=>'Select Title','Mr'=>'Mr','Mrs'=>'Mrs','Miss'=>'Miss','Ms'=>'Ms','Dr'=>'Dr','Professor'=>'Professor'))); ?></div>
     <div class="right-col makeanapointment-3"><?php echo $this->Form->input('email',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
     </div>
     
@@ -38,18 +38,18 @@
     
     <div class="form-row">
     <div class="form-feild-box">
-    <label class="makeanapointment">Guest 1</label>
+    <label class="makeanapointment">Representative 1</label>
     <p>First name, last name, job title</p>
     <?php echo $this->Form->input('guest_1',array('label'=>false)); ?>
     
     </div>
     <div class="form-feild-box guest2">
-    <label class="makeanapointment">Guest 2</label>
+    <label class="makeanapointment">Representative 2</label>
     <p>First name, last name, job title</p>
     <?php echo $this->Form->input('guest_2',array('label'=>false)); ?>
     </div>
     <div class="form-feild-box last">
-    <label class="makeanapointment">Guest 3</label>
+    <label class="makeanapointment">Representative 3</label>
     <p>First name, last name, job title</p>
     <?php echo $this->Form->input('guest_3',array('label'=>false)); ?>
     </div>
@@ -209,6 +209,8 @@
                    $('#topicid').remove()
                 }if ($(element).attr('name') == "data[Appointment][initials]" ){
                    $('#init').remove()
+                }if ($(element).attr('name') == "data[Appointment][country_id]" ){
+                   $('#countryid').remove()
                 }
             },
             errorPlacement: function(error, element) {
@@ -220,5 +222,17 @@
         });
     });
 //    });
+var $selectBox = $("select").not('#AppointmentPersonId').msDropDown().data("dd");
+var personSel = $('#AppointmentPersonId').msDropDown().data("dd");
+$('#AppointmentTeamId').change(function(){
+    $.post('<?php echo $this->webroot; ?>people',{team:$(this).val()},function(r){ r=$.parseJSON(r);
+        $('#AppointmentPersonId').html('<option value="">Select ANZ Delegate</option>');
+        for(i in r){ var item=r[i];
+            $('#AppointmentPersonId').append('<option value="'+i+'">'+item+'</option>');
+        }
+        personSel.destroy();
+        $("select").msDropDown().data("dd");
+    });
+});
     </script>
     <?php echo $this->Html->script(array('jquery.validate.min')); ?>
