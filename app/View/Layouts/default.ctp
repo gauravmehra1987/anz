@@ -73,8 +73,8 @@
 
     <div class="connect-with-us"><p>Connect with us</p>
     <div class="social-icon">
-        <a href="https://www.facebook.com/ANZAustralia"><img src="<?php echo $this->webroot; ?>img/facebook.jpg" class="left" alt="facebook" /></a>
-        <a href="http://twitter.com/ANZ_AU"><img src="<?php echo $this->webroot; ?>img/twitter.jpg" class="left" alt="twitter" /></a>
+        <a target="_blank" href="https://www.facebook.com/ANZAustralia"><img src="<?php echo $this->webroot; ?>img/facebook.jpg" class="left" alt="facebook" /></a>
+        <a target="_blank" href="http://twitter.com/ANZ_AU"><img src="<?php echo $this->webroot; ?>img/twitter.jpg" class="left" alt="twitter" /></a>
     </div>
     </div>
 
