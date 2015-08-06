@@ -49,7 +49,7 @@
     	<li><a <?php if($this->request->url=='') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>" title="Home">Home</a></li>
         <li><a <?php if($this->request->url=='make-an-appointment') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>make-an-appointment" title="Make an Appointment">Make an Appointment</a></li>
         <li><a <?php if($this->request->url=='cocktail-reception') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>cocktail-reception" title="Cocktail Reception">Cocktail Reception</a></li>
-        <li class="last"><a <?php if($this->request->url=='delegates') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>delegates" title="Delegates">Delegates</a></li>
+        <li class="last"><a <?php if($this->request->url=='delegates') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>delegates" title="Delegates">ANZ Delegates</a></li>
     </ul>
     </div>
 </div>
@@ -66,7 +66,7 @@
     <ul>
     <li class="frst"><a href="http://www.anz.com/personal/" target="_blank">anz.com</a></li>
     <li><a href="http://www.anz.com/auxiliary/help/help/website-terms-use/" target="_blank">Website Terms of Use</a></li>
-    <li><a href="http://www.anz.com/auxiliary/help/help/website-security-privacy/" target="_blank">Privacy &amp; Security</a></li>
+    <li class="lst"><a href="http://www.anz.com/auxiliary/help/help/website-security-privacy/" target="_blank">Privacy &amp; Security</a></li>
     </ul>
     <p>&copy; Australia and New Zealand Banking Group Limited (ANZ) 2015 ABN 11 005 357 522.</p>
     </div>
