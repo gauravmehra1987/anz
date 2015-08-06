@@ -60,7 +60,7 @@
     <div class='step_2'>
     <div class="form-row topspacing">
     
-    <h3 class="makeanapointment">We would like to meet with</h3>
+    <h3 class="makeanapointment">We would like to meet with:</h3>
     
     <div class="form-feild-box"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
     <div class="form-feild-box guest2"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
@@ -69,27 +69,27 @@
     
     
     <div class="form-row topspacing2 mbl-width">
-    <div class="full-width-feild"><label class="makeanapointment">Other interested topics</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'bigtext')); ?></div>
+    <div class="full-width-feild"><label class="makeanapointment">Other interested topics:</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'bigtext')); ?></div>
     </div>
     
     
     <div class="form-row makeanapointment topspacing mbl-width">
-    <div class="left-col topspacing makeanapointment-2"><label class="makeanapointment">Preferred meeting date</label>
+    <div class="left-col topspacing makeanapointment-2"><label class="makeanapointment">Preferred meeting date:</label>
     <?php echo $this->Form->input('date_id',array('label'=>false)); ?>
         <span class="error"></span>
     </div>
-    <div class="right-col makeanapointment-2"><label class="makeanapointment">Preferred meeting time</label>
+    <div class="right-col makeanapointment-2"><label class="makeanapointment">Preferred meeting time:</label>
     <?php echo $this->Form->input('time_id',array('label'=>false)); ?>
         <span class="error"></span>
     </div>
     </div>
     
     <div class="form-row makeanapointment topspacing mbl-width">
-    <div class="left-col makeanapointment-2"><label class="makeanapointment">Alternative meeting date</label>
+    <div class="left-col makeanapointment-2"><label class="makeanapointment">Alternative meeting date:</label>
         <?php echo $this->Form->input('alternate_date',array('label'=>false)); ?>
         <span class="error"></span>
     </div>
-    <div class="right-col makeanapointment-2"><label class="makeanapointment">Alternative meeting time</label>
+    <div class="right-col makeanapointment-2"><label class="makeanapointment">Alternative meeting time:</label>
     <?php echo $this->Form->input('alternate_time',array('label'=>false)); ?>
         
     </div>
