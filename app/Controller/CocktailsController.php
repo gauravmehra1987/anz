@@ -223,8 +223,8 @@ class CocktailsController extends AppController {
         
         function _notifyAdmin($post){     
             $cocktail = $this->Cocktail->findById($this->Cocktail->getLastInsertID());
-            $this->Email->to = 'ashu.srivastava@iris-worldwide.com';
-            $this->Email->bcc = 'ashusri04@gmail.com';
+            $this->Email->to = 'edm4test@gmail.com';
+//            $this->Email->bcc = 'ashusri04@gmail.com';
             $this->Email->subject = 'Cocktail Reception: Acceptance / Decline';
             $this->Email->from = "ANZ Admin<info@irisapacdigital.com>";
             $this->Email->template = 'cocktail_admin'; 

@@ -61,9 +61,13 @@ class AppointmentsController extends AppController {
 			}
 		}
 		$countries = $this->Appointment->Country->find('list');
+                $countries[''] = "Select Country";ksort($countries);
 		$teams = $this->Appointment->Team->find('list');
+                $teams[''] = "Select ANZ Team";ksort($teams);
 		$people = $this->Appointment->Person->find('list');
+                $people[''] = "Select ANZ Delegate";ksort($people);
 		$topics = $this->Appointment->Topic->find('list');
+                $topics[''] = "Select Topic to discuss";ksort($topics);
                 $dates = $this->Appointment->Date->find('list');
                 $dates[''] = "Select Date"; ksort($dates);
 		$times = $this->Appointment->Time->find('list');
@@ -251,8 +255,8 @@ class AppointmentsController extends AppController {
         function _notifyAdmin($post) {
            
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
-            $this->Email->to = 'ashu.srivastava@iris-worldwide.com';
-            $this->Email->bcc = 'ashusri04@gmail.com';
+            $this->Email->to = 'edm4test@gmail.com';
+//            $this->Email->bcc = 'ashusri04@gmail.com';
             $this->Email->subject = 'A new request for appointment from '. $post['Appointment']['first_name'];
             $this->Email->from = "ANZ <info@irisapacdigital.com>";
             $this->Email->template = 'appontment_admin'; 

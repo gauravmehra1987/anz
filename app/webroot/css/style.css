@@ -182,7 +182,7 @@ header{ width:100%; float:left;}
       .form-wrapper .hidden{display: block;}
       .step_2{display: none;}
   }
-label.error{color: red!important; font-size: 12px!important;font-family:"Verdana"}
+span.error{color: red!important; font-size: 12px!important;font-family:"Verdana"}
 .form-wrapper{    float: left;
     width: 100%;
     margin-top: 50px; margin-bottom:50px;        max-width: 650px;}

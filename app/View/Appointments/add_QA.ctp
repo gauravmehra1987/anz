@@ -22,7 +22,7 @@
     </div>
     
     <div class="form-row">
-    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array(''=>'Select Title','Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('initials',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment','text'=>'Title'),'type'=>'select','options'=>array('Mr.'=>'Mr.','Mrs.'=>'Mrs.'))); ?></div>
     <div class="right-col makeanapointment-3"><?php echo $this->Form->input('email',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
     </div>
     
@@ -41,7 +41,6 @@
     <label class="makeanapointment">Guest 1</label>
     <p>First name, last name, job title</p>
     <?php echo $this->Form->input('guest_1',array('label'=>false)); ?>
-    
     </div>
     <div class="form-feild-box guest2">
     <label class="makeanapointment">Guest 2</label>
@@ -76,24 +75,19 @@
     <div class="form-row makeanapointment topspacing mbl-width">
     <div class="left-col topspacing makeanapointment-2"><label class="makeanapointment">Preferred meeting date</label>
     <?php echo $this->Form->input('date_id',array('label'=>false)); ?>
-        <span class="error"></span>
     </div>
     <div class="right-col makeanapointment-2"><label class="makeanapointment">Preferred meeting time</label>
     <?php echo $this->Form->input('time_id',array('label'=>false)); ?>
-        <span class="error"></span>
     </div>
     </div>
     
     <div class="form-row makeanapointment topspacing mbl-width">
     <div class="left-col makeanapointment-2"><label class="makeanapointment">Alternative meeting date</label>
         <?php echo $this->Form->input('alternate_date',array('label'=>false)); ?>
-        <span class="error"></span>
     </div>
     <div class="right-col makeanapointment-2"><label class="makeanapointment">Alternative meeting time</label>
     <?php echo $this->Form->input('alternate_time',array('label'=>false)); ?>
-        
     </div>
-    <span class="error"></span>
     </div>
     
         <div class="submit-button"><input type="submit" id="DoSubmit" value="Submit">  </div>
@@ -135,9 +129,6 @@
 //        $('.c-error').remove();
         $("#appointment-form").validate({
             ignore: ":hidden",
-            errorClass: "error",
-            validClass: "noerror",
-            errorElement: "span",
             rules: {
                 'data[Appointment][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Appointment][last_name]': {required: true,minlength: 3,noSpace:true},
@@ -148,12 +139,7 @@
                 'data[Appointment][date_id]': {required:true},
                 'data[Appointment][time_id]': {required:true},
                 'data[Appointment][alternate_date]': {required:true},
-                'data[Appointment][alternate_time]': {required:true},
-                'data[Appointment][team_id]': {'required': true},
-                'data[Appointment][topic_id]': {'required': true},
-                'data[Appointment][person_id]': {'required': true},
-                'data[Appointment][country_id]': {'required': true},
-                'data[Appointment][initials]': {'required': true}
+                'data[Appointment][alternate_time]': {required:true}
             },
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
@@ -165,54 +151,20 @@
                 'data[Appointment][date_id]': {'required': "Please Select Date."},
                 'data[Appointment][time_id]': {'required': "Please Select Time."},
                 'data[Appointment][alternate_date]': {'required': "Please Select Date."},
-                'data[Appointment][alternate_time]': {'required': "Please Select Time."},
-                'data[Appointment][team_id]': {'required': "Please Select Time."},
-                'data[Appointment][topic_id]': {'required': "Please Select Date."},
-                'data[Appointment][person_id]': {'required': "Please Select Time."}
-            },
-            highlight:function(element, errorClass, validClass) {
-                
-                if ($(element).attr('name') == "data[Appointment][date_id]" ){
-                  $('#dateid').remove(); $('#AppointmentDateId_msdd').append("<span id='dateid' class='error'>Please Select Date</span>")
-                }if ($(element).attr('name') == "data[Appointment][time_id]" ){
-                  $('#timeid').remove(); $('#AppointmentTimeId_msdd').append("<span id='timeid' class='c-error error'>Please Select Time</span>")
-                }if ($(element).attr('name') == "data[Appointment][alternate_date]" ){
-                  $('#ald').remove(); $('#AppointmentAlternateDate_msdd').append("<span id='ald' class='c-error error'>Please Select Date</span>")
-                }if ($(element).attr('name') == "data[Appointment][alternate_time]" ){
-                  $('#alt').remove(); $('#AppointmentAlternateTime_msdd').append("<span id='alt' class='c-error error'>Please Select Time</span>")
-                }if ($(element).attr('name') == "data[Appointment][team_id]" ){
-                  $('#teamid').remove(); $('#AppointmentTeamId_msdd').append("<span id='teamid' class='c-error error'>Please Select ANZ Team.</span>")
-                }if ($(element).attr('name') == "data[Appointment][person_id]" ){
-                  $('#personid').remove(); $('#AppointmentPersonId_msdd').append("<span id='personid' class='c-error error'>Please Select ANZ Delegate.</span>")
-                }if ($(element).attr('name') == "data[Appointment][topic_id]" ){
-                  $('#topicid').remove(); $('#AppointmentTopicId_msdd').append("<span id='topicid' class='c-error error'>Please Select Topic.</span>")
-                }if ($(element).attr('name') == "data[Appointment][country_id]" ){
-                  $('#countryid').remove(); $('#AppointmentCountryId_msdd').append("<span id='countryid' class='c-error error'>Please Select Country.</span>")
-                }if ($(element).attr('name') == "data[Appointment][initials]" ){
-                  $('#init').remove(); $('#AppointmentInitials_msdd').append("<span id='init' class='c-error error'>Please Select Title.</span>")
-                }
-            },
-            unhighlight: function(element, errorClass, validClass) {
-               if ($(element).attr('name') == "data[Appointment][date_id]" ){
-                   $('#dateid').remove();
-                }if ($(element).attr('name') == "data[Appointment][time_id]" ){
-                   $('#timeid').remove();
-                }if ($(element).attr('name') == "data[Appointment][alternate_date]" ){
-                   $('#ald').remove();
-                }if ($(element).attr('name') == "data[Appointment][alternate_time]" ){
-                   $('#alt').remove();
-                }if ($(element).attr('name') == "data[Appointment][team_id]" ){
-                   $('#teamid').remove()
-                }if ($(element).attr('name') == "data[Appointment][person_id]" ){
-                   $('#personid').remove();
-                }if ($(element).attr('name') == "data[Appointment][topic_id]" ){
-                   $('#topicid').remove()
-                }if ($(element).attr('name') == "data[Appointment][initials]" ){
-                   $('#init').remove()
-                }
+                'data[Appointment][alternate_time]': {'required': "Please Select Time."}
             },
             errorPlacement: function(error, element) {
-                    error.insertAfter(element);       
+//                if (element.attr("name") == "data[Appointment][date_id]" ){
+//                   $('#AppointmentDateId_msdd').append("<label class='c-error error'>Please Select Date</label>")
+//                }if (element.attr("name") == "data[Appointment][time_id]" ){
+//                   $('#AppointmentTimeId_msdd').append("<label class='c-error error'>Please Select Time</label>")
+//                }if (element.attr("name") == "data[Appointment][alternate_date]" ){
+//                   $('#AppointmentAlternateDate_msdd').append("<label class='c-error error'>Please Select Date</label>")
+//                }if (element.attr("name") == "data[Appointment][alternate_time]" ){
+//                   $('#AppointmentAlternateTime_msdd').append("<label class='c-error error'>Please Select Time</label>")
+//                }else
+                    error.insertAfter(element);
+                    
             },
             submitHandler: function(form) {
                 return true;

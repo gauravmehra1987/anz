@@ -64,7 +64,6 @@
     <li class="frst"><a href="http://www.anz.com/personal/" target="_blank">anz.com</a></li>
     <li><a href="http://www.anz.com/auxiliary/help/help/website-terms-use/" target="_blank">Website Terms of Use</a></li>
     <li><a href="http://www.anz.com/auxiliary/help/help/website-security-privacy/" target="_blank">Privacy &amp; Security</a></li>
-    <li class="lst"><a href="#">Our Guidelines</a></li>
     </ul>
     <p>&copy; Australia and New Zealand Banking Group Limited (ANZ) 2015 ABN 11 005 357 522.</p>
     </div>

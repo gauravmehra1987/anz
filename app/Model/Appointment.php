@@ -113,6 +113,22 @@ class Appointment extends AppModel {
 				'required' => true
 			)
 		),
+            'alternate_date' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
+				'message' => 'Please select alternate date.',
+				'allowEmpty' => false,
+				'required' => true
+			)
+		),
+            'alternate_time' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
+				'message' => 'Please select alternate time.',
+				'allowEmpty' => false,
+				'required' => true
+			)
+		),
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
