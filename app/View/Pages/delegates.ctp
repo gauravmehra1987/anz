@@ -28,25 +28,25 @@
             <p>Executive Director - Financial Institutions Europe, Banks & Diversified Financials</p>
 
              <h3>Brenda Trenowden</h3>
-            <p>Head of Financial Institutions - Europe Head of Banks & Diversified Financials - Europe & Americas </p>
+            <p>Head of Financial Institutions - Europe, Head of Banks & Diversified Financials - Europe & Americas </p>
 
              <h3>Bryan Stagg</h3>
-            <p>Executive Director - Financial Institutions Banks & Diversified Financials, Australia </p>
+            <p>Executive Director - Financial Institutions, Banks & Diversified Financials, Australia </p>
 
              <h3>Bridget Qi</h3>
             <p>Head of Financial Institutions - China, Banks & Diversified Financials </p>
 
              <h3>Giao Pik Ho</h3>
-            <p>Head of Banks, Financial Institutions SE Asia Banks & Diversified Financials </p>
+            <p>Head of Banks, Financial Institutions SE Asia, Banks & Diversified Financials </p>
 
              <h3>Glenn Phillips </h3>
-            <p>Director, Financial Institutions Australia Banks & Diversified Financials </p>
+            <p>Director, Financial Institutions Australia, Banks & Diversified Financials </p>
 
              <h3>Paul Chandler</h3>
             <p> Head of Banks - New Zealand, Banks & Diversified Financials </p>
 
              <h3>Simon Ireland </h3>
-            <p>Global Head of Financial Institutions Global Head Banks and Diversified Financials </p>
+            <p>Global Head of Financial Institutions, Global Head Banks and Diversified Financials </p>
 
              <h3>Tina Tan </h3>
             <p class="last">Executive Director - Financial Institutions Asia, Banks & Diversified Financials </p>
@@ -79,7 +79,7 @@
             <p>Head of Financial Institutions Sales - New Zealand, Global Transaction Banking </p>
 
              <h3>Winnie Chen </h3>
-            <p class="last">Head of Financial Institutions - North Asia Global Transaction Banking</p>
+            <p class="last">Head of Financial Institutions - North Asia, Global Transaction Banking</p>
         </div>
         
         <div class="tc t3">
