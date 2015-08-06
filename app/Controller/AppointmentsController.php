@@ -245,7 +245,7 @@ class AppointmentsController extends AppController {
         function _sendAckMail($post) {
             $this->Email->to = $post['Appointment']['email'];
             $this->Email->subject = 'ANZ Sibos 2015';
-            $this->Email->from = "ANZ <info@irisapacdigital.com>";
+            $this->Email->from = "ANZ<info@sibos.anz.com>";
             $this->Email->template = 'appontment'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $post);
@@ -257,8 +257,8 @@ class AppointmentsController extends AppController {
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
             $this->Email->to = 'edm4test@gmail.com';
 //            $this->Email->bcc = 'ashusri04@gmail.com';
-            $this->Email->subject = 'A new request for appointment from '. $post['Appointment']['first_name'];
-            $this->Email->from = "ANZ <info@irisapacdigital.com>";
+            $this->Email->subject = 'Appointment Request';
+            $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
             $this->Email->template = 'appontment_admin'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $appointment);
