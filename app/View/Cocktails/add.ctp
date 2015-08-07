@@ -93,7 +93,8 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
                 'data[Cocktail][email]':{required: true,email: true,custom_email:true},
                 'data[Cocktail][country_id]':{required: true},
                 'data[Cocktail][initials]':{required: true},
-                'data[Cocktail][attending_cocktail]':{required: true}
+                'data[Cocktail][attending_cocktail]':{required: true},
+                'data[Cocktail][designation]': {required:true}
                 
             },
             messages: {
@@ -102,7 +103,8 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
                 'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 15 characters allowed!"},
                 'data[Cocktail][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Cocktail][bank_name]': {'required':"Please enter your bank name"},
-                'data[Cocktail][city]':{required: "Please enter your city"}
+                'data[Cocktail][city]':{required: "Please enter your city"},
+                'data[Cocktail][designation]': {required:"Please enter your designation."}
             },
             submitHandler: function(form) {
                 return true;
