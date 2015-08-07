@@ -42,7 +42,10 @@ You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. 
     <div class="left-col"><?php echo $this->Form->input('country_id',array('required'=>'required')); ?></div>
     <div class="right-col"><?php echo $this->Form->input('bank_name',array('label'=>'Company Name')); ?></div>
     </div>
-    
+        
+    <div class="form-row">
+    <div class="left-col"><?php echo $this->Form->input('designation',array('required'=>'required')); ?></div>
+    </div>
     
     <div class="form-row topspacing">
         <div class="left-col"><?php echo $this->Form->input('attending_cocktail',array('label'=>'Attending Cocktail:','type'=>'select','options'=>array(''=>"Select Response",1=>'Yes',0=>'No'))); ?></div>

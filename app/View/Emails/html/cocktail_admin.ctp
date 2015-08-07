@@ -29,7 +29,8 @@
         Phone: <?php echo $form['Cocktail']['phone']; ?><br/>
         City: <?php echo $form['Cocktail']['city']; ?><br/>
         Country: <?php echo $form['Country']['name']; ?><br/>
-        Bank name: <?php echo $form['Cocktail']['bank_name']; ?><br/>
+        Company Name: <?php echo $form['Cocktail']['bank_name']; ?><br/>
+        Designation: <?php echo $form['Cocktail']['designation']; ?><br/>
         Attending Cocktail: <?php echo ($form['Cocktail']['attending_cocktail'])?"Yes":"No"; ?><br/>
         <br/><br/>
        
