@@ -214,7 +214,7 @@ class CocktailsController extends AppController {
         
         function _sendAckMail($post){
             $this->Email->to = $post['Cocktail']['email'];
-            $this->Email->subject = 'ANZ Sibos 2015';
+            $this->Email->subject = 'ANZ Sibos 2015 - cocktail reception ' . ($post['Cocktail']['attending_cocktail'])?'acceptance':'';
             $this->Email->from = "ANZ<info@irisapacdigital.com>";
             $this->Email->template = 'cocktail'; 
             $this->Email->sendAs = 'html'; 
@@ -224,9 +224,9 @@ class CocktailsController extends AppController {
         
         function _notifyAdmin($post){     
             $cocktail = $this->Cocktail->findById($this->Cocktail->getLastInsertID());
-            $this->Email->to = 'edm4test@gmail.com';
-//            $this->Email->to = 'ashusri04@gmail.com';
-//            $this->Email->bcc = 'ashusri04@gmail.com';
+//            $this->Email->to = 'edm4test@gmail.com';
+            $this->Email->to = 'ashusri04@gmail.com';
+            $this->Email->bcc = 'gaurav.mehra@iris-worldwide.com';
             $this->Email->subject = 'Cocktail Reception Acceptance/Rejection';
             $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
             $this->Email->template = 'cocktail_admin'; 

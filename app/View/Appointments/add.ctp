@@ -33,7 +33,7 @@
     
     <div class="form-row">
     <div class="left-col makeanapointment"><?php echo $this->Form->input('country_id',array('label'=>array('class'=>'makeanapointment'))); ?></div>
-    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('bank_name',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="right-col makeanapointment-3"><?php echo $this->Form->input('bank_name',array('label'=>array('class'=>'makeanapointment','text'=>'Company Name'))); ?></div>
     </div>
     
     <div class="form-row">
@@ -64,10 +64,18 @@
     
     <div class="form-feild-box"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
     <div class="form-feild-box guest2"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
-    <div class="form-feild-box last"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
+    
     </div>
     
-    
+    <div class="form-row topspacing2 mbl-width">
+        <div class="full-width-feild"><label class="makeanapointment">Select another ANZ Delegate:</label><?php echo $this->Form->input('more_delegates',array('label'=>false,'class'=>'bigtext')); ?></div>
+    </div>
+        
+    <div class="form-row topspacing2 mbl-width">
+        <label class="makeanapointment">Interested Topics:</label>
+        <div class="form-feild-box last"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
+    </div>
+        
     <div class="form-row topspacing2 mbl-width">
     <div class="full-width-feild"><label class="makeanapointment">Other interested topics:</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'bigtext')); ?></div>
     </div>
@@ -141,7 +149,7 @@
             rules: {
                 'data[Appointment][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Appointment][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Appointment][phone]': {'digits': true,'required': true,'minlength': 10,'maxlength': 12,noSpace:true},
+                'data[Appointment][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 15,noSpace:true},
                 'data[Appointment][city]': {'required': true,noSpace:true},
                 'data[Appointment][bank_name]': {'required': true,noSpace:true},
                 'data[Appointment][email]':{required: true,email: true,custom_email:true},
@@ -158,7 +166,7 @@
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
                 'data[Appointment][last_name]':"Please enter your last name.",
-                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 10 digits are needed!",maxlength:"Maximim 12 digits allowed!"},
+                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 15 characters allowed!"},
                 'data[Appointment][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Appointment][bank_name]': {'required':"Please enter your bank name"},
                 'data[Appointment][city]':{required: "Please enter your city"},

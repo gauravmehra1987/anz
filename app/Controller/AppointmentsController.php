@@ -22,8 +22,8 @@ class AppointmentsController extends AppController {
  * @return void
  */
 	public function index() {
-		$this->Appointment->recursive = 0;
-		$this->set('appointments', $this->Paginator->paginate());
+            $this->Appointment->recursive = 0;
+            $this->set('appointments', $this->Paginator->paginate());
 	}
 
 /**
@@ -60,23 +60,23 @@ class AppointmentsController extends AppController {
 				$this->Session->setFlash(__('The appointment could not be saved. Please, try again.'));
 			}
 		}
-		$countries = $this->Appointment->Country->find('list');
-                $countries[''] = "Select Country";ksort($countries);
-		$teams = $this->Appointment->Team->find('list');
-                $teams[''] = "Select ANZ Team";ksort($teams);
-		
-                $people[''] = "Select ANZ Delegate";ksort($people);
-		$topics = $this->Appointment->Topic->find('list');
-                $topics[''] = "Select Topic to discuss";ksort($topics);
-                $dates = $this->Appointment->Date->find('list');
-                $dates[''] = "Select Date"; ksort($dates);
-		$times = $this->Appointment->Time->find('list');
-                $times[''] = "Select Time"; ksort($times);
-		$alternateDates = $this->Appointment->AlternateDate->find('list');
-                $alternateDates[''] = "Select Date"; ksort($alternateDates);
-		$alternateTimes = $this->Appointment->AlternateTime->find('list');
-                $alternateTimes[''] = "Select Time"; ksort($alternateTimes);
-		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
+            $countries = $this->Appointment->Country->find('list');
+            $countries[''] = "Select Country";ksort($countries);
+            $teams = $this->Appointment->Team->find('list');
+            $teams[''] = "Select ANZ Team";ksort($teams);
+
+            $people[''] = "Select ANZ Delegate";ksort($people);
+            $topics = $this->Appointment->Topic->find('list');
+            $topics[''] = "Select Topics to Discuss";ksort($topics);
+            $dates = $this->Appointment->Date->find('list');
+            $dates[''] = "Select Date"; ksort($dates);
+            $times = $this->Appointment->Time->find('list');
+            $times[''] = "Select Time"; ksort($times);
+            $alternateDates = $this->Appointment->AlternateDate->find('list');
+            $alternateDates[''] = "Select Date"; ksort($alternateDates);
+            $alternateTimes = $this->Appointment->AlternateTime->find('list');
+            $alternateTimes[''] = "Select Time"; ksort($alternateTimes);
+            $this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
 	}
 
 /**
@@ -245,7 +245,7 @@ class AppointmentsController extends AppController {
         function _sendAckMail($post) {
             $this->Email->to = $post['Appointment']['email'];
             $this->Email->subject = 'ANZ Sibos 2015';
-            $this->Email->from = "ANZ<info@sibos.anz.com>";
+            $this->Email->from = "ANZ Sibos 2015 - meeting request confirmation <info@sibos.anz.com>";
             $this->Email->template = 'appontment'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $post);
@@ -255,9 +255,9 @@ class AppointmentsController extends AppController {
         function _notifyAdmin($post) {
            
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
-            $this->Email->to = 'edm4test@gmail.com';
-//            $this->Email->to = 'ashusri04@gmail.com';
-//            $this->Email->bcc = 'ashusri04@gmail.com';
+//            $this->Email->to = 'edm4test@gmail.com';
+            $this->Email->to = 'ashusri04@gmail.com';
+            $this->Email->bcc = 'gaurav.mehra@iris-worldwide.com';
             $this->Email->subject = 'Appointment Request';
             $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
             $this->Email->template = 'appontment_admin'; 

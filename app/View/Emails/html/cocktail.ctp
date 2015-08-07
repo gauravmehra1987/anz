@@ -34,7 +34,7 @@
     <td align="left" valign="top" style="color:#414042; font-size:14px; font-family:Verdana, Geneva, sans-serif; padding-left:40px;">
        
         <?php if($form['Cocktail']['attending_cocktail']) : ?>
-        Thank you for accepting our invitation to join us at our cocktail reception. More details will be sent through closer the date. Meanwhile please mark your calendar with the event information listed below. 
+        Thank you for accepting our invitation to join us at our cocktail reception. More details will be sent through close to the date.
         <br /><br />
         <table border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
             <tr>
