@@ -1,4 +1,4 @@
-<div class="main-banner-img cocktail-bnr">
+<div class="main-banner-img cocktail-bnr makeanappointment">
 <div class="main-bnnr-layout">
 <h1 class="cocktail-reception-heading"><span>Make an Appointment</span></h1>
     </div>

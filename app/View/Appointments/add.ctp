@@ -62,8 +62,8 @@
     
     <h3 class="makeanapointment">We would like to meet with:</h3>
     
-    <div class="form-feild-box"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
-    <div class="form-feild-box guest2"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
+    <div class="form-feild-box over-width2"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
+    <div class="form-feild-box guest2 over-width2"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
     
     </div>
     
@@ -73,7 +73,7 @@
         
     <div class="form-row topspacing2 mbl-width">
         <label class="makeanapointment">Interested Topics:</label>
-        <div class="form-feild-box last"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
+        <div class="form-feild-box last over-width"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
     </div>
         
     <div class="form-row topspacing2 mbl-width">

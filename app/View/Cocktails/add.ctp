@@ -13,9 +13,10 @@
     
     <div class="form-title-and-heading">
     
-    <p><span>Champers and Ambers</span>
-You're invited to join our cocktail reception at the ANZ Stand C44 on Level B2. It's our shout!<br>
-<span class="topspacing"><strong>13 October 2015, Tuesday</strong></span>
+    <p><span>Champers and Ambers!</span>
+You're invited to join our cocktail reception at the ANZ stand C44, Level 2B.<br>
+It's our shout!<br />
+<span class="topspacing"><strong>Tuesday 13 October, 2015</strong></span>
 <strong>4.00pm - 6.00pm</strong>
 </p>
 
