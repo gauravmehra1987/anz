@@ -80,8 +80,7 @@ class PagesController extends AppController {
         }
         
         public function pull(){
-            `git pull`;
-            `chown -R sibos:sibos /home/sibos/public_html/stage/*`;
+            exec('git pull');
             die();
         }
 }

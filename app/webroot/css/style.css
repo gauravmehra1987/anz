@@ -147,7 +147,7 @@ header{ width:100%; float:left;}
 .main-banner-img.cocktail-bnr.makeanappointment{ height:332px; background:url(../img/make-an-appointment.jpg) no-repeat center center; background-size:cover;     background-position: 0px 76%;}
 .conversation{ width: 32%; margin:0 auto;}
 .conversation img{ width:100%; margin-top:80px;}
-.main-banner-img h1{ color:#fff; font-size:50px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-weight: 300; text-transform:uppercase;}
+.main-banner-img h1{ color:#fff; font-size:32px; letter-spacing:1px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-weight: 300; text-transform:uppercase;}
 .main-banner-img h1 span{ display: block;}
 .main-banner-img h1.cocktail-reception-heading{ margin-top:80px;}
  
@@ -177,8 +177,8 @@ header{ width:100%; float:left;}
 .form-row .right-col.makeanapointment-3{     width: 258px;     margin-left: 40px; float:left;}
  
  
-.form-row .left-col.makeanapointment-2{    width: 187px;}
-.form-row .right-col.makeanapointment-2{         width: 187px;float: left;margin-left: 67px;}
+.form-row .left-col.makeanapointment-2{        width: 207px;}
+.form-row .right-col.makeanapointment-2{         width: 207px;float: left;margin-left: 27px;}
 .form-wrapper.makeanapointment{ max-width:1000px;}
  
  
@@ -202,7 +202,7 @@ span.error{color: red!important; font-size: 12px!important;font-family:'MyriadPr
 .form-row .right-col{     width: 302px; float:right;}
  
 .form-row label{ float:left; width:100%;     font-size: 14px; color:#414042; font-family: Helvetica, Arial, sans-serif; margin-bottom:8px;}
-.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"]{     width: 294px; height:32px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:8px; }
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"]{     width: 294px; height:32px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:8px; font-family:Helvetica, sans-serif; font-style:italic; }
 
  
 .full-width-feild{width:100%; float:left;}
@@ -216,7 +216,7 @@ span.error{color: red!important; font-size: 12px!important;font-family:'MyriadPr
  
 .form-row h3{    font-size: 18px;color: #414042; font-weight:normal; margin-bottom:10px; width:100%; float:left;}
  
-.full-width-feild textarea{ width:98%; height:160px; border:none; outline:none; background:#e7e8e9; color:#414042; resize:none; padding-left:2%; padding-top:10px; font-size:14px; font-family:'MyriadPro-Regular', verdana;}
+.full-width-feild textarea{ width:98%; height:160px; border:none; outline:none; background:#e7e8e9; color:#414042; resize:none; padding-left:2%; padding-top:10px; font-size:14px; font-family:Helvetica, sans-serif;font-style:italic;}
  
 .form-row.topspacing{ margin:30px 0 0 0;}
 .form-row.topspacing2{ margin:15px 0 0 0;}
@@ -305,8 +305,8 @@ img.fnone{float:none !important}
   top: 1px;padding: 10px 0 10px 0;
   height: auto !important;    max-height: 400px;
   margin-top: 2px;      z-index: 1000 !important;margin-left: 1px;}
-.dd .ddChild li{   padding: 4px 0 4px 15px;    background-color: #1792d2; font-size: 13px;
-  font-family:'Verdana', Geneva, sans-serif;
+.dd .ddChild li{   padding: 4px 0 4px 15px;    background-color: #1792d2; font-size: 14px;
+  font-family:Helvetica, sans-serif;
   text-align: left;}
 .dd .ddChild li .description{color:#666;}
 .dd .ddChild li .ddlabel{color: #fff;}
@@ -370,8 +370,8 @@ footer{ width:100%; float:left; height:80px; background:#004067;     margin-top:
 .home-reception-form h1 span{ display: block;}
 .home-reception-form h3 span{ display: block;}
 .home-reception-form h3{ margin-top:0px; font-size: 16px;line-height: 24px; font-family:'MyriadPro-Regular',Helvetica,Arial,sans-serif; color:#464646; font-weight: 400;}
-.home-reception-form h1{font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-size:35px;color: #414042;font-weight: 600;      line-height: 38px;}
-.home-reception-form p{     font-size: 14px;font-weight:normal; margin-top:25px; color:#414042; font-family: 'MyriadPro-Regular',Helvetica,Arial,sans-serif;font-weight: 400;}
+.home-reception-form h1{font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-size: 32px;color: #414042;font-weight: 600;      line-height: 36px;}
+.home-reception-form p{     font-size: 14px;font-weight:normal; margin-top:25px; color:#414042;font-family: Helvetica,Arial,sans-serif;font-weight: 400;}
 .home-reception-form p span{ display: block;}
 .btn{ width:100%; float:left; margin-bottom:0px;}
  
@@ -986,7 +986,7 @@ button{ float:none; display:block;     margin: 1em auto;}
 #cocktail-reception-form input[type="text"], #cocktail-reception-form input[type="tel"], #cocktail-reception-form input[type="email"]{    width: 250px !important;
     height: 27px !important;
     color: #414042 !important;
-    font-size: 14px !important;}
+    font-size: 14px !important; font-family:Helvetica, sans-serif;    font-style: italic;}
 	
 #cocktail-reception-form input[type="text"].bigtext{    width: 432px !important;padding-left: 8px;}
 
@@ -1066,3 +1066,4 @@ button{ float:none; display:block;     margin: 1em auto;}
 .content p span{ display:inline;}
 
 }
+
