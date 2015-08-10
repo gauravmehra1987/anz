@@ -88,7 +88,7 @@ It's our shout!<br />
             rules: {
                 'data[Cocktail][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Cocktail][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Cocktail][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 15,noSpace:true},
+                'data[Cocktail][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 20,noSpace:true},
                 'data[Cocktail][city]': {'required': true,noSpace:true},
                 'data[Cocktail][bank_name]': {'required': true,noSpace:true},
                 'data[Cocktail][email]':{required: true,email: true,custom_email:true},
@@ -101,7 +101,7 @@ It's our shout!<br />
             messages: {
                 'data[Cocktail][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
                 'data[Cocktail][last_name]':"Please enter your last name.",
-                'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 15 characters allowed!"},
+                'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 20 characters allowed!"},
                 'data[Cocktail][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Cocktail][bank_name]': {'required':"Please enter your bank name"},
                 'data[Cocktail][city]':{required: "Please enter your city"},

@@ -149,7 +149,7 @@
             rules: {
                 'data[Appointment][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Appointment][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Appointment][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 15,noSpace:true},
+                'data[Appointment][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 20,noSpace:true},
                 'data[Appointment][city]': {'required': true,noSpace:true},
                 'data[Appointment][bank_name]': {'required': true,noSpace:true},
                 'data[Appointment][email]':{required: true,email: true,custom_email:true},
@@ -166,7 +166,7 @@
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
                 'data[Appointment][last_name]':"Please enter your last name.",
-                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 15 characters allowed!"},
+                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 20 characters allowed!"},
                 'data[Appointment][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Appointment][bank_name]': {'required':"Please enter your bank name"},
                 'data[Appointment][city]':{required: "Please enter your city"},

@@ -74,11 +74,11 @@ class Cocktail extends AppModel {
 				'required' => true
 			),
                         'minLength' => array(
-                            'rule' => array('minLength',10),
-                            'message' => 'Minimum 10 characters required'
+                            'rule' => array('minLength',8),
+                            'message' => 'Minimum 8 characters required'
                         ),
                         'maxLength' => array(
-                            'rule' => array('maxLength',12),
+                            'rule' => array('maxLength',20),
                             'message' => 'Maximim 20 characters allowed'
                         )
 		),
