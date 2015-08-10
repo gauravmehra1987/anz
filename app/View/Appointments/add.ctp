@@ -236,7 +236,7 @@ $('#AppointmentTeamId').change(function(){
     $.post('<?php echo $this->webroot; ?>people',{team:$(this).val()},function(r){ r=$.parseJSON(r);
         $('#AppointmentPersonId').html('<option value="">Select ANZ Delegate</option>');
         for(i in r){ var item=r[i];
-            $('#AppointmentPersonId').append('<option value="'+i+'">'+item+'</option>');
+            $('#AppointmentPersonId').append('<option value="'+item.id+'">'+item.title+'</option>');
         }
         personSel.destroy();
         $("select").msDropDown().data("dd");
