@@ -327,9 +327,9 @@ img.fnone{float:none !important}
 .thankyou-layout h1{    font-size: 50px;color: #414042;
     line-height: 55px;font-family: 'MyriadPro-Regular', verdana;
     font-weight: 300;}
-.thankyou-layout p{    font-size: 15px;
+.thankyou-layout p{    font-size: 14px;
     font-weight: normal; color:#414042;
-    margin-top: 25px; }
+    margin-top: 25px;font-family: Helvetica, Arial, sans-serif; }
  
  
  

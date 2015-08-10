@@ -64,7 +64,7 @@
     <div class="footer-content">
     <div class="footer-links">
     <ul>
-    <li class="frst"><a href="http://www.anz.com/personal/" target="_blank">anz.com</a></li>
+    <li class="frst"><a href="http://www.anz.com/" target="_blank">anz.com</a></li>
     <li><a href="http://www.anz.com/auxiliary/help/help/website-terms-use/" target="_blank">Website Terms of Use</a></li>
     <li class="lst"><a href="http://www.anz.com/auxiliary/help/help/website-security-privacy/" target="_blank">Privacy &amp; Security</a></li>
     </ul>
