@@ -16,7 +16,7 @@ class PeopleController extends AppController {
         public function index(){
             if($this->request->is('ajax')){
                 $result = $this->Person->find('list',array(
-                    'conditions'=>array('team_id'=>$this->request->data['team']),'order'=>array('id desc')));
+                    'conditions'=>array('team_id'=>$this->request->data['team']),'order'=>array('sort_order asc')));
                 $people = array();
                 foreach($result as $key=>$item){
                    $people[] = array('id'=>$key,'title'=>$item);
