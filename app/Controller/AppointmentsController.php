@@ -255,9 +255,8 @@ class AppointmentsController extends AppController {
         function _notifyAdmin($post) {
            
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
-//            $this->Email->to = 'edm4test@gmail.com';
-            $this->Email->to = 'ashusri04@gmail.com';
-            $this->Email->bcc = 'gaurav.mehra@iris-worldwide.com';
+            $this->Email->to = Configure::read('Config.admin_email');
+//            $this->Email->bcc = Configure::read('Config.dev_email');
             $this->Email->subject = 'Appointment Request';
             $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
             $this->Email->template = 'appontment_admin'; 

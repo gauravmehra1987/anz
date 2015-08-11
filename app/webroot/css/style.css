@@ -192,7 +192,7 @@ span.error{color: red!important; font-size: 12px!important;font-family:'MyriadPr
     width: 100%;
     margin-top: 50px; margin-bottom:50px;        max-width: 650px;}
                
-.form-wrapper input[type="submit"],.form-wrapper input[type="button"]{ width: 150px;height: 47px; border:none; outline:none; background: url(../img/button-bg.png) no-repeat; background-size:contain; font-size: 18px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-weight:600; color:#fff; cursor:pointer;    margin-top: 30px;}
+.form-wrapper input[type="submit"],.form-wrapper input[type="button"]{ width: 150px;height: 47px; border:none; outline:none; background: url(../img/button-bg.png) no-repeat; background-size:contain; font-size: 14px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-weight:600; color:#fff; cursor:pointer;    margin-top: 30px;}
                
 .form-row{ width:100%; float:left; margin-bottom:28px;}
  

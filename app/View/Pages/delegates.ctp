@@ -27,57 +27,62 @@
             <h3>Bob Bowmer </h3>
             <p><span>Executive Director - Financial Institutions Europe,</span> Banks & Diversified Financials </p>
 
-             <h3>Brenda Trenowden</h3>
-            <p><span>Head of Financial Institutions - Europe</span> Head of Banks and Diversified Financials - Europe & Americas</p>
+            <h3>Giao Pik Ho</h3>
+            <p><span>Head of Banks, Financial Institutions SE Asia,</span> Banks & Diversified Financials </p>
+            
+            <h3>Simon Ireland </h3>
+            <p><span>Global Head of Financial Institutions</span> Global Head of Banks and Diversified Financials </p>
+
+            <h3>Glenn Phillips </h3>
+            <p><span>Director, Financial Institutions Australia,</span> Banks & Diversified Financials </p>
+
+            <h3>Bridget Qi</h3>
+            <p><span>Head of Financial Institutions - China,</span> Banks & Diversified Financials </p>
 
              <h3>Bryan Stagg</h3>
             <p><span>Executive Director - Financial Institutions,</span> Banks & Diversified Financials, Australia </p>
 
-             <h3>Bridget Qi</h3>
-            <p><span>Head of Financial Institutions - China,</span> Banks & Diversified Financials </p>
+            <h3>Tina Tan </h3>
+            <p><span>Executive Director - Financial Institutions Asia, </span> Banks & Diversified Financials </p>
+        
+            <h3>Brenda Trenowden</h3>
+            <p class="last"><span>Head of Financial Institutions - Europe</span> Head of Banks and Diversified Financials - Europe & Americas</p>
 
-             <h3>Giao Pik Ho</h3>
-            <p><span>Head of Banks, Financial Institutions SE Asia,</span> Banks & Diversified Financials </p>
-
-             <h3>Glenn Phillips </h3>
-            <p><span>Director, Financial Institutions Australia,</span> Banks & Diversified Financials </p>
-
-
-             <h3>Simon Ireland </h3>
-            <p><span>Global Head of Financial Institutions</span> Global Head of Banks and Diversified Financials </p>
-
-             <h3>Tina Tan </h3>
-            <p class="last"><span>Executive Director - Financial Institutions Asia, </span> Banks & Diversified Financials </p>
         </div>
         
         <div class="tc t2">
             <h1>Global Transaction Banking:</h1>
-            <h3>Andy Cunningham </h3>
-            <p><span>Head of Clearing Sales – United Kingdom & Europe,</span>Global Transaction Banking </p>
-
-             <h3>Anne Collard </h3>
+            
+            <h3>Brian Barry </h3>
+            <p><span>Head of Global Clearing Product,</span> Global Transaction Banking </p>
+           
+            <h3>John Campbell </h3>
+            <p><span>Global Head, Sales Management,</span> Global Transaction Banking</p>
+            
+            <h3>Winnie Chen </h3>
+            <p><span>Head of Financial Institutions - North Asia,</span>  Global Transaction Banking</p>
+            
+            <h3>Anne Collard </h3>
             <p><span>Global Head, Digital and Channels,</span> Global Transaction Banking</p>
 
-             <h3>Brian Barry </h3>
-            <p><span>Head of Global Clearing Product,</span> Global Transaction Banking </p>
+            <h3>Andy Cunningham </h3>
+            <p><span>Head of Clearing Sales – United Kingdom & Europe,</span>Global Transaction Banking </p>
 
              <h3>Deepan Dagur </h3>
             <p><span>Head of Financial Institutions Sales – SE Asia & Pacific, </span> Global Transaction Banking </p>
 
+            <h3>Shane Marsh </h3>
+            <p><span>Head of Financial Institutions Sales - New Zealand,</span>  Global Transaction Banking </p>
+            
              <h3>Ed Pickford </h3>
             <p><span>Head of Global Network Management, </span> Global Transaction Banking </p>
 
-             <h3>John Campbell </h3>
-            <p><span>Global Head, Sales Management,</span> Global Transaction Banking</p>
-
              <h3>Sean Rowe </h3>
-            <p><span>Head of Financial Institutions Sales – Americas,</span>  Global Transaction Banking</p>
+            <p class="last"><span>Head of Financial Institutions Sales – Americas,</span>  Global Transaction Banking</p>
 
-             <h3>Shane Marsh </h3>
-            <p><span>Head of Financial Institutions Sales - New Zealand,</span>  Global Transaction Banking </p>
+             
 
-             <h3>Winnie Chen </h3>
-            <p class="last"><span>Head of Financial Institutions - North Asia,</span>  Global Transaction Banking</p>
+           
         </div>
         
         <div class="tc t3">
@@ -85,22 +90,21 @@
             <h3>Brian Bonar </h3>
             <p>Head of Payments Industry, New Zealand </p>
 
-             <h3>Nigel Dobson </h3>
+            <h3>Nigel Dobson </h3>
             <p>General Manager, Group Payments Management </p>
-
-             <h3>Owen Philp </h3>
-            <p>Senior Business Change Implementation Manager </p>
-
-             <h3>Patrick Maes </h3>
+            
+            <h3>Paul Inglis </h3>
+            <p>Head of Payments Industry </p>
+            
+            <h3>Patrick Maes </h3>
             <p>CTO – GM Global Technology, Service & Operations (GTSO) Strategy and Planning </p>
 
-             <h3>Paul Inglis </h3>
-            <p>Head of Payments Industry </p>
-
-             <h3>Robert Marchiori</h3>
-            <p class="last">Head of Payment Transactions</p>
-
+            <h3>Robert Marchiori</h3>
+            <p>Head of Payment Transactions</p>
             
+            <h3>Owen Philp </h3>
+            <p class="last">Senior Business Change Implementation Manager </p>
+
         </div>
         
         <div class="tc t4">

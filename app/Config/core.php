@@ -390,3 +390,11 @@ Configure::write('Routing.prefixes', array('admin'));
 
 Configure::write('Config.timezone', 'Europe/London');
 
+Configure::write('Config.admin_email', 'June.Ong@anz.com');
+
+Configure::write('Config.qa_email', 'ashusri04@gmail.com');
+
+Configure::write('Config.test_email', 'edm4test@gmail.com');
+
+Configure::write('Config.dev_email', 'gaurav.mehra@iris-worlwide.com');
+
