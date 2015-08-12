@@ -180,7 +180,7 @@
                 'data[Appointment][last_name]':"Please enter your last name.",
                 'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 20 characters allowed!"},
                 'data[Appointment][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
-                'data[Appointment][bank_name]': {'required':"Please enter your bank name"},
+                'data[Appointment][bank_name]': {'required':"Please enter your company name"},
                 'data[Appointment][city]':{required: "Please enter your city"},
                 'data[Appointment][date_id]': {'required': "Please Select Date."},
                 'data[Appointment][time_id]': {'required': "Please Select Time."},
