@@ -120,16 +120,16 @@ header{ width:100%; float:left;}
 .header-logo{ width:1000px; margin:0 auto;}
 .anz-logo{ float:left; width:187px;}
 .anz-logo-right-col{ width:813px; height:56px; float:left;background:url(../img/header-right-grednt.jpg) repeat-x;}
-.anz-logo-right-col p{font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;     font-size: 21px;letter-spacing: 1px; color:#fff; Helvetica, Arial, sans-serif; font-weight: 600; line-height: 54px; margin-left:20px;}
+.anz-logo-right-col p{font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-size: 21px;letter-spacing: 1px; color:#fff; font-weight: 600; line-height: 54px; margin-left:20px;}
  
 .menu{ width:100%; float:left; height:61px; background: url(../img/bg-primary-nav2.png) no-repeat; background-position: center top; position: relative;}
 .navigation{ width:1000px; margin:0 auto;}
 .navigation ul{ margin:0; padding:0; list-style-type:none; margin-left:0px; background: url(../img/bg-primary-nav.png) no-repeat 240px top}
 .navigation ul li{ margin:0; padding:0 15px; display:inline; background: url(../img/bg-primary-nav-item.png) no-repeat center top; z-index: 0; height: 60px; float: left;}
-.navigation ul li:hover{ color:#004165; margin:0; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom; z-index: 0; height: 60px; float: left;}
-.navigation ul li a{  font-size: 15px; line-height:60px; font-weight:600; color:#1792d2; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; text-decoration:none; }
+.navigation ul li:hover{ color:#004165; margin:0; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom;}
+.navigation ul li a{ font-size: 15px; line-height:60px; font-weight:600; color:#1792d2; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; text-decoration:none;    padding: 20px 0px 22px 0; }
 .navigation ul li a:hover{ color:#004165;}
-.navigation ul li.active{ color:#004165; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom; z-index: 0; height: 60px; float: left;}
+.navigation ul li.active{ color:#004165; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom;}
 .navigation ul li.frst{ padding-left:0;}
  
  
@@ -207,11 +207,11 @@ span.error{color: red!important; font-size: 12px!important;font-family:'MyriadPr
 
  
 .full-width-feild{width:100%; float:left;}
-.full-width-feild input[type="text"]{ width:96%; height:37px; float:left; border:none; outline:none; background:##e7e8e9; color:#414042; font-size:14px; padding-left:4%; }
+.full-width-feild input[type="text"]{ width:96%; height:37px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:4%; }
  
 .form-feild-box{ width: 258px; float:left; margin-right: 40px;}
 .form-feild-box label{ float:left; width:100%; font-size:18px; color:#414042; margin-bottom:0px;}
-.form-feild-box input[type="text"]{ width:98%; height:37px; float:left; border:none; outline:none; background:##e7e8e9;     color: #414042;font-size:14px; padding-left:2%; }
+.form-feild-box input[type="text"]{ width:98%; height:37px; float:left; border:none; outline:none; background:#e7e8e9;     color: #414042;font-size:14px; padding-left:2%; }
 .form-feild-box.last{  margin-right: 0;}
 .form-feild-box p{ font-size:11px; color:#414042; font-style:italic;    margin-bottom: 7px;}
  
@@ -428,6 +428,10 @@ margin-top: 50px; margin-bottom:50px;}
   
   
   @media all and (min-width: 200px) and (max-width: 675px) {
+	  
+	  
+.menu{background-color:#FFF;}
+
                  
                   .main-banner-img.cocktail-bnr {
     height: 250px;
@@ -458,7 +462,7 @@ margin-top: 50px; margin-bottom:50px;}
                   .menu {
     background: #fff;
     height: auto;
-                    width: 50%;
+    
     background: #fff;
  
 }
@@ -471,6 +475,9 @@ margin-top: 50px; margin-bottom:50px;}
     text-align: left;
     border-bottom: 0;
     padding-left: 20px;
+	background: #004167;
+	height: 100%;
+    float: none;
 }
  
  
@@ -484,22 +491,25 @@ margin-top: 50px; margin-bottom:50px;}
 .navigation ul {
     margin-left: 0px;
     display: none;
-                    padding: 20px 0;
+     padding: 20px 0;
     position: absolute;
-    top: 36px;
+    top: 0px;
     z-index: 999;
     background-color: #004167;
-    padding-right: 20px;
+    padding-right: 25px;
 }
- 
+ .navigation ul li:hover{ background:none;}
+ .navigation ul li.active { background:none;}
 .navigation ul li a {
        font-size: 12px;
     line-height: 35px;
     color: #fff;
     text-decoration: none;
 }
+
 .navigation ul li a:hover {
     color: #fff;
+	background:none;
 }
 .navigation ul li a.active {
     color: #fff;
@@ -508,7 +518,7 @@ margin-top: 50px; margin-bottom:50px;}
 .hamburgar-icon{ display:block;    float: left;
     z-index: 999;
     position: absolute;
-        top: 10px;
+    top: -25px;;
     left: 4%; cursor:pointer;    width: 20px;}
                
                 .header {
