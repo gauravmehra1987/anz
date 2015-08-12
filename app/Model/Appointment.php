@@ -97,6 +97,14 @@ class Appointment extends AppModel {
 				'required' => true
 			)
 		),
+                'designation' => array(
+			'notBlank' => array(
+				'rule' => array('notBlank'),
+				'message' => 'Please enter your designation.',
+				'allowEmpty' => false,
+				'required' => true
+			)
+		),
                 'date_id' => array(
 			'notBlank' => array(
 				'rule' => array('notBlank'),

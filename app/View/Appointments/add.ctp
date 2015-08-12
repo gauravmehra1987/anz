@@ -35,6 +35,9 @@
     <div class="left-col makeanapointment"><?php echo $this->Form->input('country_id',array('label'=>array('class'=>'makeanapointment'))); ?></div>
     <div class="right-col makeanapointment-3"><?php echo $this->Form->input('bank_name',array('label'=>array('class'=>'makeanapointment','text'=>'Company Name'))); ?></div>
     </div>
+    <div class="form-row">
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('designation',array('required'=>'required')); ?></div>
+    </div>
     
     <div class="form-row">
     <div class="form-feild-box">
@@ -169,7 +172,8 @@
                 'data[Appointment][topic_id]': {'required': true},
                 'data[Appointment][person_id]': {'required': true},
                 'data[Appointment][country_id]': {'required': true},
-                'data[Appointment][initials]': {'required': true}
+                'data[Appointment][initials]': {'required': true},
+                'data[Appointment][designation]': {required:true},
             },
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
@@ -184,7 +188,8 @@
                 'data[Appointment][alternate_time]': {'required': "Please Select Time."},
                 'data[Appointment][team_id]': {'required': "Please Select Time."},
                 'data[Appointment][topic_id]': {'required': "Please Select Date."},
-                'data[Appointment][person_id]': {'required': "Please Select Time."}
+                'data[Appointment][person_id]': {'required': "Please Select Time."},
+                'data[Appointment][designation]': {required:"Please enter your designation."}
             },
             highlight:function(element, errorClass, validClass) {
                 
