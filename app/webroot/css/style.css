@@ -129,6 +129,8 @@ header{ width:100%; float:left;}
 .navigation ul li:hover{ color:#004165; margin:0; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom;}
 .navigation ul li a{ font-size: 15px; line-height:60px; font-weight:600; color:#1792d2; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; text-decoration:none;    padding: 20px 0px 22px 0; }
 .navigation ul li a:hover{ color:#004165;}
+.navigation ul li a.active{ color:#004165;}
+
 .navigation ul li.active{ color:#004165; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom;}
 .navigation ul li.frst{ padding-left:0;}
  
