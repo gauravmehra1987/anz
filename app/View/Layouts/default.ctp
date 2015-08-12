@@ -33,7 +33,7 @@
     <div class="header-logo-bar">
     <div class="header-logo">
     <div class="anz-logo"><a href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></a></div>
-    <div class="anz-logo-right-col"><p>Conversations that matter @ Sibos</p></div>
+    <div class="anz-logo-right-col"><p>Conversations That Matter @ Sibos</p></div>
     </div>
     </div>
     <div class="left-blue-bar"></div>
@@ -46,10 +46,18 @@
 	<div class="navigation">
     <div class="hamburgar-icon" id="open-menu"><img src="<?php echo $this->webroot; ?>img/hamburgar-menu.png" alt="menu" /></div>
     <ul>
-    	<li><a <?php if($this->request->url=='') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>" title="Home">Home</a></li>
-        <li><a <?php if($this->request->url=='make-an-appointment') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>make-an-appointment" title="Make an Appointment">Make an Appointment</a></li>
-        <li><a <?php if($this->request->url=='cocktail-reception') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>cocktail-reception" title="Cocktail Reception">Cocktail Reception</a></li>
-        <li class="last"><a <?php if($this->request->url=='delegates') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>delegates" title="Delegates">ANZ Delegates</a></li>
+    	<li <?php if($this->request->url=='') echo "class='active'"; ?>>
+            <a <?php if($this->request->url=='') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>" title="Home">Home</a>
+        </li>
+        <li <?php if($this->request->url=='make-an-appointment') echo "class='active'"; ?>>
+            <a <?php if($this->request->url=='make-an-appointment') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>make-an-appointment" title="Make an Appointment">Make an Appointment</a>
+        </li>
+        <li <?php if($this->request->url=='cocktail-reception') echo "class='active'"; ?>>
+            <a <?php if($this->request->url=='cocktail-reception') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>cocktail-reception" title="Cocktail Reception">Cocktail Reception</a>
+        </li>
+        <li class="last <?php if($this->request->url=='delegates') echo "active"; ?>">
+            <a <?php if($this->request->url=='delegates') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>delegates" title="Delegates">ANZ Delegates</a>
+        </li>
     </ul>
     </div>
 </div>
