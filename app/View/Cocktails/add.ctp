@@ -103,7 +103,7 @@ It's our shout!<br />
                 'data[Cocktail][country_id]':{required: true},
                 'data[Cocktail][initials]':{required: true},
                 'data[Cocktail][attending_cocktail]':{required: true},
-                'data[Cocktail][designation]': {required:true}
+                'data[Cocktail][designation]': {required:true,minlength: 3,maxlength:50,noSpace:true}
                 
             },
             messages: {
@@ -113,7 +113,7 @@ It's our shout!<br />
                 'data[Cocktail][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
                 'data[Cocktail][bank_name]': {'required':"Please enter your bank name"},
                 'data[Cocktail][city]':{required: "Please enter your city"},
-                'data[Cocktail][designation]': {required:"Please enter your designation."}
+                'data[Cocktail][designation]': {required:"Please enter your designation.",minlength: "Designation must be more than 2 characters.",maxlength:"Designation must not exceed 50 characters."}
             },
             submitHandler: function(form) {
                 return true;

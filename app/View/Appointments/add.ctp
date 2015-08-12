@@ -173,7 +173,7 @@
                 'data[Appointment][person_id]': {'required': true},
                 'data[Appointment][country_id]': {'required': true},
                 'data[Appointment][initials]': {'required': true},
-                'data[Appointment][designation]': {required:true},
+                'data[Appointment][designation]': {required:true,minlength: 3,maxlength:50,noSpace:true}
             },
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
@@ -189,7 +189,7 @@
                 'data[Appointment][team_id]': {'required': "Please Select Time."},
                 'data[Appointment][topic_id]': {'required': "Please Select Date."},
                 'data[Appointment][person_id]': {'required': "Please Select Time."},
-                'data[Appointment][designation]': {required:"Please enter your designation."}
+                'data[Appointment][designation]': {required:"Please enter your designation.",minlength: "Designation must be more than 2 characters.",maxlength:"Designation must not exceed 50 characters."}
             },
             highlight:function(element, errorClass, validClass) {
                 
