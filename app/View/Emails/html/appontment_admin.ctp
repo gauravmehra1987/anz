@@ -36,7 +36,11 @@
         <?php if($form['Appointment']['guest_2']): ?>Representative 2: <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
         <?php if($form['Appointment']['guest_3']): ?>Representative 3: <?php echo $form['Appointment']['guest_3']; ?> (<?php echo $form['Appointment']['designation_3']; ?>)<br/><?php endif; ?>
         <br/><br/>
-        Discussion Topics:<?php echo $form['Topic']['title']; ?><br/>
+        Discussion Topics:<?php echo $form['Topic']['title']; ?><br/><br/>
+        
+        Other interested topics:
+        <?php echo $form['Topic2']['title']; ?><br/>
+        <?php echo $form['Topic3']['title']; ?><br/><br/>
         
         We would like to meet with:<br/>
         <?php echo $form['Team']['title']; ?>, <?php echo $form['Person']['title']; ?><br/>
