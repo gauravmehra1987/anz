@@ -396,5 +396,5 @@ Configure::write('Config.qa_email', 'ashusri04@gmail.com');
 
 Configure::write('Config.test_email', 'edm4test@gmail.com');
 
-Configure::write('Config.dev_email', 'gaurav.mehra@iris-worlwide.com');
+Configure::write('Config.dev_email', 'gauravmehra1987@gmail.com');
 
