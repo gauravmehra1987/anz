@@ -27,7 +27,7 @@
     </div>
     
     <div class="form-row">
-    <div class="left-col makeanapointment-3"><?php echo $this->Form->input('phone',array('label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="left-col makeanapointment-3"><?php echo $this->Form->input('phone',array('label'=>array('class'=>'makeanapointment','text'=>'Phone <i>(country code) number</i>'))); ?></div>
     <div class="right-col makeanapointment-3"><?php echo $this->Form->input('city',array('label'=>array('class'=>'makeanapointment'))); ?></div>
     </div>
     
@@ -42,19 +42,38 @@
     <div class="form-row">
     <div class="form-feild-box">
     <label class="makeanapointment">Representative 1</label>
-    <p>First name, last name, job title</p>
+    <p>First name, last name</p>
     <?php echo $this->Form->input('guest_1',array('label'=>false)); ?>
     
     </div>
     <div class="form-feild-box guest2">
     <label class="makeanapointment">Representative 2</label>
-    <p>First name, last name, job title</p>
+    <p>First name, last name</p>
     <?php echo $this->Form->input('guest_2',array('label'=>false)); ?>
     </div>
     <div class="form-feild-box last">
     <label class="makeanapointment">Representative 3</label>
-    <p>First name, last name, job title</p>
+    <p>First name, last name</p>
     <?php echo $this->Form->input('guest_3',array('label'=>false)); ?>
+    </div>
+    </div>
+            
+    <div class="form-row">
+    <div class="form-feild-box">
+    <label class="makeanapointment">Representative 1</label>
+    <p>Designation</p>
+    <?php echo $this->Form->input('designation_1',array('label'=>false)); ?>
+    
+    </div>
+    <div class="form-feild-box guest2">
+    <label class="makeanapointment">Representative 2</label>
+    <p>Designation</p>
+    <?php echo $this->Form->input('designation_2',array('label'=>false)); ?>
+    </div>
+    <div class="form-feild-box last">
+    <label class="makeanapointment">Representative 3</label>
+    <p>Designation</p>
+    <?php echo $this->Form->input('designation_3',array('label'=>false)); ?>
     </div>
     </div>
             <div class="submit-button hidden"><input class="next" type="button" value="Next">  </div>
@@ -65,22 +84,34 @@
     
     <h3 class="makeanapointment">We would like to meet with:</h3>
     
-    <div class="form-feild-box over-width2"><?php echo $this->Form->input('team_id',array('label'=>false)); ?></div>
-    <div class="form-feild-box guest2 over-width2"><?php echo $this->Form->input('person_id',array('label'=>false)); ?></div>
+    <div class="form-feild-box over-width2"><?php echo $this->Form->input('team_id',array('label'=>false,'class'=>'_teams')); ?></div>
+    <div class="form-feild-box guest2 over-width2"><?php echo $this->Form->input('person_id',array('class'=>'_teams','label'=>false,'options'=>array(''=>'Select ANZ Delegate'))); ?></div>
     
     </div>
     
-    <div class="form-row topspacing2 mbl-width">
-        <div class="full-width-feild"><label class="makeanapointment">Select another ANZ Delegate:</label><?php echo $this->Form->input('more_delegates',array('label'=>false,'class'=>'bigtext')); ?></div>
+    <div class="form-row topspacing">    
+        <div class="form-feild-box over-width2"><?php echo $this->Form->input('team2_id',array('class'=>'_teams','label'=>false)); ?></div>
+        <div class="form-feild-box guest2 over-width2"><?php echo $this->Form->input('person2_id',array('label'=>false,'options'=>array(''=>'Select ANZ Delegate'))); ?></div>
     </div>
         
+    <div class="form-row topspacing">    
+        <div class="form-feild-box over-width2"><?php echo $this->Form->input('team3_id',array('class'=>'_teams','label'=>false)); ?></div>
+        <div class="form-feild-box guest2 over-width2"><?php echo $this->Form->input('person3_id',array('label'=>false,'options'=>array(''=>'Select ANZ Delegate'))); ?></div>
+    </div>
+    
     <div class="form-row topspacing2 mbl-width">
         <label class="makeanapointment">Interested Topics:</label>
         <div class="form-feild-box last over-width"><?php echo $this->Form->input('topic_id',array('label'=>false)); ?></div>
     </div>
         
     <div class="form-row topspacing2 mbl-width">
-    <div class="full-width-feild"><label class="makeanapointment">Other interested topics:</label><?php echo $this->Form->input('other_topic',array('label'=>false,'class'=>'bigtext')); ?></div>
+        <div class="form-feild-box last over-width"><label class="makeanapointment">Other interested topics:</label><?php echo $this->Form->input('topic2_id',array('label'=>false)); ?></div>
+        
+    </div>
+    <div class="form-row topspacing2 mbl-width">
+        <div class="form-feild-box last over-width">
+            <?php echo $this->Form->input('topic3_id',array('label'=>false)); ?>
+        </div>
     </div>
     
     
@@ -143,15 +174,31 @@
         $.validator.addMethod("noSpace", function(value, element) {
             var str = value.trim();
             if(str=='') return false; else return true;
-        }, "Space are not allowed");
+        }, "Invalid Input");
         
         $.validator.addMethod("custom_email", function(value, element) {
             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
             return re.test(value);
         }, "Please enter a valid email address");
         
-//        $('#DoSubmit').click(function(){
-//        $('.c-error').remove();
+        $.validator.addMethod("prevCheck", function(value, element) {
+            var current = value.trim();
+            if(current!=''){            
+                var prev = $(element).parent().parent().prev().find('input').val();
+                var str = prev.trim();
+                if(str=='') return false; else return true;
+            } return true;
+        }, "Please fill the previous field");
+        
+        $.validator.addMethod("prevPrevCheck", function(value, element) {
+            var current = value.trim();
+            if(current!=''){            
+                var prev = $(element).parent().parent().prev().prev().find('input').val();
+                var str = prev.trim();
+                if(str=='') return false; else return true;
+            } return true;
+        }, "Please fill the previous field");
+        
         $("#appointment-form").validate({
             ignore: ":hidden",
             errorClass: "error",
@@ -173,7 +220,30 @@
                 'data[Appointment][person_id]': {'required': true},
                 'data[Appointment][country_id]': {'required': true},
                 'data[Appointment][initials]': {'required': true},
-                'data[Appointment][designation]': {required:true,minlength: 3,maxlength:50,noSpace:true}
+                'data[Appointment][designation]': {required:true,minlength: 3,maxlength:50,noSpace:true},
+                
+                'data[Appointment][guest_1]': {noSpace:true,required: {depends: function() {if ($('#AppointmentDesignation1').val()){return true;}else{return false;}}}},
+                'data[Appointment][guest_2]': {noSpace:true,prevCheck:true,required: {depends: function() {if ($('#AppointmentDesignation2').val()){return true;}else{return false;}}}},
+                'data[Appointment][guest_3]': {noSpace:true,prevPrevCheck:true,required: {depends: function() {if ($('#AppointmentDesignation3').val()){return true;}else{return false;}}}},
+
+                'data[Appointment][designation_1]': {noSpace:true,required: {depends: function() {if ($('#AppointmentGuest1').val()){return true;}else{return false;}}}},
+                'data[Appointment][designation_2]': {noSpace:true,prevCheck:true,required: {depends: function() {if ($('#AppointmentGuest2').val()){return true;}else{return false;}}}},
+                'data[Appointment][designation_3]': {noSpace:true,prevPrevCheck:true,required: {depends: function() {if ($('#AppointmentGuest3').val()){return true;}else{return false;}}}},
+                
+                'data[Appointment][person2_id]':{required: {
+                        depends: function() {
+                            if ($('#AppointmentTeam2Id').val()){ return true;}else{return false;}
+                        }
+                    }
+                },
+                'data[Appointment][person3_id]':{required: {
+                        depends: function() {
+                            if ($('#AppointmentTeam3Id').val()){ return true;}else{return false;}
+                        }
+                    }
+                }
+                
+                
             },
             messages: {
                 'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
@@ -189,7 +259,13 @@
                 'data[Appointment][team_id]': {'required': "Please Select Time."},
                 'data[Appointment][topic_id]': {'required': "Please Select Date."},
                 'data[Appointment][person_id]': {'required': "Please Select Time."},
-                'data[Appointment][designation]': {required:"Please enter your designation.",minlength: "Designation must be more than 2 characters.",maxlength:"Designation must not exceed 50 characters."}
+                'data[Appointment][designation]': {required:"Please enter your designation.",minlength: "Designation must be more than 2 characters.",maxlength:"Designation must not exceed 50 characters."},
+                'data[Appointment][designation_1]': {required:'Please enter designation also.'},
+                'data[Appointment][designation_2]': {required:'Please enter designation also.'},
+                'data[Appointment][designation_3]': {required:'Please enter designation also.'},
+                'data[Appointment][guest_1]': {required:'Please enter representative also.'},
+                'data[Appointment][guest_2]': {required:'Please enter representative also.'},
+                'data[Appointment][guest_3]': {required:'Please enter representative also.'}
             },
             highlight:function(element, errorClass, validClass) {
                 
@@ -211,6 +287,10 @@
                   $('#countryid').remove(); $('#AppointmentCountryId_msdd').append("<span id='countryid' class='c-error error'>Please Select Country.</span>")
                 }if ($(element).attr('name') == "data[Appointment][initials]" ){
                   $('#init').remove(); $('#AppointmentInitials_msdd').append("<span id='init' class='c-error error'>Please Select Title.</span>")
+                }if ($(element).attr('name') == "data[Appointment][person2_id]" ){
+                  $('#p2').remove(); $('#AppointmentPerson2Id_msdd').append("<span id='p2' class='c-error error'>Please Select ANZ Delegate.</span>")
+                }if ($(element).attr('name') == "data[Appointment][person3_id]" ){
+                  $('#p3').remove(); $('#AppointmentPerson3Id_msdd').append("<span id='p3' class='c-error error'>Please Select ANZ Delegate.</span>")
                 }
             },
             unhighlight: function(element, errorClass, validClass) {
@@ -243,8 +323,11 @@
         });
     });
 //    });
-var $selectBox = $("select").not('#AppointmentPersonId').msDropDown().data("dd");
+var $selectBox = $("select").not('#AppointmentPersonId,#AppointmentPerson2Id,#AppointmentPerson3Id').msDropDown().data("dd");
+
 var personSel = $('#AppointmentPersonId').msDropDown().data("dd");
+var person2Sel = $('#AppointmentPerson2Id').msDropDown().data("dd");
+var person3Sel = $('#AppointmentPerson3Id').msDropDown().data("dd");
 $('#AppointmentTeamId').change(function(){
     $.post('<?php echo $this->webroot; ?>people',{team:$(this).val()},function(r){ r=$.parseJSON(r);
         $('#AppointmentPersonId').html('<option value="">Select ANZ Delegate</option>');
@@ -255,5 +338,25 @@ $('#AppointmentTeamId').change(function(){
         $("select").msDropDown().data("dd");
     });
 });
-    </script>
+$('#AppointmentTeam2Id').change(function(){
+    $.post('<?php echo $this->webroot; ?>people',{team:$(this).val()},function(r){ r=$.parseJSON(r);
+        $('#AppointmentPerson2Id').html('<option value="">Select ANZ Delegate</option>');
+        for(i in r){ var item=r[i];
+            $('#AppointmentPerson2Id').append('<option value="'+item.id+'">'+item.title+'</option>');
+        }
+        person2Sel.destroy();
+        $("select").msDropDown().data("dd");
+    });
+});
+$('#AppointmentTeam3Id').change(function(){
+    $.post('<?php echo $this->webroot; ?>people',{team:$(this).val()},function(r){ r=$.parseJSON(r);
+        $('#AppointmentPerson3Id').html('<option value="">Select ANZ Delegate</option>');
+        for(i in r){ var item=r[i];
+            $('#AppointmentPerson3Id').append('<option value="'+item.id+'">'+item.title+'</option>');
+        }
+        person3Sel.destroy();
+        $("select").msDropDown().data("dd");
+    });
+});
+</script>
     <?php echo $this->Html->script(array('jquery.validate.min')); ?>

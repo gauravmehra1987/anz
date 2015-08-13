@@ -32,15 +32,17 @@
         Bank name: <?php echo $form['Appointment']['bank_name']; ?><br/>
         <br/><br/>
         Accompanied by: <br/>
-        Guest 1: <?php echo $form['Appointment']['guest_1']; ?><br/>
-        Guest 2: <?php echo $form['Appointment']['guest_2']; ?><br/>
-        Guest 3: <?php echo $form['Appointment']['guest_3']; ?><br/>
+        <?php if($form['Appointment']['guest_1']): ?>Representative 1: <?php echo $form['Appointment']['guest_1']; ?> (<?php echo $form['Appointment']['designation_1']; ?>)<br/><?php endif; ?>
+        <?php if($form['Appointment']['guest_2']): ?>Representative 2: <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
+        <?php if($form['Appointment']['guest_3']): ?>Representative 3: <?php echo $form['Appointment']['guest_3']; ?> (<?php echo $form['Appointment']['designation_3']; ?>)<br/><?php endif; ?>
         <br/><br/>
         Discussion Topics:<?php echo $form['Topic']['title']; ?><br/>
         <?php echo $form['Appointment']['other_topic']; ?><br/>
         We would like to meet with:<br/>
         <?php echo $form['Team']['title']; ?>, <?php echo $form['Person']['title']; ?><br/>
-        Another ANZ Delegate: <?php echo $form['Appointment']['more_delegates']; ?><br/>
+        <?php if($form['Team2']['title']): ?><?php echo $form['Team2']['title']; ?>, <?php echo $form['Person2']['title']; ?><br/><?php endif; ?>
+        <?php if($form['Team3']['title']): ?><?php echo $form['Team3']['title']; ?>, <?php echo $form['Person3']['title']; ?><br/><?php endif; ?>
+        
         Preferred meeting date and time: <?php echo $form['Date']['title']; ?>, <?php echo $form['Time']['title']; ?><br/>
         Alternative meeting date and time: <?php echo $form['AlternateDate']['title']; ?>, <?php echo $form['AlternateTime']['title']; ?><br/>
     </td>

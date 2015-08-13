@@ -12,8 +12,8 @@
     <div class="cocktail-reception-form">
     
     <div class="form-title-and-heading">
-    
-    <p><span>Champers and Ambers!</span>
+        <p class="makeanapointment">Champers and Ambers!</p><br/>
+    <p>
 You're invited to join our cocktail reception at the ANZ stand C44, Level 2B.<br>
 It's our shout!<br />
 <span class="topspacing"><strong>Tuesday 13 October, 2015</strong></span>
@@ -35,7 +35,7 @@ It's our shout!<br />
     </div>
     
     <div class="form-row">
-    <div class="left-col"><?php echo $this->Form->input('phone'); ?></div>
+    <div class="left-col"><?php echo $this->Form->input('phone',array('label'=>'Phone <i>(country code) number</i>')); ?></div>
     <div class="right-col"><?php echo $this->Form->input('city'); ?></div>
     </div>
     

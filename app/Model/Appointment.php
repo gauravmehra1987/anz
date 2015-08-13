@@ -5,7 +5,11 @@ App::uses('AppModel', 'Model');
  *
  * @property Country $Country
  * @property Team $Team
+ * @property Team2 $Team2
+ * @property Team3 $Team3
  * @property Person $Person
+ * @property Person2 $Person2
+ * @property Person3 $Person3
  * @property Topic $Topic
  * @property Date $Date
  * @property Time $Time
@@ -161,6 +165,20 @@ class Appointment extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+                'Team2' => array(
+			'className' => 'Team',
+			'foreignKey' => 'team2_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+                'Team3' => array(
+			'className' => 'Team',
+			'foreignKey' => 'team3_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'Person' => array(
 			'className' => 'Person',
 			'foreignKey' => 'person_id',
@@ -168,9 +186,37 @@ class Appointment extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+            'Person2' => array(
+			'className' => 'Person',
+			'foreignKey' => 'person2_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+            'Person3' => array(
+			'className' => 'Person',
+			'foreignKey' => 'person3_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'Topic' => array(
 			'className' => 'Topic',
 			'foreignKey' => 'topic_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+            'Topic2' => array(
+			'className' => 'Topic',
+			'foreignKey' => 'topic2_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+            'Topic3' => array(
+			'className' => 'Topic',
+			'foreignKey' => 'topic3_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

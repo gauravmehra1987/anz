@@ -16,7 +16,7 @@
     <div class="tabs-bar">
         <div id="t1" class="tab active"><p>Financial Institutions Group</p></div>
         <div id="t2" class="tab"><p>Global Transaction Banking</p></div>
-        <div id="t3" class="tab"><p>Global Technology, Services and Operations</p></div>
+        <div id="t3" class="tab"><p>Global Technology, Services &AMP; Operations</p></div>
         <div id="t4" class="tab lst"><p>Compliance</p></div>
     </div>
     
@@ -40,7 +40,7 @@
             <p><span>Head of Financial Institutions - China,</span> Banks & Diversified Financials </p>
 
              <h3>Bryan Stagg</h3>
-            <p><span>Executive Director - Financial Institutions,</span> Banks & Diversified Financials, Australia </p>
+            <p><span>Executive Director - Financial Institutions, Australia</span> Banks & Diversified Financials </p>
 
             <h3>Tina Tan </h3>
             <p><span>Executive Director - Financial Institutions Asia, </span> Banks & Diversified Financials </p>

@@ -110,20 +110,38 @@ b, strong {
 
  
 body.cocktail-reception-bg{ background:#0e3d57;}
- 
-header{ width:100%; float:left;}
-.header{ width:100%; height:47px; position:relative;}
-.header .left-blue-bar{ width:50%;height:56px; float:left; background:url(../img/header-left-grednt.jpg) repeat-x;}
-.header .right-blue-bar{ width:50%;height:56px;float:left; background:url(../img/header-right-grednt.jpg) repeat-x;}
- 
-.header-logo-bar{ width:100%; position:absolute; top:0; left:0;}
-.header-logo{ width:1000px; margin:0 auto;}
-.anz-logo{ float:left; width:187px;}
-.anz-logo-right-col{ width:813px; height:56px; float:left;background:url(../img/header-right-grednt.jpg) repeat-x;}
-.anz-logo-right-col p{font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-size: 21px;letter-spacing: 1px; color:#fff; font-weight: 600; line-height: 54px; margin-left:20px;}
+#header { position: relative; width: 100%; z-index: 1; background: #fff; overflow-x: hidden;}
+#header .container{ width: 100%; max-width: 980px; margin: 0 auto !important;}
+#header p { font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-size: 18px;letter-spacing: 1px; color:#fff; font-weight: 600; line-height: 48px; margin: 0; padding: 0;}
+#header { height: 48px; background:url(../img/bg-header.png) no-repeat center 0; z-index: 6;}
+#header .container { height: 48px; background: #0071a9 url(../img/bg-header.png) no-repeat right 0;}
+.logo a {
+  display: block;
+  width: 177px;
+  height: 48px;
+  text-indent: -9999px;
+  background: url(../img/logo-header.png) no-repeat -15px 0;
+}
+.padboth {
+    padding: 0 20px;
+}
+ul.nav, ul.nav li {
+  margin: 0;
+  display: block;
+  list-style-image: none;
+  width: auto;
+}
+ul.nav.hrz li {
+  float: left;
+}
+
+#header .container {
+    height: 48px;
+    background: url(../img/bg-header-inside.png) no-repeat 0 0;}
+
  
 .menu{ width:100%; float:left; height:61px; background: url(../img/bg-primary-nav2.png) no-repeat; background-position: center top; position: relative;}
-.navigation{ width:1000px; margin:0 auto;}
+.navigation{ width:980px; margin:0 auto;}
 .navigation ul{ margin:0; padding:0; list-style-type:none; margin-left:0px; background: url(../img/bg-primary-nav.png) no-repeat 240px top}
 .navigation ul li{ margin:0; padding:0 15px; display:inline; background: url(../img/bg-primary-nav-item.png) no-repeat center top; z-index: 0; height: 60px; float: left;}
 .navigation ul li:hover{ color:#004165; margin:0; background: url(../img/bg-primary-nav-item.png) no-repeat center bottom;}
@@ -150,7 +168,7 @@ header{ width:100%; float:left;}
 .main-banner-img.cocktail-bnr.makeanappointment{ height:332px; background:url(../img/make-an-appointment.jpg) no-repeat center center; background-size:cover;     background-position: 0px 76%;}
 .conversation{ width: 32%; margin:0 auto;}
 .conversation img{ width:100%; margin-top:80px;}
-.main-banner-img h1{ color:#fff; font-size:32px; letter-spacing:1px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-weight: 300; text-transform:uppercase;}
+.main-banner-img h1{ color:#fff; font-size:44px; letter-spacing:1px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-weight: 600; text-transform:uppercase;}
 .main-banner-img h1 span{ display: block;}
 .main-banner-img h1.cocktail-reception-heading{ margin-top:80px;}
  
@@ -195,7 +213,7 @@ span.error{color: red!important; font-size: 12px!important;font-family:'MyriadPr
     width: 100%;
     margin-top: 50px; margin-bottom:50px;        max-width: 650px;}
                
-.form-wrapper input[type="submit"],.form-wrapper input[type="button"]{ width: 130px;height: 40px; border:none; outline:none; background: url(../img/button-bg.png) no-repeat; background-size:contain; font-size: 14px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-weight:600; color:#fff; cursor:pointer;    margin-top: 30px;}
+.form-wrapper input[type="submit"],.form-wrapper input[type="button"]{ width: 110px; height: 40px; border:none; outline:none; background: url(../img/sb-bt.png) no-repeat; background-size:contain; font-size: 14px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; font-weight:600; color:#fff; cursor:pointer;    margin-top: 30px;}
                
 .form-row{ width:100%; float:left; margin-bottom:28px;}
  
@@ -337,11 +355,11 @@ img.fnone{float:none !important}
  
  
  
-footer{ width:100%; float:left; height:80px; background:#004067;     margin-top: 120px; font-family: Helvetica, Arial, sans-serif;}
-.footer-content{ width:1000px; margin:0 auto;     margin-top: 20px;}
+footer{ width:100%; float:left; height:110px; background:#004067;     margin-top: 120px; font-family: Helvetica, Arial, sans-serif;}
+.footer-content{ width:980px; margin:0 auto;  min-height: 55px; padding-top: 25px; margin-top: 5px;}
 .footer-links{ width:70%; float:left;}
 .footer-links p{ font-size: 12px;font-weight: normal;line-height: 15px;color: #fff;margin-top: 5px;font-family: Helvetica, Arial, sans-serif;}
-.footer-links ul{ margin:0; padding:0;}
+.footer-links ul{ margin:0; padding:0; height:27px;}
 .footer-links ul li{ border-right:1px solid #fff; margin:0; padding:0 10px; list-style-type:none; display:inline;}
 .footer-links ul li a{ font-size:12px; color:#fff; text-decoration:none; font-weight:bold;}
 .footer-links ul li.frst{ padding-left:0;}
@@ -350,8 +368,8 @@ footer{ width:100%; float:left; height:80px; background:#004067;     margin-top:
 .connect-with-us{ width:20%; float:right;}
 .connect-with-us p{ font-size:12px; font-weight: bold; font-family: Helvetica, Arial, sans-serif; color:#fff; text-align:right;}
  
-.social-icon{ width:62px; float:right; margin-top:2px;}
-.social-icon .left{ float:left;}
+.social-icon{ width:75px; float:right; margin-top:5px;}
+.social-icon .left{ float:left; margin: 0 0 0 5px;}
  
  
 .hamburgar-icon{ display:none;}
@@ -372,7 +390,7 @@ footer{ width:100%; float:left; height:80px; background:#004067;     margin-top:
 .home-title-and-heading{ float:left;     margin-top: 0;}
 .home-reception-form h1 span{ display: block;}
 .home-reception-form h3 span{ display: block;}
-.home-reception-form h3{ margin-top:0px; font-size: 16px;line-height: 24px; font-family:'MyriadPro-Regular',Helvetica,Arial,sans-serif; color:#464646; font-weight: 400;}
+.home-reception-form h3{ margin-top:0px; font-size: 18px;line-height: 22px; font-family:'MyriadPro-Regular',Helvetica,Arial,sans-serif; color:#464646; font-weight: 600;}
 .home-reception-form h1{font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-size: 32px;color: #414042;font-weight: 600;      line-height: 36px;}
 .home-reception-form p{     font-size: 14px;font-weight:normal; margin-top:25px; color:#414042;font-family: Helvetica,Arial,sans-serif;font-weight: 400;}
 .home-reception-form p span{ display: block;}
@@ -380,8 +398,8 @@ footer{ width:100%; float:left; height:80px; background:#004067;     margin-top:
  
  
  
-.makenappointment{     width: 155px;height: 48px; background:url(../img/button-bg.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:14px;font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-right:32px; margin-top:51px; cursor:pointer;}
-.cocktailreception{ width: 155px;height: 48px; background:url(../img/button-bg.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:14px; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-top:51px; cursor:pointer;}
+.makenappointment{     width: 155px;height: 40px; background:url(../img/hm-bt.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:14px;font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-right:32px; margin-top:51px; cursor:pointer;}
+.cocktailreception{ width: 155px;height: 40px; background:url(../img/hm-bt.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:14px; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-top:51px; cursor:pointer;}
  
  
 .form-wrapper{float: left;
@@ -431,7 +449,16 @@ margin-top: 50px; margin-bottom:50px;}
   
   @media all and (min-width: 200px) and (max-width: 675px) {
 	  
+	  #header p { font-size: 8px;}
+	 
+	  .padboth {
+    padding-left: 0;
+    padding-right: 0;
+}
 	  
+	  #header ul li.logo {
+    margin-left: 52px;
+}
 .menu{background-color:#FFF;}
 
                  
@@ -520,8 +547,8 @@ margin-top: 50px; margin-bottom:50px;}
 .hamburgar-icon{ display:block;    float: left;
     z-index: 999;
     position: absolute;
-    top: -25px;;
-    left: 4%; cursor:pointer;    width: 20px;}
+    top: -30px;;
+    left: 3%; cursor:pointer;    width: 20px;}
                
                 .header {
     height: 36px;
@@ -692,9 +719,9 @@ footer {
 }
  
 .makenappointment {
-    width: 152px;
-    height: 47px;
-    background: url(../img/button-bg.png) no-repeat;
+    width: 155px;
+    height: 40px;
+    background: url(../img/hm-bt.png) no-repeat;
     background-size: contain;
     font-size: 12px;
     margin-right: 10px;
@@ -702,9 +729,9 @@ footer {
 }
  
 .cocktailreception {
-    width: 152px;
-    height: 47px;
-    background: url(../img/button-bg.png) no-repeat;
+    width: 155px;
+    height: 40px;
+    background: url(../img/hm-bt.png) no-repeat;
     background-size: contain;
     font-size: 12px;
     margin-right: 10px;
@@ -1080,6 +1107,5 @@ button{ float:none; display:block;     margin: 1em auto;}
 
 }
 @media (max-width: 1000px) and (min-width: 640px){
-.menu{ background: url(../img/bg-primary-nav3.png) no-repeat; background-position: -1135px top;; position: relative;}	
-}
+.menu{ background: url(../img/bg-primary-nav3.png) no-repeat; background-position: -1135px top;; position: relative;}	}
 

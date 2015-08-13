@@ -64,10 +64,12 @@ class AppointmentsController extends AppController {
             $countries[''] = "Select Country";ksort($countries);
             $teams = $this->Appointment->Team->find('list');
             $teams[''] = "Select ANZ Team";ksort($teams);
-
-            $people[''] = "Select ANZ Delegate";ksort($people);
+            $team2s = $team3s = $teams;
+            
+            
             $topics = $this->Appointment->Topic->find('list');
             $topics[''] = "Select Topics to Discuss";ksort($topics);
+            $topic2s = $topic3s = $topics;
             $dates = $this->Appointment->Date->find('list');
             $dates[''] = "Select Date"; ksort($dates);
             $times = $this->Appointment->Time->find('list');
@@ -76,62 +78,9 @@ class AppointmentsController extends AppController {
             $alternateDates[''] = "Select Date"; ksort($alternateDates);
             $alternateTimes = $this->Appointment->AlternateTime->find('list');
             $alternateTimes[''] = "Select Time"; ksort($alternateTimes);
-            $this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
+            $this->set(compact('countries', 'teams','team2s','team3s', 'topics','topic2s','topic3s', 'dates', 'times', 'alternateDates', 'alternateTimes'));
 	}
 
-/**
- * edit method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function edit($id = null) {
-		if (!$this->Appointment->exists($id)) {
-			throw new NotFoundException(__('Invalid appointment'));
-		}
-		if ($this->request->is(array('post', 'put'))) {
-			if ($this->Appointment->save($this->request->data)) {
-				$this->Session->setFlash(__('The appointment has been saved.'));
-				return $this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The appointment could not be saved. Please, try again.'));
-			}
-		} else {
-			$options = array('conditions' => array('Appointment.' . $this->Appointment->primaryKey => $id));
-			$this->request->data = $this->Appointment->find('first', $options);
-		}
-		$countries = $this->Appointment->Country->find('list');
-		$teams = $this->Appointment->Team->find('list');
-		$people = $this->Appointment->Person->find('list');
-		$topics = $this->Appointment->Topic->find('list');
-		$dates = $this->Appointment->Date->find('list');
-		$times = $this->Appointment->Time->find('list');
-		$alternateDates = $this->Appointment->AlternateDate->find('list');
-		$alternateTimes = $this->Appointment->AlternateTime->find('list');
-		$this->set(compact('countries', 'teams', 'people', 'topics', 'dates', 'times', 'alternateDates', 'alternateTimes'));
-	}
-
-/**
- * delete method
- *
- * @throws NotFoundException
- * @param string $id
- * @return void
- */
-	public function delete($id = null) {
-		$this->Appointment->id = $id;
-		if (!$this->Appointment->exists()) {
-			throw new NotFoundException(__('Invalid appointment'));
-		}
-		$this->request->allowMethod('post', 'delete');
-		if ($this->Appointment->delete()) {
-			$this->Session->setFlash(__('The appointment has been deleted.'));
-		} else {
-			$this->Session->setFlash(__('The appointment could not be deleted. Please, try again.'));
-		}
-		return $this->redirect(array('action' => 'index'));
-	}
 
 /**
  * admin_index method
@@ -254,7 +203,7 @@ class AppointmentsController extends AppController {
         
         function _notifyAdmin($post) {
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
-            $this->Email->to = Configure::read('Config.admin_email');
+            $this->Email->to = Configure::read('Config.dev_email');
             $this->Email->subject = 'Appointment Request';
             $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
             $this->Email->template = 'appontment_admin'; 

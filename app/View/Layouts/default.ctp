@@ -27,20 +27,18 @@
 
 <body>
 
-<header>
-	<div class="header">
-    
-    <div class="header-logo-bar">
-    <div class="header-logo">
-    <div class="anz-logo"><a href="<?php echo $this->webroot; ?>"><img src="<?php echo $this->webroot; ?>img/anz-logo.jpg" alt="AZN" /></a></div>
-    <div class="anz-logo-right-col"><p>Conversations That Matter @ Sibos</p></div>
+<div id="header">
+    <header>
+      <div class="container">
+        <div class="row padboth">
+          <ul class="nav hrz">
+            <li class="logo"><a href="//stage/"></a></li>
+            <li class="title"><p>Conversations That Matter @ Sibos</p></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     </div>
-    </div>
-    <div class="left-blue-bar"></div>
-    
-    <div class="right-blue-bar"></div>
-    </div>
-</header>
 
 <div class="menu">
 	<div class="navigation">

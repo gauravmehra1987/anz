@@ -15,7 +15,11 @@ class AppointmentTest extends CakeTestCase {
 		'app.appointment',
 		'app.country',
 		'app.team',
+		'app.team2',
+		'app.team3',
 		'app.person',
+		'app.person2',
+		'app.person3',
 		'app.topic',
 		'app.date',
 		'app.time'

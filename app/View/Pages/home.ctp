@@ -21,7 +21,7 @@
 
         <div class="home-title-and-heading dsk">
 
-        <h3><span>Sibos 2015: 12 - 15 October</span> <span>Stand C44, Level B2</span> <span>The Sands Expo and Convention Centre,</span> Marina Bay Sands, Singapore</h3>
+        <h3><span>Sibos 2015: 12 - 15 October</span> <span>Stand C44, Level B2</span> <span>The Sands Expo and Convention Centre, Marina Bay Sands, Singapore</span></h3>
         <p>Meet ANZ representatives across relationship, compliance, trade and payment services, operations and technology, at Sibos 2015. We look forward to seeing you and discussing how we can help meet the needs of your business. </p>
         </div>
 
