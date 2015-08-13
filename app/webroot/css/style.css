@@ -1109,3 +1109,7 @@ button{ float:none; display:block;     margin: 1em auto;}
 @media (max-width: 1000px) and (min-width: 640px){
 .menu{ background: url(../img/bg-primary-nav3.png) no-repeat; background-position: -1135px top;; position: relative;}	}
 
+
+.ie8 .makenappointment{font-size:14px;}
+.ie8 .cocktailreception{font-size:14px;}
+

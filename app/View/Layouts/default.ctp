@@ -10,11 +10,14 @@
 <!-- About -->
 <link rel="icon" href="favicon.ico" type="image/x-icon" >
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" >
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="<?php echo $this->webroot; ?>css/ie8.css" />
+<![endif]-->
 <meta content="favicon.ico" itemprop="image">
 
 <?php echo $this->Html->charset(); ?>
 	<title><?php if(isset($title)) echo $title; else echo "ANZ"; ?></title>
-        <?php echo $this->Html->css('style'); ?>
+        <?php echo $this->Html->css(array('style')); ?>
         <?php echo $this->Html->script(array('jquery','jquery.dd','vendor/modernizr','vendor/html5')); ?>
        <?php
 		echo $this->Html->meta('icon');
