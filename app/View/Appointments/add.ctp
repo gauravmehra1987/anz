@@ -80,7 +80,7 @@
         </div>
         
     <div class='step_2'>
-    <div class="form-row topspacing">
+    <div class="form-row topnospacing">
     
     <h3 class="makeanapointment">We would like to meet with:</h3>
     
@@ -105,7 +105,8 @@
     </div>
         
     <div class="form-row topspacing2 mbl-width">
-        <div class="form-feild-box last over-width"><label class="makeanapointment">Other interested topics:</label><?php echo $this->Form->input('topic2_id',array('label'=>false)); ?></div>
+    <label class="makeanapointment">Other interested topics:</label>
+        <div class="form-feild-box last over-width"><?php echo $this->Form->input('topic2_id',array('label'=>false)); ?></div>
         
     </div>
     <div class="form-row topspacing2 mbl-width">

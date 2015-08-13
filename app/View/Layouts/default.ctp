@@ -32,7 +32,7 @@
       <div class="container">
         <div class="row padboth">
           <ul class="nav hrz">
-            <li class="logo"><a href="//stage/"></a></li>
+            <li class="logo"><a href="<?php echo $this->webroot; ?>"></a></li>
             <li class="title"><p>Conversations That Matter @ Sibos</p></li>
           </ul>
         </div>
