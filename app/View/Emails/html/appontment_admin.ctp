@@ -38,7 +38,7 @@
         <br/><br/>
         Discussion Topics:<?php echo $form['Topic']['title']; ?><br/><br/>
         
-        Other interested topics:
+        Other interested topics:<br/>
         <?php echo $form['Topic2']['title']; ?><br/>
         <?php echo $form['Topic3']['title']; ?><br/><br/>
         
