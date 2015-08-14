@@ -184,6 +184,7 @@ ul.nav.hrz li {
 .cocktail-reception-form p span.topspacing{ margin-top:15px;}
 .cocktail-reception-form p.makeanapointment{     font-size: 18px;font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif;font-weight: 600;line-height: 22px; color: #414042; }
 .form-row label.makeanapointment{ font-size:14px;font-family: Helvetica, Arial, sans-serif}
+.form-row label.makeanapointment i{font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #414042; font-style: italic;}
 .form-row h3.makeanapointment{ font-size:14px;font-family: Helvetica, Arial, sans-serif; }
  
 .form-row input[type="text"].makeanapointment{     width: 250px; height:27px;color:#414042; font-size:11px; }
