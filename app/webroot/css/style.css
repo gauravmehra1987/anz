@@ -1084,6 +1084,9 @@ button{ float:none; display:block;     margin: 1em auto;}
 .over-width{ width:440px;}
 .form-feild-box.over-width2{ width:340px;}
 
+@media (max-width: 825px) and (min-width: 676px){
+.form-feild-box.over-width2{ margin-top:20px;}
+}
 
 @media (max-width: 679px) and (min-width: 421px){
 .form-feild-box.over-width2 {

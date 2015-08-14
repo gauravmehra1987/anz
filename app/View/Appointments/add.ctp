@@ -17,7 +17,7 @@
     <?php echo $this->Form->create('Appointment',array('id'=>'appointment-form')); ?>
         <div class="step_1">
     <div class="form-row">
-    <div class="left-col makeanapointment-3"><?php echo $this->Form->input('first_name',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
+    <div class="left-col makeanapointment-3"><?php echo $this->Form->input('first_name',array('class'=>'makeanapointment  ie-bt','label'=>array('class'=>'makeanapointment'))); ?></div>
     <div class="right-col makeanapointment-3"><?php echo $this->Form->input('last_name',array('class'=>'makeanapointment','label'=>array('class'=>'makeanapointment'))); ?></div>
     </div>
     
