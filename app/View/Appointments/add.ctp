@@ -193,10 +193,15 @@
         
         $.validator.addMethod("prevPrevCheck", function(value, element) {
             var current = value.trim();
-            if(current!=''){            
-                var prev = $(element).parent().parent().prev().prev().find('input').val();
-                var str = prev.trim();
-                if(str=='') return false; else return true;
+            var state = true;
+            if(current!=''){
+                
+                var prev = $(element).parent().parent().prev().find('input').val();
+                var f1 = prev.trim();
+                
+                var prevPrev = $(element).parent().parent().prev().prev().find('input').val();
+                var f2 = prev.trim();
+                if(f1 == '' || f2 == '') return false; else return true;
             } return true;
         }, "Please fill the previous field");
         
