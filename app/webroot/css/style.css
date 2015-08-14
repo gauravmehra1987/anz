@@ -695,8 +695,8 @@ footer {
   @media all and (min-width: 200px) and (max-width: 420px) {
                   .main-banner-img.home-bnr {
     background: url(../img/anz-home-bg.jpg) no-repeat center center;
-    background-size: 151%;
-    background-position: 36% 0%;
+    background-size: 300%;
+    background-position: 51% 0%;
                 height: 403px;
 }
 .conversation img {
@@ -719,7 +719,7 @@ footer {
 }
  
 .makenappointment {
-    width: 155px;
+    width: 152px;
     height: 40px;
     background: url(../img/hm-bt.png) no-repeat;
     background-size: contain;
@@ -729,7 +729,7 @@ footer {
 }
  
 .cocktailreception {
-    width: 155px;
+    width: 152px;
     height: 40px;
     background: url(../img/hm-bt.png) no-repeat;
     background-size: contain;
