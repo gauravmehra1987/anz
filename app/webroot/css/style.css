@@ -220,6 +220,7 @@ span.error{color: red!important; font-size: 12px!important;font-family:'MyriadPr
 .form-row .right-col{     width: 302px; float:right;}
  
 .form-row label{ float:left; width:100%;     font-size: 14px; color:#414042; font-family: Helvetica, Arial, sans-serif; margin-bottom:8px;}
+.form-row label i{font-family: Helvetica, Arial, sans-serif; font-size: 11px; color: #414042; font-style: italic;}
 .form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"]{     width: 294px; height:32px; float:left; border:none; outline:none; background:#e7e8e9; color:#414042; font-size:14px; padding-left:8px; font-family:Helvetica, sans-serif; font-style:italic; }
 
  
