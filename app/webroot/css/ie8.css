@@ -1,2 +1,2 @@
-.makenappointment{ font-size:13px !important;}
-.cocktailreception{ font-size:13px !important;}
+#cocktail-reception-form input[type="text"], #cocktail-reception-form input[type="tel"], #cocktail-reception-form input[type="email"]{ 
+    padding-top: 2px;}

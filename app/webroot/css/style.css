@@ -396,8 +396,8 @@ footer{ width:100%; float:left; height:110px; background:#004067;     margin-top
  
  
  
-.makenappointment{     width: 155px;height: 40px; background:url(../img/hm-bt.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:14px;font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-right:32px; margin-top:51px; cursor:pointer;}
-.cocktailreception{ width: 155px;height: 40px; background:url(../img/hm-bt.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:14px; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-top:51px; cursor:pointer;}
+.makenappointment{     width: 155px;height: 40px; background:url(../img/hm-bt.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:13px;font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-right:32px; margin-top:51px; cursor:pointer;}
+.cocktailreception{ width: 155px;height: 40px; background:url(../img/hm-bt.png) no-repeat; background-size:contain; border:none; outline:none; color:#fff; font-size:13px; font-family:'MyriadPro-Regular', Helvetica, Arial, sans-serif; float:left; font-weight: 600; margin-top:51px; cursor:pointer;}
  
  
 .form-wrapper{float: left;
@@ -1021,10 +1021,11 @@ button{ float:none; display:block;     margin: 1em auto;}
 
 
 
-#cocktail-reception-form input[type="text"], #cocktail-reception-form input[type="tel"], #cocktail-reception-form input[type="email"]{    width: 250px !important;
+#cocktail-reception-form input[type="text"], #cocktail-reception-form input[type="tel"], #cocktail-reception-form input[type="email"]{ 
+	width: 250px !important;
     height: 27px !important;
     color: #414042 !important;
-    font-size: 14px !important; font-family:Helvetica, sans-serif;    font-style: italic;}
+    font-size: 14px !important; font-family:Helvetica, sans-serif;    font-style: italic;     vertical-align: middle;}
 	
 #cocktail-reception-form input[type="text"].bigtext{    width: 432px !important;padding-left: 8px;}
 
@@ -1106,8 +1107,3 @@ button{ float:none; display:block;     margin: 1em auto;}
 }
 @media (max-width: 1000px) and (min-width: 640px){
 .menu{ background: url(../img/bg-primary-nav3.png) no-repeat; background-position: -1135px top;; position: relative;}	}
-
-
-.ie8 .makenappointment{font-size:14px;}
-.ie8 .cocktailreception{font-size:14px;}
-
