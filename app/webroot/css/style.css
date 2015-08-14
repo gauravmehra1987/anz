@@ -154,12 +154,8 @@ ul.nav.hrz li {
  
  
 .wrapper{ width:100%; float:left; margin-top: -10px;}
-.wrapper.cocktail-reception{width:100%; float:left;    margin-top: -10px;}
- 
- 
- 
- 
- 
+.wrapper.cocktail-reception{width:100%; float:left; margin-top: -10px;}
+
 .main-banner-img{ width:100%; height:400px; float:left; background:#999;}
 .main-banner-img .main-bnnr-layout{ width:1000px; margin:0 auto;}
 .main-banner-img.home-bnr{ background:url(../img/anz-home-bg.jpg) no-repeat center center; background-size:cover;}

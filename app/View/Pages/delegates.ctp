@@ -46,7 +46,7 @@
             <p><span>Executive Director - Financial Institutions Asia, </span> Banks & Diversified Financials </p>
         
             <h3>Brenda Trenowden</h3>
-            <p class="last"><span>Head of Financial Institutions - Europe</span> Head of Banks and Diversified Financials - Europe & Americas</p>
+            <p class="last"><span>Head of Financial Institutions - Europe</span> Head of Banks &amp; Diversified Financials - Europe & Americas</p>
 
         </div>
         
@@ -63,7 +63,7 @@
             <p><span>Head of Financial Institutions - North Asia,</span>  Global Transaction Banking</p>
             
             <h3>Anne Collard </h3>
-            <p><span>Global Head, Digital and Channels,</span> Global Transaction Banking</p>
+            <p><span>Global Head, Digital &amp; Channels,</span> Global Transaction Banking</p>
 
             <h3>Andy Cunningham </h3>
             <p><span>Head of Clearing Sales – United Kingdom & Europe,</span>Global Transaction Banking </p>
@@ -97,7 +97,7 @@
             <p>Head of Payments Industry </p>
             
             <h3>Patrick Maes </h3>
-            <p>CTO – GM Global Technology, Service & Operations (GTSO) Strategy and Planning </p>
+            <p>CTO – GM Global Technology, Service & Operations (GTSO) Strategy &amp; Planning </p>
 
             <h3>Robert Marchiori</h3>
             <p>Head of Payment Transactions</p>
