@@ -223,13 +223,13 @@
                 'data[Appointment][initials]': {'required': true},
                 'data[Appointment][designation]': {required:true,minlength: 3,maxlength:50,noSpace:true},
                 
-                'data[Appointment][guest_1]': {noSpace:true,required: {depends: function() {if ($('#AppointmentDesignation1').val()){return true;}else{return false;}}}},
-                'data[Appointment][guest_2]': {noSpace:true,prevCheck:true,required: {depends: function() {if ($('#AppointmentDesignation2').val()){return true;}else{return false;}}}},
-                'data[Appointment][guest_3]': {noSpace:true,prevPrevCheck:true,required: {depends: function() {if ($('#AppointmentDesignation3').val()){return true;}else{return false;}}}},
+                'data[Appointment][guest_1]': {required: {depends: function() {if ($('#AppointmentDesignation1').val()){return true;}else{return false;}}}},
+                'data[Appointment][guest_2]': {prevCheck:true,required: {depends: function() {if ($('#AppointmentDesignation2').val()){return true;}else{return false;}}}},
+                'data[Appointment][guest_3]': {prevPrevCheck:true,required: {depends: function() {if ($('#AppointmentDesignation3').val()){return true;}else{return false;}}}},
 
-                'data[Appointment][designation_1]': {noSpace:true,required: {depends: function() {if ($('#AppointmentGuest1').val()){return true;}else{return false;}}}},
-                'data[Appointment][designation_2]': {noSpace:true,prevCheck:true,required: {depends: function() {if ($('#AppointmentGuest2').val()){return true;}else{return false;}}}},
-                'data[Appointment][designation_3]': {noSpace:true,prevPrevCheck:true,required: {depends: function() {if ($('#AppointmentGuest3').val()){return true;}else{return false;}}}},
+                'data[Appointment][designation_1]': {required: {depends: function() {if ($('#AppointmentGuest1').val()){return true;}else{return false;}}}},
+                'data[Appointment][designation_2]': {prevCheck:true,required: {depends: function() {if ($('#AppointmentGuest2').val()){return true;}else{return false;}}}},
+                'data[Appointment][designation_3]': {prevPrevCheck:true,required: {depends: function() {if ($('#AppointmentGuest3').val()){return true;}else{return false;}}}},
                 
                 'data[Appointment][person2_id]':{required: {
                         depends: function() {
