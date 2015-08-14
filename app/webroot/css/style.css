@@ -160,7 +160,7 @@ ul.nav.hrz li {
  
  
  
-.main-banner-img{ width:100%; height:637px; float:left; background:#999;}
+.main-banner-img{ width:100%; height:400px; float:left; background:#999;}
 .main-banner-img .main-bnnr-layout{ width:1000px; margin:0 auto;}
 .main-banner-img.home-bnr{ background:url(../img/anz-home-bg.jpg) no-repeat center center; background-size:cover;}
 .main-banner-img.cocktail-bnr{ height:332px; background:url(../img/cocktail-reception.jpg) no-repeat center center; background-size:cover;}
@@ -698,7 +698,7 @@ footer {
     background: url(../img/anz-home-bg.jpg) no-repeat center center;
     background-size: 300%;
     background-position: 51% 0%;
-                height: 403px;
+                height: 400px;
 }
 .conversation img {
         margin-top: 32%;
