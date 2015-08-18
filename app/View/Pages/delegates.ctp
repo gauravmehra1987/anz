@@ -31,7 +31,7 @@
             <p><span>Head of Banks, Financial Institutions SE Asia,</span> Banks & Diversified Financials </p>
             
             <h3>Simon Ireland </h3>
-            <p><span>Global Head of Financial Institutions</span> Global Head of Banks and Diversified Financials </p>
+            <p><span>Global Head of Financial Institutions</span> Global Head of Banks &amp; Diversified Financials </p>
 
             <h3>Glenn Phillips </h3>
             <p><span>Director, Financial Institutions Australia,</span> Banks & Diversified Financials </p>

@@ -76,9 +76,9 @@ It's our shout!<br />
             if(str=='') return false; else return true;
         }, "Space are not allowed");
         
-        $.validator.addMethod("alphanumeric", function(value, element) {
-            return this.optional(element) || /[0-9]|[0-9].*[a-z]/i.test(value);
-        }, "Phone must be alpha numeric.");
+         $.validator.addMethod("alphanumeric", function(value, element) {
+      return this.optional(element) || /^[0-9()+-]*$/i.test(value);
+ }, "Phone must be alpha numeric.");
         
         jQuery.validator.addMethod("xSpace", function(value, element) { 
             return value.indexOf(" ") < 0 && value != ""; 
