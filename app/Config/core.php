@@ -391,7 +391,7 @@ Configure::write('Routing.prefixes', array('admin'));
 Configure::write('Config.timezone', 'Europe/London');
 
 Configure::write('Config.admin_email', 'june.ong@anz.com');
-
+Configure::write('Config.cc_admin_email', 'norzabilah.basirun@anz.com');
 Configure::write('Config.qa_email', 'ashusri04@gmail.com');
 
 Configure::write('Config.test_email', 'edm4test@gmail.com');
