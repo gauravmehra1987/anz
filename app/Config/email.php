@@ -48,12 +48,12 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('site@localhost' => 'ANZ Sibos'),
-		'host' => 'sibos.anz.com',
+		'from' => array('bookings@sibos.asia' => 'ANZ Sibos'),
+		'host' => 'mail.sibos.asia',
 		'port' => 25,
 		'timeout' => 30,
-		'username' => 'info@sibos.anz.com',
-		'password' => 'ukFSJiPm2',
+		'username' => 'bookings@sibos.asia',
+		'password' => 'Bk28As64Bg7',
 		'client' => null,
 		'log' => false,
 		//'charset' => 'utf-8',
