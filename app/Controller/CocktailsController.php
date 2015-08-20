@@ -220,7 +220,7 @@ class CocktailsController extends AppController {
                 $subject = 'ANZ Sibos 2015 - cocktail reception';
             }
             $this->Email->subject = $subject;
-            $this->Email->from = "ANZ<info@irisapacdigital.com>";
+            $this->Email->from = "ANZ<bookings@sibos.asia>";
             $this->Email->template = 'cocktail'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $post);
@@ -235,7 +235,7 @@ class CocktailsController extends AppController {
             $this->Email->cc = Configure::read('Config.cc_admin_email');
             $this->Email->bcc = Configure::read('Config.qa_email');
             $this->Email->subject = 'Cocktail Reception Acceptance/Rejection';
-            $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
+            $this->Email->from = "ANZ Sibos Admin<bookings@sibos.asia>";
             $this->Email->template = 'cocktail_admin'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $cocktail);

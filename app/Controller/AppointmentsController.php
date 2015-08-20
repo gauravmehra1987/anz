@@ -194,7 +194,7 @@ class AppointmentsController extends AppController {
         function _sendAckMail($post) {
             $this->Email->to = $post['Appointment']['email'];
             $this->Email->subject = 'ANZ Sibos 2015';
-            $this->Email->from = "ANZ Sibos 2015 - meeting request confirmation <info@sibos.anz.com>";
+            $this->Email->from = "ANZ Sibos 2015 - meeting request confirmation <bookings@sibos.asia>";
             $this->Email->template = 'appontment'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $post);
@@ -209,7 +209,7 @@ class AppointmentsController extends AppController {
             $this->Email->cc = Configure::read('Config.cc_admin_email');
             $this->Email->bcc = Configure::read('Config.qa_email');
             $this->Email->subject = 'Appointment Request';
-            $this->Email->from = "ANZ Sibos Admin<info@sibos.anz.com>";
+            $this->Email->from = "ANZ Sibos Admin<bookings@sibos.asia>";
             $this->Email->template = 'appontment_admin'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $appointment);
