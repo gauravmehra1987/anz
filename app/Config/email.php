@@ -48,7 +48,7 @@ class EmailConfig {
 
 	public $smtp = array(
 		'transport' => 'Smtp',
-		'from' => array('bookings@sibos.asia' => 'ANZ Sibos'),
+		'from' => array('bookings@sibos.asia' => 'Sibos Bookings'),
 		'host' => 'mail.sibos.asia',
 		'port' => 25,
 		'timeout' => 30,
