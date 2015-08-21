@@ -35,7 +35,7 @@
         <?php if($form['Appointment']['guest_1']): ?><b>Representative 1:</b> <?php echo $form['Appointment']['guest_1']; ?> (<?php echo $form['Appointment']['designation_1']; ?>)<br/><?php endif; ?>
         <?php if($form['Appointment']['guest_2']): ?><b>Representative 2:</b> <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
         <?php if($form['Appointment']['guest_3']): ?><b>Representative 3:</b> <?php echo $form['Appointment']['guest_3']; ?> (<?php echo $form['Appointment']['designation_3']; ?>)<br/><?php endif; ?>
-        <br/><br/>
+        
         <b>Discussion Topics:</b> <?php echo $form['Topic']['title']; ?><br/><br/>
         
         <b>Other interested topics:</b><br/>
