@@ -203,7 +203,6 @@ class AppointmentsController extends AppController {
         
         function _notifyAdmin($post) {
             $appointment = $this->Appointment->findById($this->Appointment->getLastInsertID());
-
             $this->Email->config = 'smtp';
             $this->Email->to = Configure::read('Config.admin_email');
             $this->Email->cc = Configure::read('Config.cc_admin_email');
