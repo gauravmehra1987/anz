@@ -193,8 +193,8 @@ class AppointmentsController extends AppController {
         
         function _sendAckMail($post) {
             $this->Email->to = $post['Appointment']['email'];
-            $this->Email->subject = 'ANZ Sibos 2015';
-            $this->Email->from = "ANZ Sibos 2015 - meeting request confirmation <bookings@sibos.asia>";
+            $this->Email->subject = 'ANZ Sibos 2015 - Appointment Request';
+            $this->Email->from = "ANZ<bookings@sibos.asia>";
             $this->Email->template = 'appontment'; 
             $this->Email->sendAs = 'html'; 
             $this->set('form', $post);

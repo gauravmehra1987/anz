@@ -215,9 +215,9 @@ class CocktailsController extends AppController {
         function _sendAckMail($post){
             $this->Email->to = $post['Cocktail']['email'];
             if($post['Cocktail']['attending_cocktail']){
-                $subject = 'ANZ Sibos 2015 - cocktail reception acceptance';
+                $subject = 'ANZ Sibos 2015 - Cocktail Reception Acceptance';
             }else{
-                $subject = 'ANZ Sibos 2015 - cocktail reception';
+                $subject = 'ANZ Sibos 2015 - Cocktail Reception Rejection';
             }
             $this->Email->subject = $subject;
             $this->Email->from = "ANZ<bookings@sibos.asia>";

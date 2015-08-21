@@ -22,33 +22,33 @@
   </tr>
   <tr>
     <td align="left" valign="top" style="color:#414042; font-size:14px; font-family:Verdana, Geneva, sans-serif; padding-left:40px;">
-        First name: <?php echo $form['Appointment']['first_name']; ?><br/>
-        Last Name: <?php echo $form['Appointment']['last_name']; ?><br/>
-        Title: <?php echo $form['Appointment']['initials']; ?><br/>
-        E-mail: <?php echo $form['Appointment']['email']; ?><br/>
-        Phone: <?php echo $form['Appointment']['phone']; ?><br/>
-        City: <?php echo $form['Appointment']['city']; ?><br/>
-        Country: <?php echo $form['Country']['name']; ?><br/>
-        Bank name: <?php echo $form['Appointment']['bank_name']; ?><br/>
+        <b>First name:</b> <?php echo $form['Appointment']['first_name']; ?><br/>
+        <b>Last Name:</b> <?php echo $form['Appointment']['last_name']; ?><br/>
+        <b>Title:</b> <?php echo $form['Appointment']['initials']; ?><br/>
+        <b>E-mail:</b> <?php echo $form['Appointment']['email']; ?><br/>
+        <b>Phone: </b><?php echo $form['Appointment']['phone']; ?><br/>
+        <b>City:</b> <?php echo $form['Appointment']['city']; ?><br/>
+        <b>Country:</b> <?php echo $form['Country']['name']; ?><br/>
+        <b>Bank name:</b> <?php echo $form['Appointment']['bank_name']; ?><br/>
         <br/><br/>
-        Accompanied by: <br/>
+        <b>Accompanied by:</b> <br/>
         <?php if($form['Appointment']['guest_1']): ?>Representative 1: <?php echo $form['Appointment']['guest_1']; ?> (<?php echo $form['Appointment']['designation_1']; ?>)<br/><?php endif; ?>
         <?php if($form['Appointment']['guest_2']): ?>Representative 2: <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
         <?php if($form['Appointment']['guest_3']): ?>Representative 3: <?php echo $form['Appointment']['guest_3']; ?> (<?php echo $form['Appointment']['designation_3']; ?>)<br/><?php endif; ?>
         <br/><br/>
-        Discussion Topics:<?php echo $form['Topic']['title']; ?><br/><br/>
+        <b>Discussion Topics: <?php echo $form['Topic']['title']; ?><br/><br/>
         
-        Other interested topics:<br/>
+            <b>Other interested topics:</b><br/>
         <?php echo $form['Topic2']['title']; ?><br/>
         <?php echo $form['Topic3']['title']; ?><br/><br/>
         
-        We would like to meet with:<br/>
+        <b>We would like to meet with:</b><br/>
         <?php echo $form['Team']['title']; ?>, <?php echo $form['Person']['title']; ?><br/>
         <?php if($form['Team2']['title']): ?><?php echo $form['Team2']['title']; ?>, <?php echo $form['Person2']['title']; ?><br/><?php endif; ?>
         <?php if($form['Team3']['title']): ?><?php echo $form['Team3']['title']; ?>, <?php echo $form['Person3']['title']; ?><br/><?php endif; ?>
-        
-        Preferred meeting date and time: <?php echo $form['Date']['title']; ?>, <?php echo $form['Time']['title']; ?><br/>
-        Alternative meeting date and time: <?php echo $form['AlternateDate']['title']; ?>, <?php echo $form['AlternateTime']['title']; ?><br/>
+        <br/><br/>
+        <b>Preferred meeting date and time:</b> <?php echo $form['Date']['title']; ?>, <?php echo $form['Time']['title']; ?><br/>
+        <b>Alternative meeting date and time:</b> <?php echo $form['AlternateDate']['title']; ?>, <?php echo $form['AlternateTime']['title']; ?><br/>
     </td>
   </tr>
   <tr>

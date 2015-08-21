@@ -22,16 +22,17 @@
   </tr>
   <tr>
     <td align="left" valign="top" style="color:#414042; font-size:14px; font-family:Verdana, Geneva, sans-serif; padding-left:40px;">
-        First name: <?php echo $form['Cocktail']['first_name']; ?><br/>
-        Last Name: <?php echo $form['Cocktail']['last_name']; ?><br/>
-        Title: <?php echo $form['Cocktail']['initials']; ?><br/>
-        E-mail: <?php echo $form['Cocktail']['email']; ?><br/>
-        Phone: <?php echo $form['Cocktail']['phone']; ?><br/>
-        City: <?php echo $form['Cocktail']['city']; ?><br/>
-        Country: <?php echo $form['Country']['name']; ?><br/>
-        Company Name: <?php echo $form['Cocktail']['bank_name']; ?><br/>
-        Designation: <?php echo $form['Cocktail']['designation']; ?><br/>
-        Attending Cocktail: <?php echo ($form['Cocktail']['attending_cocktail'])?"Yes":"No"; ?><br/>
+        <b>First name:</b> <?php echo $form['Cocktail']['first_name']; ?><br/>
+        <b>Last Name:</b> <?php echo $form['Cocktail']['last_name']; ?><br/>
+        <b>Title:</b> <?php echo $form['Cocktail']['initials']; ?><br/>
+        <b>E-mail:</b> <?php echo $form['Cocktail']['email']; ?><br/>
+        <b>Phone:</b> <?php echo $form['Cocktail']['phone']; ?><br/>
+        <b>City:</b> <?php echo $form['Cocktail']['city']; ?><br/>
+        <b>Country:</b> <?php echo $form['Country']['name']; ?><br/>
+        <b>Company Name:</b> <?php echo $form['Cocktail']['bank_name']; ?><br/>
+        <b>Designation:</b> <?php echo $form['Cocktail']['designation']; ?><br/>
+        <b>Attending Cocktail:</b> <?php echo ($form['Cocktail']['attending_cocktail'])?"Yes":"No"; ?><br/>
+        <b>Dietary Restriction</b> <?php echo $form['Cocktail']['dietary_restrictions']; ?>
         <br/><br/>
        
     </td>
