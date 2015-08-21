@@ -80,7 +80,7 @@ class PagesController extends AppController {
         }
         
         public function pull(){
-            exec('git pull');
+            shell_exec('git pull');
             die();
         }
 }

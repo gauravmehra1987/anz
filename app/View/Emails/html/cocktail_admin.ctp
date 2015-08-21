@@ -26,7 +26,7 @@
         <b>Last Name:</b> <?php echo $form['Cocktail']['last_name']; ?><br/>
         <b>Title:</b> <?php echo $form['Cocktail']['initials']; ?><br/>
         <b>E-mail:</b> <?php echo $form['Cocktail']['email']; ?><br/>
-        <b>Phone:</b> <?php echo $form['Cocktail']['phone']; ?><br/>
+        <b>Phone:</b> <?php echo trim($form['Cocktail']['phone']); ?><br/>
         <b>City:</b> <?php echo $form['Cocktail']['city']; ?><br/>
         <b>Country:</b> <?php echo $form['Country']['name']; ?><br/>
         <b>Company Name:</b> <?php echo $form['Cocktail']['bank_name']; ?><br/>

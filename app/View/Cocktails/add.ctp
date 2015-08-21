@@ -84,6 +84,10 @@ It's our shout!<br />
             return value.indexOf(" ") < 0 && value != ""; 
         }, "Phone must be alpha numeric.");
         
+        jQuery.validator.addMethod("mSpace", function(value, element) { 
+            return value.indexOf("  ") < 0 && value != ""; 
+        }, "Phone must be alpha numeric.");
+        
         $.validator.addMethod("custom_email", function(value, element) {
             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
             return re.test(value);
@@ -96,7 +100,7 @@ It's our shout!<br />
             rules: {
                 'data[Cocktail][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Cocktail][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Cocktail][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 20,noSpace:true,alphanumeric:true},
+                'data[Cocktail][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 20,noSpace:true,alphanumeric:true,mSpace:true},
                 'data[Cocktail][city]': {'required': true,noSpace:true},
                 'data[Cocktail][bank_name]': {'required': true,noSpace:true},
                 'data[Cocktail][email]':{required: true,email: true,custom_email:true},

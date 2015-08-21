@@ -26,7 +26,7 @@
         <b>Last Name:</b> <?php echo $form['Appointment']['last_name']; ?><br/>
         <b>Title:</b> <?php echo $form['Appointment']['initials']; ?><br/>
         <b>E-mail:</b> <?php echo $form['Appointment']['email']; ?><br/>
-        <b>Phone: </b><?php echo $form['Appointment']['phone']; ?><br/>
+        <b>Phone: </b><?php echo trim($form['Appointment']['phone']); ?><br/>
         <b>City:</b> <?php echo $form['Appointment']['city']; ?><br/>
         <b>Country:</b> <?php echo $form['Country']['name']; ?><br/>
         <b>Bank name:</b> <?php echo $form['Appointment']['bank_name']; ?><br/>
