@@ -392,7 +392,7 @@ Configure::write('Config.timezone', 'Europe/London');
 
 Configure::write('Config.admin_email', array('sibos@iris-worldwide.com','june.ong@anz.com','norzabilah.basirun@anz.com'));
 
-Configure::write('Config.qa_email', 'gauravmehra1987@gmail.com');
+Configure::write('Config.qa_email', 'ashusri04@gmail.com');
 
 Configure::write('Config.test_email', 'edm4test@gmail.com');
 
