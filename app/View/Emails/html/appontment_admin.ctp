@@ -31,14 +31,14 @@
         <b>Country:</b> <?php echo $form['Country']['name']; ?><br/>
         <b>Bank name:</b> <?php echo $form['Appointment']['bank_name']; ?><br/>
         <br/><br/>
-        <b>Accompanied by:</b> <br/>
-        <?php if($form['Appointment']['guest_1']): ?>Representative 1: <?php echo $form['Appointment']['guest_1']; ?> (<?php echo $form['Appointment']['designation_1']; ?>)<br/><?php endif; ?>
-        <?php if($form['Appointment']['guest_2']): ?>Representative 2: <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
-        <?php if($form['Appointment']['guest_3']): ?>Representative 3: <?php echo $form['Appointment']['guest_3']; ?> (<?php echo $form['Appointment']['designation_3']; ?>)<br/><?php endif; ?>
+        Accompanied by: <br/>
+        <?php if($form['Appointment']['guest_1']): ?><b>Representative 1:</b> <?php echo $form['Appointment']['guest_1']; ?> (<?php echo $form['Appointment']['designation_1']; ?>)<br/><?php endif; ?>
+        <?php if($form['Appointment']['guest_2']): ?><b>Representative 2:</b> <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
+        <?php if($form['Appointment']['guest_3']): ?><b>Representative 3:</b> <?php echo $form['Appointment']['guest_3']; ?> (<?php echo $form['Appointment']['designation_3']; ?>)<br/><?php endif; ?>
         <br/><br/>
-        <b>Discussion Topics: <?php echo $form['Topic']['title']; ?><br/><br/>
+        <b>Discussion Topics:</b> <?php echo $form['Topic']['title']; ?><br/><br/>
         
-            <b>Other interested topics:</b><br/>
+        <b>Other interested topics:</b><br/>
         <?php echo $form['Topic2']['title']; ?><br/>
         <?php echo $form['Topic3']['title']; ?><br/><br/>
         
