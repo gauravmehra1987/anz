@@ -159,8 +159,8 @@
             }
         });  
         
-         $.validator.addMethod("alphanumeric", function(value, element) {
-      return this.optional(element) || /^[0-9()+- ]*$/i.test(value);
+$.validator.addMethod("alphanumeric", function(value, element) {
+      return this.optional(element) || /^[ 0-9()+-]*$/i.test(value);
  }, "Phone must be alpha numeric.");
         
         jQuery.validator.addMethod("xSpace", function(value, element) { 
@@ -213,7 +213,7 @@
             rules: {
                 'data[Appointment][first_name]': {required: true,minlength: 3,noSpace:true},
                 'data[Appointment][last_name]': {required: true,minlength: 3,noSpace:true},
-                'data[Appointment][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 20,noSpace:true,alphanumeric:true,xSpace:true},
+                'data[Appointment][phone]': {'digits': false,'required': true,'minlength': 8,'maxlength': 20,noSpace:true,alphanumeric:true},
                 'data[Appointment][city]': {'required': true,noSpace:true},
                 'data[Appointment][bank_name]': {'required': true,noSpace:true},
                 'data[Appointment][email]':{required: true,email: true,custom_email:true},
