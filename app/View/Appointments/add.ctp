@@ -160,7 +160,7 @@
         });  
         
          $.validator.addMethod("alphanumeric", function(value, element) {
-      return this.optional(element) || /^[0-9()+-]*$/i.test(value);
+      return this.optional(element) || /^[0-9()+- ]*$/i.test(value);
  }, "Phone must be alpha numeric.");
         
         jQuery.validator.addMethod("xSpace", function(value, element) { 
