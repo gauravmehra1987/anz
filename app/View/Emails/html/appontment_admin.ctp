@@ -30,7 +30,7 @@
         <b>City:</b> <?php echo $form['Appointment']['city']; ?><br/>
         <b>Country:</b> <?php echo $form['Country']['name']; ?><br/>
         <b>Bank name:</b> <?php echo $form['Appointment']['bank_name']; ?><br/>
-        <br/><br/>
+        <br/>
         Accompanied by: <br/>
         <?php if($form['Appointment']['guest_1']): ?><b>Representative 1:</b> <?php echo $form['Appointment']['guest_1']; ?> (<?php echo $form['Appointment']['designation_1']; ?>)<br/><?php endif; ?>
         <?php if($form['Appointment']['guest_2']): ?><b>Representative 2:</b> <?php echo $form['Appointment']['guest_2']; ?> (<?php echo $form['Appointment']['designation_2']; ?>)<br/><?php endif; ?>
@@ -46,7 +46,7 @@
         <?php echo $form['Team']['title']; ?>, <?php echo $form['Person']['title']; ?><br/>
         <?php if($form['Team2']['title']): ?><?php echo $form['Team2']['title']; ?>, <?php echo $form['Person2']['title']; ?><br/><?php endif; ?>
         <?php if($form['Team3']['title']): ?><?php echo $form['Team3']['title']; ?>, <?php echo $form['Person3']['title']; ?><br/><?php endif; ?>
-        <br/><br/>
+        <br/>
         <b>Preferred meeting date and time:</b> <?php echo $form['Date']['title']; ?>, <?php echo $form['Time']['title']; ?><br/>
         <b>Alternative meeting date and time:</b> <?php echo $form['AlternateDate']['title']; ?>, <?php echo $form['AlternateTime']['title']; ?><br/>
     </td>
