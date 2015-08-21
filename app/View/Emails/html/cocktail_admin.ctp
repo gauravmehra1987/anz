@@ -32,7 +32,7 @@
         <b>Company Name:</b> <?php echo $form['Cocktail']['bank_name']; ?><br/>
         <b>Designation:</b> <?php echo $form['Cocktail']['designation']; ?><br/>
         <b>Attending Cocktail:</b> <?php echo ($form['Cocktail']['attending_cocktail'])?"Yes":"No"; ?><br/>
-        <b>Dietary Restriction:</b> <?php echo $form['Cocktail']['dietary_restrictions']; ?>
+        <b>Dietary Restrictions:</b> <?php echo $form['Cocktail']['dietary_restrictions']; ?>
         <br/><br/>
        
     </td>
