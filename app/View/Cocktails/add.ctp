@@ -91,7 +91,7 @@ It's our shout!<br />
         $.validator.addMethod("custom_email", function(value, element) {
             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
             return re.test(value);
-        }, "Please enter a valid email address");
+        }, "Please enter a valid email address.");
         
         $("#cocktail-form").validate({
             errorClass: "error",
@@ -111,12 +111,12 @@ It's our shout!<br />
                 
             },
             messages: {
-                'data[Cocktail][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
+                'data[Cocktail][first_name]': {required: "Please enter your first name.",minlength: "Full name must be more than 2 characters."},
                 'data[Cocktail][last_name]':"Please enter your last name.",
-                'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 20 characters allowed!"},
-                'data[Cocktail][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
-                'data[Cocktail][bank_name]': {'required':"Please enter your company name"},
-                'data[Cocktail][city]':{required: "Please enter your city"},
+                'data[Cocktail][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed.",maxlength:"Maximim 20 characters allowed."},
+                'data[Cocktail][email]': {required:"Please enter your email address.",email:"Please enter a valid email address."},
+                'data[Cocktail][bank_name]': {'required':"Please enter your company name."},
+                'data[Cocktail][city]':{required: "Please enter your city."},
                 'data[Cocktail][designation]': {required:"Please enter your designation.",minlength: "Designation must be more than 2 characters.",maxlength:"Designation must not exceed 50 characters."}
             },
             submitHandler: function(form) {
@@ -124,9 +124,9 @@ It's our shout!<br />
             }, highlight:function(element, errorClass, validClass) {
                  
                 if ($(element).attr('name') == "data[Cocktail][country_id]" ){
-                  $('#countryid').remove(); $('#CocktailCountryId_msdd').append("<span id='countryid' class='c-error error'>Please Select Country.</span>")
+                  $('#countryid').remove(); $('#CocktailCountryId_msdd').append("<span id='countryid' class='c-error error'>Please select country.</span>")
                 }if ($(element).attr('name') == "data[Cocktail][initials]" ){
-                  $('#init').remove(); $('#CocktailInitials_msdd').append("<span id='init' class='c-error error'>Please Select Title.</span>")
+                  $('#init').remove(); $('#CocktailInitials_msdd').append("<span id='init' class='c-error error'>Please select title.</span>")
                 }if ($(element).attr('name') == "data[Cocktail][attending_cocktail]" ){
                   $('#attend').remove(); $('#CocktailAttendingCocktail_msdd').append("<span id='attend' class='c-error error'>Please select yes/no.</span>")
                 }

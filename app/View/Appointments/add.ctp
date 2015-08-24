@@ -179,7 +179,7 @@ $.validator.addMethod("alphanumeric", function(value, element) {
         $.validator.addMethod("noSpace", function(value, element) {
             var str = value.trim();
             if(str=='') return false; else return true;
-        }, "Invalid Input");
+        }, "Invalid Input.");
         
         $.validator.addMethod("custom_email", function(value, element) {
             var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
@@ -193,7 +193,7 @@ $.validator.addMethod("alphanumeric", function(value, element) {
                 var str = prev.trim();
                 if(str=='') return false; else return true;
             } return true;
-        }, "Please fill the previous field");
+        }, "Please fill the previous field.");
         
         $.validator.addMethod("prevPrevCheck", function(value, element) {
             var current = value.trim();
@@ -207,7 +207,7 @@ $.validator.addMethod("alphanumeric", function(value, element) {
                 var f2 = prev.trim();
                 if(f1 == '' || f2 == '') return false; else return true;
             } return true;
-        }, "Please fill the previous field");
+        }, "Please fill the previous field.");
         
         $("#appointment-form").validate({
             ignore: ":hidden",
@@ -256,19 +256,19 @@ $.validator.addMethod("alphanumeric", function(value, element) {
                 
             },
             messages: {
-                'data[Appointment][first_name]': {required: "Please Provide your first name",minlength: "Full name must be more than 2 characters."},
+                'data[Appointment][first_name]': {required: "Please enter your first name.",minlength: "Full name must be more than 2 characters."},
                 'data[Appointment][last_name]':"Please enter your last name.",
-                'data[Appointment][phone]': {required:"Please enter your phone number",minlength:"Minimum 8 characters are needed!",maxlength:"Maximim 20 characters allowed!"},
-                'data[Appointment][email]': {required:"Please enter your email address",email:"Please enter a valid email address"},
-                'data[Appointment][bank_name]': {'required':"Please enter your company name"},
-                'data[Appointment][city]':{required: "Please enter your city"},
-                'data[Appointment][date_id]': {'required': "Please Select Date."},
-                'data[Appointment][time_id]': {'required': "Please Select Time."},
-                'data[Appointment][alternate_date]': {'required': "Please Select Date."},
-                'data[Appointment][alternate_time]': {'required': "Please Select Time."},
-                'data[Appointment][team_id]': {'required': "Please Select Time."},
-                'data[Appointment][topic_id]': {'required': "Please Select Date."},
-                'data[Appointment][person_id]': {'required': "Please Select Time."},
+                'data[Appointment][phone]': {required:"Please enter your phone number.",minlength:"Minimum 8 characters are needed.",maxlength:"Maximim 20 characters allowed."},
+                'data[Appointment][email]': {required:"Please enter your email address.",email:"Please enter a valid email address."},
+                'data[Appointment][bank_name]': {'required':"Please enter your company name."},
+                'data[Appointment][city]':{required: "Please enter your city."},
+                'data[Appointment][date_id]': {'required': "Please select date."},
+                'data[Appointment][time_id]': {'required': "Please select time."},
+                'data[Appointment][alternate_date]': {'required': "Please select date."},
+                'data[Appointment][alternate_time]': {'required': "Please select time."},
+                'data[Appointment][team_id]': {'required': "Please select time."},
+                'data[Appointment][topic_id]': {'required': "Please select date."},
+                'data[Appointment][person_id]': {'required': "Please select time."},
                 'data[Appointment][designation]': {required:"Please enter your designation.",minlength: "Designation must be more than 2 characters.",maxlength:"Designation must not exceed 50 characters."},
                 'data[Appointment][designation_1]': {required:'Please enter designation also.'},
                 'data[Appointment][designation_2]': {required:'Please enter designation also.'},
@@ -280,27 +280,27 @@ $.validator.addMethod("alphanumeric", function(value, element) {
             highlight:function(element, errorClass, validClass) {
                 
                 if ($(element).attr('name') == "data[Appointment][date_id]" ){
-                  $('#dateid').remove(); $('#AppointmentDateId_msdd').append("<span id='dateid' class='error'>Please Select Date</span>")
+                  $('#dateid').remove(); $('#AppointmentDateId_msdd').append("<span id='dateid' class='error'>Please select date.</span>")
                 }if ($(element).attr('name') == "data[Appointment][time_id]" ){
-                  $('#timeid').remove(); $('#AppointmentTimeId_msdd').append("<span id='timeid' class='c-error error'>Please Select Time</span>")
+                  $('#timeid').remove(); $('#AppointmentTimeId_msdd').append("<span id='timeid' class='c-error error'>Please select time.</span>")
                 }if ($(element).attr('name') == "data[Appointment][alternate_date]" ){
-                  $('#ald').remove(); $('#AppointmentAlternateDate_msdd').append("<span id='ald' class='c-error error'>Please Select Date</span>")
+                  $('#ald').remove(); $('#AppointmentAlternateDate_msdd').append("<span id='ald' class='c-error error'>Please select date.</span>")
                 }if ($(element).attr('name') == "data[Appointment][alternate_time]" ){
-                  $('#alt').remove(); $('#AppointmentAlternateTime_msdd').append("<span id='alt' class='c-error error'>Please Select Time</span>")
+                  $('#alt').remove(); $('#AppointmentAlternateTime_msdd').append("<span id='alt' class='c-error error'>Please select time.</span>")
                 }if ($(element).attr('name') == "data[Appointment][team_id]" ){
-                  $('#teamid').remove(); $('#AppointmentTeamId_msdd').append("<span id='teamid' class='c-error error'>Please Select ANZ Team.</span>")
+                  $('#teamid').remove(); $('#AppointmentTeamId_msdd').append("<span id='teamid' class='c-error error'>Please select ANZ team.</span>")
                 }if ($(element).attr('name') == "data[Appointment][person_id]" ){
-                  $('#personid').remove(); $('#AppointmentPersonId_msdd').append("<span id='personid' class='c-error error'>Please Select ANZ Delegate.</span>")
+                  $('#personid').remove(); $('#AppointmentPersonId_msdd').append("<span id='personid' class='c-error error'>Please select ANZ delegate.</span>")
                 }if ($(element).attr('name') == "data[Appointment][topic_id]" ){
-                  $('#topicid').remove(); $('#AppointmentTopicId_msdd').append("<span id='topicid' class='c-error error'>Please Select Topic.</span>")
+                  $('#topicid').remove(); $('#AppointmentTopicId_msdd').append("<span id='topicid' class='c-error error'>Please select topic.</span>")
                 }if ($(element).attr('name') == "data[Appointment][country_id]" ){
-                  $('#countryid').remove(); $('#AppointmentCountryId_msdd').append("<span id='countryid' class='c-error error'>Please Select Country.</span>")
+                  $('#countryid').remove(); $('#AppointmentCountryId_msdd').append("<span id='countryid' class='c-error error'>Please select country.</span>")
                 }if ($(element).attr('name') == "data[Appointment][initials]" ){
-                  $('#init').remove(); $('#AppointmentInitials_msdd').append("<span id='init' class='c-error error'>Please Select Title.</span>")
+                  $('#init').remove(); $('#AppointmentInitials_msdd').append("<span id='init' class='c-error error'>Please select title.</span>")
                 }if ($(element).attr('name') == "data[Appointment][person2_id]" ){
-                  $('#p2').remove(); $('#AppointmentPerson2Id_msdd').append("<span id='p2' class='c-error error'>Please Select ANZ Delegate.</span>")
+                  $('#p2').remove(); $('#AppointmentPerson2Id_msdd').append("<span id='p2' class='c-error error'>Please select ANZ delegate.</span>")
                 }if ($(element).attr('name') == "data[Appointment][person3_id]" ){
-                  $('#p3').remove(); $('#AppointmentPerson3Id_msdd').append("<span id='p3' class='c-error error'>Please Select ANZ Delegate.</span>")
+                  $('#p3').remove(); $('#AppointmentPerson3Id_msdd').append("<span id='p3' class='c-error error'>Please select ANZ delegate.</span>")
                 }
             },
             unhighlight: function(element, errorClass, validClass) {
