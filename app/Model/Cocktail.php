@@ -41,7 +41,7 @@ class Cocktail extends AppModel {
 				'required' => true
 			),
                         'between' => array(
-                            'rule' => array('lengthBetween', 3, 20),
+                            'rule' => array('lengthBetween', 3, 255),
                             'message' => 'Between 3 to 20 characters only'
                         )
 		),
@@ -53,7 +53,7 @@ class Cocktail extends AppModel {
 				'required' => true
 			),
                         'between' => array(
-                            'rule' => array('lengthBetween', 3, 20),
+                            'rule' => array('lengthBetween', 3, 255),
                             'message' => 'Between 3 to 20 characters only'
                         )
 		),

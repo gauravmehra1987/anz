@@ -20,11 +20,11 @@
         <?php echo $this->Html->css(array('style')); ?>
         <?php echo $this->Html->script(array('jquery','jquery.dd','vendor/modernizr','vendor/html5')); ?>
        <?php
-		echo $this->Html->meta('icon');
-		echo $this->Html->css('style');
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
+            echo $this->Html->meta('icon');
+            echo $this->Html->css('style');
+            echo $this->fetch('meta');
+            echo $this->fetch('css');
+            echo $this->fetch('script');
 	?>
 </head>
 
