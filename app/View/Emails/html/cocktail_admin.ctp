@@ -3,7 +3,7 @@
     <td align="center" valign="top">
     <table width="600" border="0" cellspacing="0" cellpadding="0">
   <tr>
-    <td align="center" valign="top">
+    <td align="center" valign="top" style="border:1px solid #cccccc;">
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td align="center" valign="top"><img src="http://irisapacdigital.com/stage.anz/img/mail/anz-main-image.jpg" width="600" height="373" alt="Conversations that matter" border="0" style="display:block;"/></td>
