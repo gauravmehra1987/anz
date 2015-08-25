@@ -206,7 +206,7 @@ class AppointmentsController extends AppController {
             $this->Email->config = 'smtp';
             $this->Email->to = Configure::read('Config.admin_email');
 //            $this->Email->cc = Configure::read('Config.cc_admin_email');
-            $this->Email->bcc = Configure::read('Config.qa_email');
+//            $this->Email->bcc = Configure::read('Config.qa_email');
             $this->Email->subject = 'Appointment Request';
             $this->Email->from = "Sibos Bookings<bookings@sibos.asia>";
             $this->Email->template = 'appontment_admin'; 
