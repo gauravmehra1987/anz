@@ -78,6 +78,14 @@ class PagesController extends AppController {
         public function delegates(){
             $this->set('title','Delegates');
         }
+		
+		public function aseen(){
+            $this->set('title','Capturing aseen oportunity');
+        }
+		
+		public function speakers(){
+            $this->set('title','ANZ Speakers');
+        }
         
         public function pull(){
             shell_exec('git pull');

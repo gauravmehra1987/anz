@@ -45,7 +45,7 @@ It's our shout!<br />
     </div>
         
     <div class="form-row">
-    <div class="left-col"><?php echo $this->Form->input('designation',array('required'=>'required')); ?></div>
+    <div class="left-col"><?php echo $this->Form->input('designation',array('required'=>'required', 'label'=>'Job Title')); ?></div>
     </div>
     
     <div class="form-row topspacing">

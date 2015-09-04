@@ -42,6 +42,9 @@
              <h3>Bryan Stagg</h3>
             <p><span>Executive Director - Financial Institutions, Australia</span> Banks & Diversified Financials </p>
 
+            <h3>Raffaele Tafuro </h3>
+            <p><span>Executive Director, Financial Institutions Europe, </span> Banks & Diversified Financials </p>
+
             <h3>Tina Tan </h3>
             <p><span>Executive Director - Financial Institutions Asia, </span> Banks & Diversified Financials </p>
         
@@ -53,8 +56,8 @@
         <div class="tc t2">
             <h1>Global Transaction Banking:</h1>
             
-            <h3>Brian Barry </h3>
-            <p><span>Head of Global Clearing Product,</span> Global Transaction Banking </p>
+            <!-- <h3>Brian Barry </h3>
+            <p><span>Head of Global Clearing Product,</span> Global Transaction Banking </p> -->
            
             <h3>John Campbell </h3>
             <p><span>Global Head, Sales Management,</span> Global Transaction Banking</p>

@@ -36,7 +36,7 @@
     <div class="right-col makeanapointment-3"><?php echo $this->Form->input('bank_name',array('label'=>array('class'=>'makeanapointment','text'=>'Company Name'))); ?></div>
     </div>
     <div class="form-row">
-    <div class="left-col makeanapointment"><?php echo $this->Form->input('designation',array('required'=>'required')); ?></div>
+    <div class="left-col makeanapointment"><?php echo $this->Form->input('designation',array('required'=>'required', 'label'=>'Job Title')); ?></div>
     </div>
     
     <div class="form-row">
