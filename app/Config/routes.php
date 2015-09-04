@@ -31,7 +31,7 @@
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
         Router::connect('/pull', array('controller' => 'pages', 'action' => 'pull'));
         Router::connect('/make-an-appointment', array('controller' => 'Appointments', 'action' => 'add'));
-		Router::connect('/capturing-aseen-oportunity', array('controller' => 'Pages', 'action' => 'aseen'));
+		Router::connect('/capturing-asean-opportunity', array('controller' => 'Pages', 'action' => 'aseen'));
 		Router::connect('/anz-speakers', array('controller' => 'Pages', 'action' => 'speakers'));
         Router::connect('/make-an-appointment/thanks', array('controller' => 'Appointments', 'action' => 'success'));
         Router::connect('/cocktail-reception', array('controller' => 'Cocktails', 'action' => 'add'));
