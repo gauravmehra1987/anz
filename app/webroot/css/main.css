@@ -3,7 +3,7 @@
   background: url(../img/aseen-banner.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 390px;
+  height: 400px;
 }
 .banner-wrap h1 {
   font: 50px/45px 'MyriadPro-Regular';
@@ -127,7 +127,7 @@
   background: url(../img/speakers-banner.jpg) no-repeat center center;
   background-size: cover;
   width: 100%;
-  height: 390px;
+  height: 400px;
 }
 .speakers-wrap h1 {
   font: 50px/45px 'MyriadPro-Regular';
@@ -250,7 +250,7 @@ ul.speakers li.profile {
     margin-top: 25px;
   }
   .twitter-feed .content_twitter {
-    height: 750px;
+    height: 800px;
   }
   .twitter-feed .mCSB_scrollTools .mCSB_draggerContainer {
     display: none;
@@ -276,165 +276,165 @@ ul.speakers li.profile {
   }
 }
 @media only screen and (max-width: 767px) {
-.banner-wrap h1 {
-  font-size: 35px;
-  line-height: 32px;
-}
-.container-area {
-  padding: 0 48px;
-}
-.content-area {
-  margin-top: 43px;
-}
-.content-area h2 {
-  font-size: 16px;
-  line-height: 20px;
-}
-.content-area p {
-  font-size: 12px;
-  line-height: 14px;
-  margin-top: 20px;
-}
-.twitter-feed .content_twitter {
-  height: 850px;
-}
-.info-graphics {
-  margin-top: 50px;
-}
-.speakers-block {
-  margin-top: 45px;
-}
-.speakers-wrap h1 {
-  font-size: 35px;
-  line-height: 32px;
-}
-.speakers-right {
-  padding-left: 10px;
-  margin-top: 20px;
-}
-.speakers-left, .speakers-right {
-  width: auto;
-}
-.speakers-left small.name {
-  font-size: 14px;
-}
-.speakers-left small.designation {
-  font-size: 12px;
-}
-.speakers-left p {
-  font-size: 14px;
-}
-.speakers-right span.topic {
-  font-size: 12px;
-}
-.speakers-right h4 {
-  font-size: 14px;
-  line-height: 17px;
-}
-.speakers-right small {
-  font-size: 12px;
-}
-.top-gap {
-  padding-top: 10px;
-}
-/* home style */
-.content-wrap .col-left h2 {
-  font-size: 18px;
-  line-height: 20px;
-}
-.twitter-heading {
-  margin-top: 50px;
-}
-.twitter-heading h2 {
-  font-size: 16px;
-  line-height: 25px;
-  padding-top: 38px;
-}
+  .banner-wrap h1 {
+    font-size: 35px;
+    line-height: 32px;
+  }
+  .container-area {
+    padding: 0 48px;
+  }
+  .content-area {
+    margin-top: 43px;
+  }
+  .content-area h2 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .content-area p {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 20px;
+  }
+  .twitter-feed .content_twitter {
+    height: 900px;
+  }
+  .info-graphics {
+    margin-top: 50px;
+  }
+  .speakers-block {
+    margin-top: 45px;
+  }
+  .speakers-wrap h1 {
+    font-size: 35px;
+    line-height: 32px;
+  }
+  .speakers-right {
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .speakers-left, .speakers-right {
+    width: auto;
+  }
+  .speakers-left small.name {
+    font-size: 14px;
+  }
+  .speakers-left small.designation {
+    font-size: 12px;
+  }
+  .speakers-left p {
+    font-size: 14px;
+  }
+  .speakers-right span.topic {
+    font-size: 12px;
+  }
+  .speakers-right h4 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .speakers-right small {
+    font-size: 12px;
+  }
+  .top-gap {
+    padding-top: 10px;
+  }
+  /* home style */
+  .content-wrap .col-left h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .twitter-heading {
+    margin-top: 50px;
+  }
+  .twitter-heading h2 {
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 38px;
+  }
 }
 @media only screen and (max-width: 640px) {
-ul.speakers li.profile {
-  width: 65%;
-}
-.speakers-left, .speakers-right {
-  width: 100%;
-}
-.speakers-left {
-  padding-right: 0;
-}
-.speakers-right {
-  padding-left: 10px;
-  margin-top: 20px;
-}
-.speakers-block {
-  margin-top: 35px;
-}
-.top-gap {
-  padding-top: 5px;
-}
-.twitter-feed .content_twitter {
-  height: 950px;
-}
+  ul.speakers li.profile {
+    width: 65%;
+  }
+  .speakers-left, .speakers-right {
+    width: 100%;
+  }
+  .speakers-left {
+    padding-right: 0;
+  }
+  .speakers-right {
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .speakers-block {
+    margin-top: 35px;
+  }
+  .top-gap {
+    padding-top: 5px;
+  }
+  .twitter-feed .content_twitter {
+    height: 1000px;
+  }
 }
 @media only screen and (max-width: 480px) {
-.banner-wrap {
-  height: 354px;
-}
-.banner-wrap h1 {
-  font-size: 25px;
-  line-height: 32px;
-  padding-left: 42px;
-}
-.container-area {
-  padding: 0 42px;
-}
-.content-area {
-  margin-top: 34px;
-}
-.content-area h2 {
-  font-size: 14px;
-  line-height: 16px;
-}
-.content-area p {
-  font-size: 12px;
-}
-.speakers-wrap {
-  height: 348px;
-}
-.speakers-wrap h1 {
-  font-size: 25px;
-  line-height: 32px;
-  padding-left: 42px;
-}
-/* home style */
-.main-banner-img.home-bnr {
-  height: 325px !important;
-}
-.content-wrap .col-left {
-  margin-top: 35px;
-}
-.content-wrap .col-left h2 {
-  font-size: 18px;
-  line-height: 20px;
-}
-.twitter-heading {
-  margin-top: 37px;
-}
-.twitter-heading h2 {
-  padding-top: 32px;
-}
-ul.speakers li.profile {
-  width: auto;
-  margin-top: 10px;
-}
-.speakers-left {
-  padding: 0;
-}
-.speakers-right {
-  padding-left: 0;
-}
-.twitter-feed .content_twitter {
-  height: 1330px;
-}
+  .banner-wrap {
+    height: 354px;
+  }
+  .banner-wrap h1 {
+    font-size: 25px;
+    line-height: 32px;
+    padding-left: 42px;
+  }
+  .container-area {
+    padding: 0 42px;
+  }
+  .content-area {
+    margin-top: 34px;
+  }
+  .content-area h2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .content-area p {
+    font-size: 12px;
+  }
+  .speakers-wrap {
+    height: 348px;
+  }
+  .speakers-wrap h1 {
+    font-size: 25px;
+    line-height: 32px;
+    padding-left: 42px;
+  }
+  /* home style */
+  .main-banner-img.home-bnr {
+    height: 325px !important;
+  }
+  .content-wrap .col-left {
+    margin-top: 35px;
+  }
+  .content-wrap .col-left h2 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+  .twitter-heading {
+    margin-top: 37px;
+  }
+  .twitter-heading h2 {
+    padding-top: 32px;
+  }
+  ul.speakers li.profile {
+    width: auto;
+    margin-top: 10px;
+  }
+  .speakers-left {
+    padding: 0;
+  }
+  .speakers-right {
+    padding-left: 0;
+  }
+  .twitter-feed .content_twitter {
+    height: 1330px;
+  }
 }
 /* Twitteer */
 
@@ -500,6 +500,7 @@ ul.speakers li.profile {
   text-align: left;
   color: #00a7ef !important;
   float: left;
+  padding-right: 2px;
 }
 #tw-widget1 .user a span[data-scribe="element:name"] {
   position: static;
@@ -517,7 +518,7 @@ ul.speakers li.profile {
 }
 #tw-widget1 .tweet {
   margin: 0;
-  padding: 20px;
+  padding: 20px !important;
   color: #4d4d4d;
   font-weight: normal;
   font-size: 15px;

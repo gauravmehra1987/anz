@@ -51,8 +51,8 @@
     	<li <?php if($this->request->url=='') echo "class='active'"; ?>>
             <a <?php if($this->request->url=='') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>" title="Home">Home</a>
         </li>
-        <li <?php if($this->request->url=='capturing-aseen-oportunity') echo "class='active'"; ?>>
-            <a <?php if($this->request->url=='capturing-aseen-oportunity') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>capturing-asean-opportunity" title="Capturing the ASEAN Opportunity">Capturing the ASEAN Opportunity</a>
+        <li <?php if($this->request->url=='capturing-asean-opportunity') echo "class='active'"; ?>>
+            <a <?php if($this->request->url=='capturing-asean-opportunity') echo "class='active'"; ?> href="<?php echo $this->webroot; ?>capturing-asean-opportunity" title="Capturing the ASEAN Opportunity">Capturing the ASEAN Opportunity</a>
         </li>
 
         <li <?php if($this->request->url=='anz-speakers') echo "class='active'"; ?>>
