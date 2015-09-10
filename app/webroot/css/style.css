@@ -159,12 +159,12 @@ ul.nav.hrz li {
 .main-banner-img{ width:100%; height:400px; float:left; background:#999;}
 .main-banner-img .main-bnnr-layout{ width:1000px; margin:0 auto;}
 .main-banner-img.home-bnr{ background:url(../img/anz-home-bg.jpg) no-repeat center center; background-size:cover;}
-.main-banner-img.cocktail-bnr{ height:332px; background:url(../img/cocktail-reception.jpg) no-repeat center center; background-size:cover;}
-.main-banner-img.cocktail-bnr.deligates-bnr{ height:332px; background:url(../img/deligates.jpg) no-repeat center center; background-size:cover;}
-.main-banner-img.cocktail-bnr.makeanappointment{ height:332px; background:url(../img/make-an-appointment.jpg) no-repeat center center; background-size:cover;     background-position: 0px 76%;}
+.main-banner-img.cocktail-bnr{ height:390px; background:url(../img/cocktail-reception.jpg) no-repeat center center; background-size:cover;}
+.main-banner-img.cocktail-bnr.deligates-bnr{ height:390px; background:url(../img/deligates.jpg) no-repeat center center; background-size:cover;}
+.main-banner-img.cocktail-bnr.makeanappointment{ height:390px; background:url(../img/make-an-appointment.jpg) no-repeat center center; background-size:cover;     background-position: 0px 76%;}
 .conversation{ width: 32%; margin:0 auto;}
-.conversation img{ width:100%; margin-top:80px;}
-.main-banner-img h1{ color:#fff; font-size:44px; letter-spacing:1px; font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;    font-weight: 600; text-transform:uppercase;}
+.conversation img{ width:88%; margin-top:80px;}
+.main-banner-img h1{ color:#fff;  letter-spacing:1px;     font: 50px/45px 'MyriadPro-Regular';     text-transform:uppercase;}
 .main-banner-img h1 span{ display: block;}
 .main-banner-img h1.cocktail-reception-heading{ margin-top:80px;}
  
@@ -1110,3 +1110,79 @@ button{ float:none; display:block;     margin: 1em auto;}
 }
 @media (max-width: 1000px) and (min-width: 640px){
 .menu{ background: url(../img/bg-primary-nav3.png) no-repeat; background-position: -1135px top;; position: relative;}	}
+
+
+@media all and (min-width: 1025px) and (max-width: 3000px) {
+.main-banner-img h1.cocktail-reception-heading {
+    margin-left: 25px;
+    margin-top: 170px;
+}
+
+.deligates-title-and-heading {
+    margin-left: 25px;
+}
+
+.cocktail-reception-form {
+    margin-left: 25px;
+}
+  }
+
+  @media all and (min-width: 676px) and (max-width: 1024px) {
+.main-banner-img h1.cocktail-reception-heading {
+    margin-left: 25px;
+    margin-top: 170px;
+}
+}
+
+
+ @media all and (min-width: 481px) and (max-width: 675px) {
+.main-banner-img h1.cocktail-reception-heading {
+
+
+    font-size: 35px;
+    line-height: 32px;
+    padding-left: 42px;
+    margin-top: 170px;
+}
+.main-banner-img.cocktail-bnr.makeanappointment {
+    height: 314px;
+
+  }
+.main-banner-img.cocktail-bnr.deligates-bnr {
+    height: 314px;
+}
+.main-banner-img.cocktail-bnr {
+    height: 314px;
+}
+
+
+
+  }
+
+@media all and (min-width: 200px) and (max-width: 480px) {
+
+.main-banner-img h1.cocktail-reception-heading {
+
+
+    font-size: 25px;
+    line-height: 32px;
+    padding-left: 42px;
+    margin-top: 170px;
+}
+
+  .logo a {
+    width: 156px; 
+}
+
+.main-banner-img.cocktail-bnr.makeanappointment {
+    height: 354px;
+
+  }
+.main-banner-img.cocktail-bnr.deligates-bnr {
+    height: 354px;
+}
+.main-banner-img.cocktail-bnr {
+    height: 354px;
+}
+
+}
