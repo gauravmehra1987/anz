@@ -81,6 +81,7 @@
 }
 .content-wrap .col-right p a{
   text-decoration: underline; color: #414042;
+  cursor: pointer;
 }
 .twitter-heading {
   width: 100%;
