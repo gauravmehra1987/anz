@@ -29,6 +29,7 @@
   float: left;
   margin: 65px 0 0 0;
 }
+.content-area .download{ display: none;}
 .content-area h2 {
   font: 24px/29px 'MyriadPro-Regular';
   color: #004067;
@@ -39,9 +40,10 @@
   color: #414042;
   margin: 28px 0 0 0;
 }
+
 .info-graphics {
   width: 100%;
-  height: 655px;
+  height: 495px;
   float: left;
   background: #d2d3d5;
   margin: 123px 0 0 0;
@@ -72,13 +74,19 @@
   margin-top: 54px;
 }
 .content-wrap .col-right p {
-  color: #414042;
+  color: #414042; padding: 0 0 20px;
+}
+.content-wrap .col-right p span{ 
+  display: block;
+}
+.content-wrap .col-right p a{
+  text-decoration: underline; color: #414042;
 }
 .twitter-heading {
   width: 100%;
   border-top: 1px solid #00aef7;
   float: left;
-  margin-top: 65px;
+  margin-top: 65px; display: none;
 }
 .twitter-heading h2 {
   font: 24px/30px 'MyriadPro-Regular';
@@ -89,7 +97,7 @@
 .twitter-feed {
   width: 100%;
   float: left;
-  margin-top: 35px;
+  margin-top: 35px; display: none;
 }
 .twitter-feed .content {
   background: none;
@@ -274,6 +282,9 @@ ul.speakers li.profile {
   .deligates-title-and-heading{
     margin-left: 10px !important;
   }
+  .info-graphics{
+    height: 370px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .banner-wrap h1 {
@@ -300,6 +311,7 @@ ul.speakers li.profile {
   }
   .info-graphics {
     margin-top: 50px;
+    height: 300px;
   }
   .speakers-block {
     margin-top: 45px;
@@ -434,6 +446,9 @@ ul.speakers li.profile {
   }
   .twitter-feed .content_twitter {
     height: 1330px;
+  }
+  .info-graphics {
+    height: 170px;
   }
 }
 /* Twitteer */

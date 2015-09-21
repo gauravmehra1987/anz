@@ -7,12 +7,12 @@
     <div class="content-wrap">
         <div class="container-area">
             <div class="content-area">
-                <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h2>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                <button class="makenappointment" onclick="location.href='<?php echo $this->webroot; ?>make-an-appointment'">Download White Paper</button>
+                <h2>Navigating ASEAN as it sees the benefits of greater banking integration</h2>
+                <p>In 'Shaping the Future of ASEAN Banking', we explore the opportunities present in ASEAN as it emerges as a key manufacturing hub and engine of growth. ANZ has observed three distinct approaches from banks as they navigate an increasingly connected ASEAN, each requiring adaptation as the region evolves.</p>
+                <button class="makenappointment download" onclick="location.href='<?php echo $this->webroot; ?>make-an-appointment'">Download White Paper</button>
             </div>
             <div class="info-graphics">
-                <span>Pending infographic <br/>(max width: 1000px)</span>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GhZWaL02hRk" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>

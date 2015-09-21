@@ -1109,7 +1109,9 @@ button{ float:none; display:block;     margin: 1em auto;}
 
 }
 @media (max-width: 1000px) and (min-width: 640px){
-.menu{ background: url(../img/bg-primary-nav6.png) no-repeat; background-position: -1130px top;; position: relative;}	}
+.menu{ background: url(../img/bg-primary-nav6.png) no-repeat; background-position: -1130px top; position: relative;}
+-webkit-.menu{ background: url(../img/bg-primary-nav6.png) no-repeat; background-position: -1130px top; position: relative;}
+}
 
 
 @media all and (min-width: 1025px) and (max-width: 3000px) {
