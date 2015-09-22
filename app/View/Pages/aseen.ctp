@@ -11,8 +11,11 @@
                 <p>In 'Shaping the Future of ASEAN Banking', we explore the opportunities present in ASEAN as it emerges as a key manufacturing hub and engine of growth. ANZ has observed three distinct approaches from banks as they navigate an increasingly connected ASEAN, each requiring adaptation as the region evolves.</p>
                 <button class="makenappointment download" onclick="location.href='<?php echo $this->webroot; ?>make-an-appointment'">Download White Paper</button>
             </div>
-            <div class="info-graphics">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GhZWaL02hRk" frameborder="0" allowfullscreen></iframe>
+             <div class="info-graphics">
+                <span>Pending infographic <br/>(max width: 1000px)</span>
+            </div>
+            <div class="responsive-video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GhZWaL02hRk" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
     </div>

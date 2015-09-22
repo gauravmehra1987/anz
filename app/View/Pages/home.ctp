@@ -12,7 +12,7 @@
             </div>
 
             <div class="col-right">
-                <p>SIBOS 2015: 12–15 October
+                <p class="text-heading">SIBOS 2015: 12–15 October
                 <span>Level B2, Stand C44</span>
                 The Sands Expo and Convention Centre, Marina Bay Sands, Singapore</p>
                 <p>ANZ is proud to once again be part of Sibos. <a onclick="location.href='<?php echo $this->webroot; ?>delegates'">Our ANZ representatives</a> across relationship, compliance, trade and payment services, operations and technology, look forward to meeting you and discussing how we can help meet the needs of your financial institution. </p>

@@ -40,19 +40,35 @@
   color: #414042;
   margin: 28px 0 0 0;
 }
-
 .info-graphics {
   width: 100%;
-  height: 495px;
+  height: 655px;
   float: left;
   background: #d2d3d5;
   margin: 123px 0 0 0;
   text-align: center;
+  position: relative;
 }
 .info-graphics span {
   position: relative;
   top: 350px;
   text-align: center;
+}
+.responsive-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  clear: both;
+  top: 30px;
+}
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*max-width: 500px;*/
+  max-height: 495px;
 }
 /*  Home Page */
 .content-wrap .col-left {
@@ -75,6 +91,12 @@
 }
 .content-wrap .col-right p {
   color: #414042; padding: 0 0 20px;
+}
+.content-wrap .col-right p.text-heading{
+  font-weight: bold;
+}
+.content-wrap .col-right .makenappointment{
+  margin-top: 25px;
 }
 .content-wrap .col-right p span{ 
   display: block;
@@ -283,8 +305,8 @@ ul.speakers li.profile {
   .deligates-title-and-heading{
     margin-left: 10px !important;
   }
-  .info-graphics{
-    height: 370px;
+  .responsive-video iframe{
+    max-height: 370px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -312,7 +334,9 @@ ul.speakers li.profile {
   }
   .info-graphics {
     margin-top: 50px;
-    height: 300px;
+  }
+  .responsive-video iframe{
+    max-height: 300px;
   }
   .speakers-block {
     margin-top: 45px;
@@ -448,8 +472,11 @@ ul.speakers li.profile {
   .twitter-feed .content_twitter {
     height: 1330px;
   }
-  .info-graphics {
-    height: 170px;
+  .responsive-video{
+    padding-bottom: 80%;
+  }
+  .responsive-video iframe{
+    max-height: 170px;
   }
 }
 /* Twitteer */
