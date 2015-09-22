@@ -61,8 +61,8 @@
                     <li class="profile">
                         <div class="speakers-left">
                             <small class="name">Alan Huse </small>
-                            <small class="designation">Head, Global Transaction Banking 
-                            Australia, New Zealand and 
+                            <small class="designation">Head, Global Transaction <span>Banking 
+                            Australia,</span> New Zealand and 
                             the Pacific</small>
                         </div>
                                                    
