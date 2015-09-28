@@ -80,7 +80,7 @@ class PagesController extends AppController {
         }
 		
 		public function aseen(){
-            $this->set('title','Capturing aseen oportunity');
+            $this->set('title','Capturing The ASEAN Oportunity');
         }
 		
 		public function speakers(){
