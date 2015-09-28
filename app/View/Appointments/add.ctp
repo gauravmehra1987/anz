@@ -11,7 +11,7 @@
             <div class="cocktail-reception-form" id="cocktail-reception-form">
     
     <div class="form-title-and-heading">
-    <p class="makeanapointment">Please complete the following to make an appointment:</p>
+    <p class="makeanapointment main-heading">Please complete the following to make an appointment:</p>
     </div>
    <div class="form-wrapper makeanapointment">
     <?php echo $this->Form->create('Appointment',array('id'=>'appointment-form')); ?>
