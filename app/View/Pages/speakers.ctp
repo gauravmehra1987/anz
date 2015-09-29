@@ -53,7 +53,7 @@
                        <div class="speakers-right">
                             <span class="topic">FORUM - Sibos Big Issue Debate:</span>
                             <h4>"THE INTERNET OF THINGS AND IMPLICATIONS FOR BANKS' CORE PLATFORMS"</h4>
-                            <p>“The increasingly connected nature of our world – the internet of things – is driving our understanding of a customer’s experience of their touchpoints with us. It is no longer valid to simply offer products, and we are keen to orient more around our customer’s major life stage events, whether that is the life stage of an individual such as buying a house, or the lifestage of a business such as securing capital for international expansion. The internet of things allows us to understand and better service those events.”</p>
+                            <p>“The internet of things (IoT) is about connecting - connecting employees, customers, value-chains, ecosystems, regions and economies – where value is created with synergistic effects, often surpassing the importance of the underlying products. In this world of connectivity, we don’t talk anymore about a car loan but offer car ownership, we don’t’ suggest funds to invest in but rather offer a retirement plan. Both consumers and corporates expect intelligent convenience (and not having to worry about orchestration), and expect services provided by ecosystems specialised in the life events they care about, such as home ownership or retirement planning for consumers, or such as mergers and acquisitions for businesses.”</p>
                             <small>Tuesday 13 October, 2015 <span>11:30 am - 12:30 pm</span> </small>
                         </div> 
                     </li>   
