@@ -79,7 +79,8 @@ class PagesController extends AppController {
             $this->set('title','Delegates');
         }
 		
-		public function aseen(){
+        public function aseen(){
+            $this->redirect('/');
             $this->set('title','Capturing The ASEAN Opportunity');
         }
 		
