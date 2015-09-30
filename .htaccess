@@ -1,5 +1,9 @@
 <IfModule mod_rewrite.c>
-   RewriteEngine on
-   RewriteRule    ^$ app/webroot/    [L]
-   RewriteRule    (.*) app/webroot/$1 [L]
+    RewriteEngine on
+
+    RewriteCond %{HTTP_HOST} ^sibos\.anz\.com$ [NC]
+    RewriteRule ^.*$ http://www.sibos\.anz\.com%{REQUEST_URI} [R=301,L] # <-- Mind the 'L'!
+
+    RewriteRule    ^$ app/webroot/    [L]
+    RewriteRule    (.*) app/webroot/$1 [L]
 </IfModule>
