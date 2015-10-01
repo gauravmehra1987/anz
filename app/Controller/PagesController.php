@@ -80,7 +80,7 @@ class PagesController extends AppController {
         }
 		
         public function aseen(){
-            $this->redirect('/');
+            //$this->redirect('/');
             $this->set('title','Capturing The ASEAN Opportunity');
         }
 		

@@ -17,7 +17,7 @@
                 <span>The Sands Expo and Convention Centre,</span> Marina Bay Sands, Singapore</p>
                 <p>ANZ is proud to once again be part of Sibos. <a onclick="location.href='<?php echo $this->webroot; ?>delegates'">Our ANZ representatives</a> across relationship, compliance, trade and payment services, operations and technology, look forward to meeting you and discussing how we can help meet the needs of your financial institution. </p>
 
-                <p>We look forward to participating in <a onclick="location.href='<?php echo $this->webroot; ?>anz-speakers'">key speaking forums</a> where the best of the industry comes together to share market trends, experiences and ideas. We’re also very excited to present insights and <a onclick="location.href='<?php echo $this->webroot; ?>capturing-asean-opportunity'">opportunities in ASEAN</a>, and how ANZ can be your partner to navigate some of these. </p>
+                <p>We look forward to participating in <a onclick="location.href='<?php echo $this->webroot; ?>anz-speakers'">key speaking forums</a> where the best of the industry comes together to share market trends, experiences and ideas. </p>
 
                 <p>We look forward to an inspiring week in Singapore.</p>
 
