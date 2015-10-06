@@ -15,7 +15,7 @@
                 <span>Pending infographic <br/>(max width: 1000px)</span>
             </div>
             <div class="responsive-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/GhZWaL02hRk" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://player.vimeo.com/video/141377507" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
     </div>
