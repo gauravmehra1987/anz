@@ -25,7 +25,7 @@
             </div>
 
             <div class="twitter-heading">
-                <h2>Lorem ipsum dolor sit</h2>
+                <h2>CONVERSATIONS THAT MATTER @ SIBOS</h2>
             </div>
 
             <div class="twitter-feed">
